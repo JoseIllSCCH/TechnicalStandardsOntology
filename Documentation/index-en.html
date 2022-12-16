@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://scch/technical_standards","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://scch/technical_standards","name":"Techincal Security Standards Ontology", "headline":"This ontology serves as the basis to represent technical standards in a machine readable way. It provides elements to define publications, their provisions, their dependencies and possible constraints, among other constructs.This ontology is based on three technical standars, namely the IEC 62443 4-2, ETSI 303645 and the more general NIST Framework  for ImprovingCritical Infrastructure Cybersecurity.Therefore, besides providing the schematic elements,  it also considers system related concepts to describe system solutions, their components, etc.Making it possible to define not only project or system specific information but also project independent information. This makes it more robust for engineering design tasks.", "datePublished":"Fri Dec 16 13:17:48 CET 2022", "version":"0.1", "license":"http://scch/technical_standards#MIT_License", "author":[{"@type":"Person","name":"Gandalf Denk"},{"@type":"Person","name":"Georg Buchgeher"},{"@type":"Person","name":"Jose Illescas"},{"@type":"Person","name":"Lisa Ehrlinger"},{"@type":"Person","name":"Peter Panholzer"},{"@type":"Person","name":"Thomas Brandstetter"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://scch/technical_standards","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://scch/technical_standards","name":"Techincal Security Standards Ontology", "headline":"This ontology serves as the basis to represent technical standards in a machine readable way. It provides elements to define publications, their provisions, their dependencies and possible constraints, among other constructs.This ontology is based on three technical standars, namely the IEC 62443 4-2, ETSI 303645 and the more general NIST Framework  for ImprovingCritical Infrastructure Cybersecurity.Therefore, besides providing the schematic elements,  it also considers system related concepts to describe system solutions, their components, etc.Making it possible to define not only project or system specific information but also project independent information. This makes it more robust for engineering design tasks.", "datePublished":"Fri Dec 16 17:12:04 CET 2022", "version":"0.1", "license":"http://scch/technical_standards#MIT_License", "author":[{"@type":"Person","name":"Gandalf Denk"},{"@type":"Person","name":"Georg Buchgeher"},{"@type":"Person","name":"Jose Illescas"},{"@type":"Person","name":"Lisa Ehrlinger"},{"@type":"Person","name":"Peter Panholzer"},{"@type":"Person","name":"Thomas Brandstetter"}]}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -985,7 +985,6 @@ This section provides details for each class and property defined by Techincal S
             <sup class="type-op" title="object property">op</sup>, <a href="#connectsDestination"
                title="http://scch/technical_standards#connectsDestination">connects destination</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#connectsSource" title="http://scch/technical_standards#connectsSource">connects source</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasNetworkType" title="http://scch/technical_standards#hasNetworkType">has network type</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#usesAlgorithm" title="http://scch/technical_standards#usesAlgorithm">uses algorithm</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#usesChannel" title="http://scch/technical_standards#usesChannel">uses channel</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#usesProtocol" title="http://scch/technical_standards#usesProtocol">uses protocol</a>
@@ -1744,11 +1743,6 @@ Devices may have specific attributes that may be exposed to different threats, w
             <a href="#Type" title="http://scch/technical_standards#Type">type</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasNetworkType" title="http://scch/technical_standards#hasNetworkType">has network type</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
       </dl>
    </div>
    <div class="entity" id="NonFunctionalRequirement">
@@ -1922,12 +1916,14 @@ Devices may have specific attributes that may be exposed to different threats, w
          <dt>is in domain of</dt>
          <dd>
             <a href="#affects" title="http://scch/technical_standards#affects">affects</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#followsProblem" title="http://scch/technical_standards#followsProblem">follows problem</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#relatedToProblem"
+               title="http://scch/technical_standards#relatedToProblem">related to problem</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#followsProblem" title="http://scch/technical_standards#followsProblem">follows problem</a>
+            <a href="#relatedToProblem"
+               title="http://scch/technical_standards#relatedToProblem">related to problem</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -2928,11 +2924,6 @@ Items can have types, devices also.</span>
          </a>
       </li>
       <li>
-         <a href="#followsProblem" title="http://scch/technical_standards#followsProblem">
-            <span>follows problem</span>
-         </a>
-      </li>
-      <li>
          <a href="#handledBy" title="http://scch/technical_standards#handledBy">
             <span>handled by</span>
          </a>
@@ -3028,8 +3019,9 @@ Items can have types, devices also.</span>
          </a>
       </li>
       <li>
-         <a href="#hasNetworkType" title="http://scch/technical_standards#hasNetworkType">
-            <span>has network type</span>
+         <a href="#hasMoreGeneralVersion"
+            title="http://scch/technical_standards#hasMoreGeneralVersion">
+            <span>has more general version</span>
          </a>
       </li>
       <li>
@@ -3213,6 +3205,12 @@ Items can have types, devices also.</span>
       <li>
          <a href="#refersTo" title="http://scch/technical_standards#refersTo">
             <span>refers to</span>
+         </a>
+      </li>
+      <li>
+         <a href="#relatedToProblem"
+            title="http://scch/technical_standards#relatedToProblem">
+            <span>related to problem</span>
          </a>
       </li>
       <li>
@@ -4066,31 +4064,6 @@ Items can have types, devices also.</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="followsProblem">
-      <h3>follows problem<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://scch/technical_standards#followsProblem</p>
-      <div class="comment">
-         <span class="markdown">ETSI 303645</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Problem" title="http://scch/technical_standards#Problem">problem</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Problem" title="http://scch/technical_standards#Problem">problem</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="handledBy">
       <h3>handled by<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -4249,13 +4222,6 @@ Items can have types, devices also.</span>
          <strong>IRI:</strong> http://scch/technical_standards#hasConstraint</p>
       <div class="description">
          <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="http://scch/technical_standards#Provision"
-                  target="_blank"
-                  title="http://scch/technical_standards#Provision">provision</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <a href="#Constraint" title="http://scch/technical_standards#Constraint">constraint</a>
@@ -4485,8 +4451,7 @@ can work within a system or component which provides it.</span>
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="http://scch/technical_standards#hasMoreGeneralVersion"
-                  target="_blank"
+               <a href="#hasMoreGeneralVersion"
                   title="http://scch/technical_standards#hasMoreGeneralVersion">has more general version</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
@@ -4519,8 +4484,7 @@ can work within a system or component which provides it.</span>
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="http://scch/technical_standards#hasMoreGeneralVersion"
-                  target="_blank"
+               <a href="#hasMoreGeneralVersion"
                   title="http://scch/technical_standards#hasMoreGeneralVersion">has more general version</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
@@ -4542,29 +4506,29 @@ can work within a system or component which provides it.</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="hasNetworkType">
-      <h3>has network type<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="hasMoreGeneralVersion">
+      <h3>has more general version<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://scch/technical_standards#hasNetworkType</p>
+         <strong>IRI:</strong> http://scch/technical_standards#hasMoreGeneralVersion</p>
       <div class="description">
          <dl>
-            <dt>has super-properties</dt>
+            <dt>has sub-properties</dt>
             <dd>
-               <a href="#hasType" title="http://scch/technical_standards#hasType">has type</a>
+               <a href="#hasMoreGeneralDomain"
+                  title="http://scch/technical_standards#hasMoreGeneralDomain">has more general domain</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#hasMoreGeneralProblem"
+                  title="http://scch/technical_standards#hasMoreGeneralProblem">has more general problem</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
-            <dt>has domain</dt>
+            <dt>is inverse of</dt>
             <dd>
-               <a href="#Connection" title="http://scch/technical_standards#Connection">connection</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#NetworkType" title="http://scch/technical_standards#NetworkType">network type</a>
-               <sup class="type-c" title="class">c</sup>
+               <a href="http://scch/technical_standards#hasSubVersion"
+                  target="_blank"
+                  title="http://scch/technical_standards#hasSubVersion">has sub version</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -4774,6 +4738,13 @@ can work within a system or component which provides it.</span>
          <strong>IRI:</strong> http://scch/technical_standards#hasSubDomain</p>
       <div class="description">
          <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://scch/technical_standards#hasSubVersion"
+                  target="_blank"
+                  title="http://scch/technical_standards#hasSubVersion">has sub version</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#Domain" title="http://scch/technical_standards#Domain">domain</a>
@@ -4788,9 +4759,6 @@ can work within a system or component which provides it.</span>
             <dd>
                <a href="#hasMoreGeneralDomain"
                   title="http://scch/technical_standards#hasMoreGeneralDomain">has more general domain</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="http://scch/technical_standards#isSubDomainOf"
-                  target="_blank"
-                  title="http://scch/technical_standards#isSubDomainOf">is sub domain of</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -4805,6 +4773,13 @@ can work within a system or component which provides it.</span>
          <strong>IRI:</strong> http://scch/technical_standards#hasSubProblem</p>
       <div class="description">
          <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://scch/technical_standards#hasSubVersion"
+                  target="_blank"
+                  title="http://scch/technical_standards#hasSubVersion">has sub version</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#Threat" title="http://scch/technical_standards#Threat">threat</a>
@@ -4921,11 +4896,6 @@ can work within a system or component which provides it.</span>
          <strong>IRI:</strong> http://scch/technical_standards#hasType</p>
       <div class="description">
          <dl>
-            <dt>has sub-properties</dt>
-            <dd>
-               <a href="#hasNetworkType" title="http://scch/technical_standards#hasNetworkType">has network type</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
             <dt>has range</dt>
             <dd>
                <a href="#Type" title="http://scch/technical_standards#Type">type</a>
@@ -5338,6 +5308,38 @@ can work within a system or component which provides it.</span>
             <dt>has range</dt>
             <dd>
                <a href="#Publication" title="http://scch/technical_standards#Publication">publication</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="relatedToProblem">
+      <h3>related to problem<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://scch/technical_standards#relatedToProblem</p>
+      <div class="comment">
+         <span class="markdown">ETSI 303645</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="http://scch/technical_standards#relatedTo"
+                  target="_blank"
+                  title="http://scch/technical_standards#relatedTo">related to</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Problem" title="http://scch/technical_standards#Problem">problem</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Problem" title="http://scch/technical_standards#Problem">problem</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -7173,15 +7175,6 @@ MAy be modelled differently, via Component's property.</span>
 <sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
 </div>
 </div>
-</div>
-    
-
-<!--REFERENCES SECTION-->
-  <div id="references">
-<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-<span class="markdown">
-Add your references here. It is recommended to have them as a list.</span>
-
 </div>
 <div id="acknowledgments">
 <h2 id="ack" class="list">Acknowledgments <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>

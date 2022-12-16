@@ -286,13 +286,6 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <http://scch/technical_standards#exposes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://scch/technical_standards#Threat> .
 <http://scch/technical_standards#exposes> <http://www.w3.org/2000/01/rdf-schema#range> <http://scch/technical_standards#Vulnerability> .
 # 
-# http://scch/technical_standards#followsProblem
-<http://scch/technical_standards#followsProblem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://scch/technical_standards#followsProblem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://scch/technical_standards#Problem> .
-<http://scch/technical_standards#followsProblem> <http://www.w3.org/2000/01/rdf-schema#range> <http://scch/technical_standards#Problem> .
-<http://scch/technical_standards#followsProblem> <http://purl.org/dc/terms/description> "Used to define possible chain of problems." .
-<http://scch/technical_standards#followsProblem> <http://www.w3.org/2000/01/rdf-schema#comment> "ETSI 303645" .
-# 
 # http://scch/technical_standards#handledBy
 <http://scch/technical_standards#handledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://scch/technical_standards#handledBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://scch/technical_standards#handles> .
@@ -336,7 +329,6 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # http://scch/technical_standards#hasConstraint
 <http://scch/technical_standards#hasConstraint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://scch/technical_standards#hasConstraint> <http://www.w3.org/2000/01/rdf-schema#domain> <http://scch/technical_standards#Provision> .
 <http://scch/technical_standards#hasConstraint> <http://www.w3.org/2000/01/rdf-schema#range> <http://scch/technical_standards#Constraint> .
 # 
 # http://scch/technical_standards#hasDelegatedCapability
@@ -413,15 +405,10 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # http://scch/technical_standards#hasMoreGeneralVersion
 <http://scch/technical_standards#hasMoreGeneralVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://scch/technical_standards#hasMoreGeneralVersion> <http://www.w3.org/2002/07/owl#inverseOf> <http://scch/technical_standards#hasSubVersion> .
 # 
 # http://scch/technical_standards#hasMoreSecureVersion
 <http://scch/technical_standards#hasMoreSecureVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-# 
-# http://scch/technical_standards#hasNetworkType
-<http://scch/technical_standards#hasNetworkType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://scch/technical_standards#hasNetworkType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://scch/technical_standards#hasType> .
-<http://scch/technical_standards#hasNetworkType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://scch/technical_standards#Connection> .
-<http://scch/technical_standards#hasNetworkType> <http://www.w3.org/2000/01/rdf-schema#range> <http://scch/technical_standards#NetworkType> .
 # 
 # http://scch/technical_standards#hasOS
 <http://scch/technical_standards#hasOS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -473,14 +460,18 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # http://scch/technical_standards#hasSubDomain
 <http://scch/technical_standards#hasSubDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://scch/technical_standards#hasSubDomain> <http://www.w3.org/2002/07/owl#inverseOf> <http://scch/technical_standards#isSubDomainOf> .
+<http://scch/technical_standards#hasSubDomain> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://scch/technical_standards#hasSubVersion> .
 <http://scch/technical_standards#hasSubDomain> <http://www.w3.org/2000/01/rdf-schema#domain> <http://scch/technical_standards#Domain> .
 <http://scch/technical_standards#hasSubDomain> <http://www.w3.org/2000/01/rdf-schema#range> <http://scch/technical_standards#Domain> .
 # 
 # http://scch/technical_standards#hasSubProblem
 <http://scch/technical_standards#hasSubProblem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://scch/technical_standards#hasSubProblem> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://scch/technical_standards#hasSubVersion> .
 <http://scch/technical_standards#hasSubProblem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://scch/technical_standards#Threat> .
 <http://scch/technical_standards#hasSubProblem> <http://www.w3.org/2000/01/rdf-schema#range> <http://scch/technical_standards#Threat> .
+# 
+# http://scch/technical_standards#hasSubVersion
+<http://scch/technical_standards#hasSubVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # http://scch/technical_standards#hasSuccessor
 <http://scch/technical_standards#hasSuccessor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -539,9 +530,6 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # http://scch/technical_standards#isSourceOf
 <http://scch/technical_standards#isSourceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://scch/technical_standards#isSourceOf> <http://www.w3.org/2000/01/rdf-schema#comment> "ETSI 303645" .
-# 
-# http://scch/technical_standards#isSubDomainOf
-<http://scch/technical_standards#isSubDomainOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 # 
 # http://scch/technical_standards#isSupplementalGuidanceOf
 <http://scch/technical_standards#isSupplementalGuidanceOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -627,6 +615,14 @@ _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # http://scch/technical_standards#relatedTo
 <http://scch/technical_standards#relatedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://scch/technical_standards#relatedToProblem
+<http://scch/technical_standards#relatedToProblem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://scch/technical_standards#relatedToProblem> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://scch/technical_standards#relatedTo> .
+<http://scch/technical_standards#relatedToProblem> <http://www.w3.org/2000/01/rdf-schema#domain> <http://scch/technical_standards#Problem> .
+<http://scch/technical_standards#relatedToProblem> <http://www.w3.org/2000/01/rdf-schema#range> <http://scch/technical_standards#Problem> .
+<http://scch/technical_standards#relatedToProblem> <http://purl.org/dc/terms/description> "Used to define possible chain of problems." .
+<http://scch/technical_standards#relatedToProblem> <http://www.w3.org/2000/01/rdf-schema#comment> "ETSI 303645" .
 # 
 # http://scch/technical_standards#requiresFunctionality
 <http://scch/technical_standards#requiresFunctionality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .

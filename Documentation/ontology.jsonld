@@ -1776,21 +1776,6 @@
     "@id" : "http://scch/technical_standards#Vulnerability"
   } ]
 }, {
-  "@id" : "http://scch/technical_standards#followsProblem",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://purl.org/dc/terms/description" : [ {
-    "@value" : "Used to define possible chain of problems."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "ETSI 303645"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://scch/technical_standards#Problem"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://scch/technical_standards#Problem"
-  } ]
-}, {
   "@id" : "http://scch/technical_standards#handledBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
@@ -1853,9 +1838,6 @@
 }, {
   "@id" : "http://scch/technical_standards#hasConstraint",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://scch/technical_standards#Provision"
-  } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://scch/technical_standards#Constraint"
   } ]
@@ -1981,22 +1963,13 @@
   } ]
 }, {
   "@id" : "http://scch/technical_standards#hasMoreGeneralVersion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://scch/technical_standards#hasSubVersion"
+  } ]
 }, {
   "@id" : "http://scch/technical_standards#hasMoreSecureVersion",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "http://scch/technical_standards#hasNetworkType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://scch/technical_standards#Connection"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://scch/technical_standards#NetworkType"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://scch/technical_standards#hasType"
-  } ]
 }, {
   "@id" : "http://scch/technical_standards#hasOS",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -2087,8 +2060,8 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://scch/technical_standards#Domain"
   } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://scch/technical_standards#isSubDomainOf"
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://scch/technical_standards#hasSubVersion"
   } ]
 }, {
   "@id" : "http://scch/technical_standards#hasSubProblem",
@@ -2098,7 +2071,13 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://scch/technical_standards#Threat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://scch/technical_standards#hasSubVersion"
   } ]
+}, {
+  "@id" : "http://scch/technical_standards#hasSubVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
   "@id" : "http://scch/technical_standards#hasSuccessor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
@@ -2415,9 +2394,6 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "http://scch/technical_standards#isSubDomainOf",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
   "@id" : "http://scch/technical_standards#isSupplementalGuidanceOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
@@ -2641,6 +2617,24 @@
 }, {
   "@id" : "http://scch/technical_standards#relatedTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://scch/technical_standards#relatedToProblem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "Used to define possible chain of problems."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://scch/technical_standards#Problem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://scch/technical_standards#Problem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://scch/technical_standards#relatedTo"
+  } ]
 }, {
   "@id" : "http://scch/technical_standards#requiresFunctionality",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],

@@ -334,14 +334,6 @@ xsd:string rdf:type rdfs:Datatype .
          rdfs:range :Vulnerability .
 
 
-###  http://scch/technical_standards#followsProblem
-:followsProblem rdf:type owl:ObjectProperty ;
-                rdfs:domain :Problem ;
-                rdfs:range :Problem ;
-                <http://purl.org/dc/terms/description> "Used to define possible chain of problems." ;
-                rdfs:comment "ETSI 303645" .
-
-
 ###  http://scch/technical_standards#handledBy
 :handledBy rdf:type owl:ObjectProperty ;
            owl:inverseOf :handles ;
@@ -387,7 +379,6 @@ xsd:string rdf:type rdfs:Datatype .
 
 ###  http://scch/technical_standards#hasConstraint
 :hasConstraint rdf:type owl:ObjectProperty ;
-               rdfs:domain :Provision ;
                rdfs:range :Constraint .
 
 
@@ -474,18 +465,12 @@ can work within a system or component which provides it.""" .
 
 
 ###  http://scch/technical_standards#hasMoreGeneralVersion
-:hasMoreGeneralVersion rdf:type owl:ObjectProperty .
+:hasMoreGeneralVersion rdf:type owl:ObjectProperty ;
+                       owl:inverseOf :hasSubVersion .
 
 
 ###  http://scch/technical_standards#hasMoreSecureVersion
 :hasMoreSecureVersion rdf:type owl:ObjectProperty .
-
-
-###  http://scch/technical_standards#hasNetworkType
-:hasNetworkType rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf :hasType ;
-                rdfs:domain :Connection ;
-                rdfs:range :NetworkType .
 
 
 ###  http://scch/technical_standards#hasOS
@@ -548,15 +533,20 @@ can work within a system or component which provides it.""" .
 
 ###  http://scch/technical_standards#hasSubDomain
 :hasSubDomain rdf:type owl:ObjectProperty ;
-              owl:inverseOf :isSubDomainOf ;
+              rdfs:subPropertyOf :hasSubVersion ;
               rdfs:domain :Domain ;
               rdfs:range :Domain .
 
 
 ###  http://scch/technical_standards#hasSubProblem
 :hasSubProblem rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :hasSubVersion ;
                rdfs:domain :Threat ;
                rdfs:range :Threat .
+
+
+###  http://scch/technical_standards#hasSubVersion
+:hasSubVersion rdf:type owl:ObjectProperty .
 
 
 ###  http://scch/technical_standards#hasSuccessor
@@ -629,10 +619,6 @@ can work within a system or component which provides it.""" .
 ###  http://scch/technical_standards#isSourceOf
 :isSourceOf rdf:type owl:ObjectProperty ;
             rdfs:comment "ETSI 303645" .
-
-
-###  http://scch/technical_standards#isSubDomainOf
-:isSubDomainOf rdf:type owl:ObjectProperty .
 
 
 ###  http://scch/technical_standards#isSupplementalGuidanceOf
@@ -736,6 +722,15 @@ can work within a system or component which provides it.""" .
 
 ###  http://scch/technical_standards#relatedTo
 :relatedTo rdf:type owl:ObjectProperty .
+
+
+###  http://scch/technical_standards#relatedToProblem
+:relatedToProblem rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :relatedTo ;
+                  rdfs:domain :Problem ;
+                  rdfs:range :Problem ;
+                  <http://purl.org/dc/terms/description> "Used to define possible chain of problems." ;
+                  rdfs:comment "ETSI 303645" .
 
 
 ###  http://scch/technical_standards#requiresFunctionality

@@ -556,18 +556,6 @@ Making it possible to define not only project or system specific information but
     
 
 
-    <!-- http://scch/technical_standards#followsProblem -->
-
-
-    <owl:ObjectProperty rdf:about="http://scch/technical_standards#followsProblem">
-        <rdfs:domain rdf:resource="http://scch/technical_standards#Problem"/>
-        <rdfs:range rdf:resource="http://scch/technical_standards#Problem"/>
-        <terms:description>Used to define possible chain of problems.</terms:description>
-        <rdfs:comment>ETSI 303645</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://scch/technical_standards#handledBy -->
 
 
@@ -642,7 +630,6 @@ Making it possible to define not only project or system specific information but
 
 
     <owl:ObjectProperty rdf:about="http://scch/technical_standards#hasConstraint">
-        <rdfs:domain rdf:resource="http://scch/technical_standards#Provision"/>
         <rdfs:range rdf:resource="http://scch/technical_standards#Constraint"/>
     </owl:ObjectProperty>
     
@@ -783,7 +770,9 @@ can work within a system or component which provides it.</rdfs:comment>
     <!-- http://scch/technical_standards#hasMoreGeneralVersion -->
 
 
-    <owl:ObjectProperty rdf:about="http://scch/technical_standards#hasMoreGeneralVersion"/>
+    <owl:ObjectProperty rdf:about="http://scch/technical_standards#hasMoreGeneralVersion">
+        <owl:inverseOf rdf:resource="http://scch/technical_standards#hasSubVersion"/>
+    </owl:ObjectProperty>
     
 
 
@@ -791,17 +780,6 @@ can work within a system or component which provides it.</rdfs:comment>
 
 
     <owl:ObjectProperty rdf:about="http://scch/technical_standards#hasMoreSecureVersion"/>
-    
-
-
-    <!-- http://scch/technical_standards#hasNetworkType -->
-
-
-    <owl:ObjectProperty rdf:about="http://scch/technical_standards#hasNetworkType">
-        <rdfs:subPropertyOf rdf:resource="http://scch/technical_standards#hasType"/>
-        <rdfs:domain rdf:resource="http://scch/technical_standards#Connection"/>
-        <rdfs:range rdf:resource="http://scch/technical_standards#NetworkType"/>
-    </owl:ObjectProperty>
     
 
 
@@ -907,7 +885,7 @@ can work within a system or component which provides it.</rdfs:comment>
 
 
     <owl:ObjectProperty rdf:about="http://scch/technical_standards#hasSubDomain">
-        <owl:inverseOf rdf:resource="http://scch/technical_standards#isSubDomainOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://scch/technical_standards#hasSubVersion"/>
         <rdfs:domain rdf:resource="http://scch/technical_standards#Domain"/>
         <rdfs:range rdf:resource="http://scch/technical_standards#Domain"/>
     </owl:ObjectProperty>
@@ -918,9 +896,17 @@ can work within a system or component which provides it.</rdfs:comment>
 
 
     <owl:ObjectProperty rdf:about="http://scch/technical_standards#hasSubProblem">
+        <rdfs:subPropertyOf rdf:resource="http://scch/technical_standards#hasSubVersion"/>
         <rdfs:domain rdf:resource="http://scch/technical_standards#Threat"/>
         <rdfs:range rdf:resource="http://scch/technical_standards#Threat"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://scch/technical_standards#hasSubVersion -->
+
+
+    <owl:ObjectProperty rdf:about="http://scch/technical_standards#hasSubVersion"/>
     
 
 
@@ -1045,13 +1031,6 @@ can work within a system or component which provides it.</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://scch/technical_standards#isSourceOf">
         <rdfs:comment>ETSI 303645</rdfs:comment>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://scch/technical_standards#isSubDomainOf -->
-
-
-    <owl:ObjectProperty rdf:about="http://scch/technical_standards#isSubDomainOf"/>
     
 
 
@@ -1222,6 +1201,19 @@ can work within a system or component which provides it.</rdfs:comment>
 
 
     <owl:ObjectProperty rdf:about="http://scch/technical_standards#relatedTo"/>
+    
+
+
+    <!-- http://scch/technical_standards#relatedToProblem -->
+
+
+    <owl:ObjectProperty rdf:about="http://scch/technical_standards#relatedToProblem">
+        <rdfs:subPropertyOf rdf:resource="http://scch/technical_standards#relatedTo"/>
+        <rdfs:domain rdf:resource="http://scch/technical_standards#Problem"/>
+        <rdfs:range rdf:resource="http://scch/technical_standards#Problem"/>
+        <terms:description>Used to define possible chain of problems.</terms:description>
+        <rdfs:comment>ETSI 303645</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
