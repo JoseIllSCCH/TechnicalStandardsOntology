@@ -1,0 +1,1932 @@
+@prefix : <http://scch/technical_standards#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://scch/technical_standards> .
+
+<http://scch/technical_standards> rdf:type owl:Ontology ;
+                                   owl:versionIRI <http://scch/technical_standards/0.1> ;
+                                   dcterms:creator "Gandalf Denk" ,
+                                                   "Georg Buchgeher" ,
+                                                   "Jose Illescas" ,
+                                                   "Lisa Ehrlinger" ,
+                                                   "Peter Panholzer" ,
+                                                   "Thomas Brandstetter" ;
+                                   dcterms:description """This ontology serves as the basis to represent technical standards in a machine readable way. It provides elements to define publications, their provisions, their dependencies and possible constraints, among other constructs.
+
+This ontology is based on three technical standars, namely the IEC 62443 4-2, ETSI 303645 and the more general NIST Framework  for Improving
+Critical Infrastructure Cybersecurity.
+
+Therefore, besides providing the schematic elements,  it also considers system related concepts to describe system solutions, their components, etc.
+
+Making it possible to define not only project or system specific information but also project independent information. This makes it more robust for engineering design tasks."""@en ;
+                                   dcterms:license :MIT_License ,
+                                                   <https://choosealicense.com/licenses/mit/> ;
+                                   dcterms:title "Techincal Security Standards Ontology"@en ;
+                                   owl:versionInfo "0.1"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/dateAccepted
+dcterms:dateAccepted rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/hasVersion
+dcterms:hasVersion rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/language
+dcterms:language rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/provenance
+dcterms:provenance rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+dcterms:publisher rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/replaces
+dcterms:replaces rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/requires
+dcterms:requires rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://scch/technical_standards#abbr
+:abbr rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#comment
+rdfs:comment rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#seeAlso
+rdfs:seeAlso rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral
+rdf:PlainLiteral rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#Literal
+rdfs:Literal rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#boolean
+xsd:boolean rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#integer
+xsd:integer rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#language
+xsd:language rdf:type rdfs:Datatype .
+
+
+###  http://www.w3.org/2001/XMLSchema#string
+xsd:string rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://scch/technical_standards#achieves
+:achieves rdf:type owl:ObjectProperty ;
+          owl:inverseOf :promotedBy ;
+          rdfs:domain :Outcome ;
+          rdfs:range :Driver ;
+          dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#addressedBy
+:addressedBy rdf:type owl:ObjectProperty ;
+             owl:inverseOf :addresses .
+
+
+###  http://scch/technical_standards#addresses
+:addresses rdf:type owl:ObjectProperty ;
+           rdfs:domain [ rdf:type owl:Class ;
+                         owl:unionOf ( :Capability
+                                       :CounterMeasure
+                                       :Provision
+                                     )
+                       ] ;
+           rdfs:range :Threat .
+
+
+###  http://scch/technical_standards#addressesConcern
+:addressesConcern rdf:type owl:ObjectProperty ;
+                  rdfs:range :Concern ;
+                  dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#affects
+:affects rdf:type owl:ObjectProperty ;
+         owl:inverseOf :isAffectedBy ;
+         rdfs:domain :Problem .
+
+
+###  http://scch/technical_standards#applicableTo
+:applicableTo rdf:type owl:ObjectProperty ;
+              owl:inverseOf :applies ;
+              rdfs:domain :ComponentRequirement ;
+              rdfs:range :Component .
+
+
+###  http://scch/technical_standards#applies
+:applies rdf:type owl:ObjectProperty ;
+         rdfs:domain :Component ;
+         rdfs:range :ComponentRequirement .
+
+
+###  http://scch/technical_standards#associatedToSubCategory
+:associatedToSubCategory rdf:type owl:ObjectProperty ;
+                         owl:inverseOf :considersProvision ;
+                         rdfs:domain :Provision ;
+                         rdfs:range :NISTSubCategory ;
+                         dcterms:provenance "NISTSubCategory" .
+
+
+###  http://scch/technical_standards#belongsTo
+:belongsTo rdf:type owl:ObjectProperty ;
+           owl:inverseOf :ownerOf ;
+           rdfs:domain :TechnicalCommittee ;
+           rdfs:range :Organization .
+
+
+###  http://scch/technical_standards#channelUsedBy
+:channelUsedBy rdf:type owl:ObjectProperty ;
+               owl:inverseOf :usesChannel .
+
+
+###  http://scch/technical_standards#composedOf
+:composedOf rdf:type owl:ObjectProperty ;
+            owl:inverseOf :composes ;
+            rdfs:domain :Component ;
+            rdfs:range :Component .
+
+
+###  http://scch/technical_standards#composes
+:composes rdf:type owl:ObjectProperty .
+
+
+###  http://scch/technical_standards#configurationOf
+:configurationOf rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :hasConfiguration ;
+                 dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#connects
+:connects rdf:type owl:ObjectProperty ;
+          rdfs:domain :Connection ;
+          rdfs:range :Component .
+
+
+###  http://scch/technical_standards#connectsDestination
+:connectsDestination rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :isDestinationOf ;
+                     rdfs:domain :Connection ;
+                     rdfs:comment "ETSI 303645" .
+
+
+###  http://scch/technical_standards#connectsSource
+:connectsSource rdf:type owl:ObjectProperty ;
+                owl:inverseOf :isSourceOf ;
+                rdfs:domain :Connection ;
+                rdfs:comment "ETSI 303645" .
+
+
+###  http://scch/technical_standards#considersAsset
+:considersAsset rdf:type owl:ObjectProperty ;
+                rdfs:domain :RiskAssesement ;
+                rdfs:range :Asset .
+
+
+###  http://scch/technical_standards#considersProvision
+:considersProvision rdf:type owl:ObjectProperty ;
+                    rdfs:domain :NISTSubCategory ;
+                    rdfs:range :Provision ;
+                    dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#considersRisk
+:considersRisk rdf:type owl:ObjectProperty ;
+               rdfs:range :Risk .
+
+
+###  http://scch/technical_standards#considersThreat
+:considersThreat rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Risk ;
+                 rdfs:range :Threat ;
+                 dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#considersVulnerability
+:considersVulnerability rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Risk ;
+                        rdfs:range :Vulnerability ;
+                        dcterms:provenance "NIST Framework" ;
+                        rdfs:comment "Risk management" .
+
+
+###  http://scch/technical_standards#consistOfFrameworkElement
+:consistOfFrameworkElement rdf:type owl:ObjectProperty ,
+                                    owl:InverseFunctionalProperty ;
+                           rdfs:domain :Framework ;
+                           rdfs:range :FrameworkElement ;
+                           dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#containedBy
+:containedBy rdf:type owl:ObjectProperty ;
+             owl:inverseOf :contains .
+
+
+###  http://scch/technical_standards#contains
+:contains rdf:type owl:ObjectProperty ;
+          rdfs:domain :Publication ;
+          rdfs:range :Provision .
+
+
+###  http://scch/technical_standards#demandsCapability
+:demandsCapability rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Provision ;
+                   rdfs:range :Capability .
+
+
+###  http://scch/technical_standards#dependsOn
+:dependsOn rdf:type owl:ObjectProperty ;
+           rdfs:domain :RequirementDependencyConstraint ;
+           rdfs:range :Provision ;
+           dcterms:description "Association between a constraint to a specific provision. Implying that the item holding the constraint depends on the referenced provision, making this provision a requirement." .
+
+
+###  http://scch/technical_standards#describesSolution
+:describesSolution rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :solutionOfArchitecture ;
+                   rdfs:domain :Architecture ;
+                   rdfs:range :SolutionStructure ;
+                   dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#developedBy
+:developedBy rdf:type owl:ObjectProperty ;
+             owl:inverseOf :develops .
+
+
+###  http://scch/technical_standards#develops
+:develops rdf:type owl:ObjectProperty ;
+          rdfs:domain :TechnicalCommittee ;
+          rdfs:range :Publication ;
+          dcterms:description "Relates a publication to its developer." ;
+          rdfs:comment "Maybe replaced by annotation property." .
+
+
+###  http://scch/technical_standards#enhancementOf
+:enhancementOf rdf:type owl:ObjectProperty ;
+               owl:inverseOf :hasEnhancement ;
+               rdfs:domain :Provision ;
+               rdfs:range :Provision .
+
+
+###  http://scch/technical_standards#exposedBy
+:exposedBy rdf:type owl:ObjectProperty ;
+           owl:inverseOf :exposes ;
+           rdfs:domain :Vulnerability ;
+           rdfs:range :Threat .
+
+
+###  http://scch/technical_standards#exposes
+:exposes rdf:type owl:ObjectProperty ;
+         rdfs:domain :Threat ;
+         rdfs:range :Vulnerability .
+
+
+###  http://scch/technical_standards#handledBy
+:handledBy rdf:type owl:ObjectProperty ;
+           owl:inverseOf :handles ;
+           rdfs:domain :Vulnerability ;
+           rdfs:range :CounterMeasure .
+
+
+###  http://scch/technical_standards#handles
+:handles rdf:type owl:ObjectProperty ;
+         rdfs:domain :CounterMeasure ;
+         rdfs:range :Vulnerability .
+
+
+###  http://scch/technical_standards#hasArchitecture
+:hasArchitecture rdf:type owl:ObjectProperty ;
+                 rdfs:range :Architecture ;
+                 dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#hasCapability
+:hasCapability rdf:type owl:ObjectProperty ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( :Component
+                                           :System
+                                         )
+                           ] ;
+               rdfs:range :Capability .
+
+
+###  http://scch/technical_standards#hasCategory
+:hasCategory rdf:type owl:ObjectProperty ,
+                      owl:InverseFunctionalProperty ;
+             rdfs:domain :NISTFunction ;
+             rdfs:range :NISTCategory ;
+             dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#hasConfiguration
+:hasConfiguration rdf:type owl:ObjectProperty ;
+                  rdfs:range :Configuration ;
+                  dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#hasConstraint
+:hasConstraint rdf:type owl:ObjectProperty ;
+               rdfs:range :Constraint .
+
+
+###  http://scch/technical_standards#hasDelegatedCapability
+:hasDelegatedCapability rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :hasCapability ;
+                        owl:inverseOf :isDelegatedCapabilityOf ;
+                        rdfs:range :Capability ;
+                        rdfs:comment """Capability that is not native to the item, but can be used by it.
+Certain components may not be able to provide a capability but 
+can work within a system or component which provides it.""" .
+
+
+###  http://scch/technical_standards#hasDevicePhysicalLimitation
+:hasDevicePhysicalLimitation rdf:type owl:ObjectProperty ;
+                             owl:inverseOf :isDevicePhysicalLimitationOf ;
+                             rdfs:domain :Device ;
+                             rdfs:range :DevicePhysicalLimitation .
+
+
+###  http://scch/technical_standards#hasDomain
+:hasDomain rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isDomainOf ;
+           rdfs:range :Domain .
+
+
+###  http://scch/technical_standards#hasEnhancement
+:hasEnhancement rdf:type owl:ObjectProperty .
+
+
+###  http://scch/technical_standards#hasFW
+:hasFW rdf:type owl:ObjectProperty ;
+       rdfs:domain :Device ;
+       rdfs:range :Firmware .
+
+
+###  http://scch/technical_standards#hasFunction
+:hasFunction rdf:type owl:ObjectProperty ;
+             rdfs:range :Function .
+
+
+###  http://scch/technical_standards#hasHMI
+:hasHMI rdf:type owl:ObjectProperty ;
+        rdfs:domain :Device ;
+        rdfs:range [ rdf:type owl:Class ;
+                     owl:unionOf ( :HUI
+                                   :InputDevice
+                                 )
+                   ] .
+
+
+###  http://scch/technical_standards#hasInterface
+:hasInterface rdf:type owl:ObjectProperty ;
+              rdfs:domain :Component ;
+              rdfs:range :Interface .
+
+
+###  http://scch/technical_standards#hasLighterVersion
+:hasLighterVersion rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :hasMoreSecureVersion .
+
+
+###  http://scch/technical_standards#hasMainCategory
+:hasMainCategory rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :hasSubCategory ;
+                 dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#hasMoreGeneralDomain
+:hasMoreGeneralDomain rdf:type owl:ObjectProperty ;
+                      rdfs:subPropertyOf :hasMoreGeneralVersion ;
+                      owl:inverseOf :hasSubDomain ;
+                      rdfs:domain :Domain ;
+                      rdfs:range :Domain ;
+                      dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#hasMoreGeneralProblem
+:hasMoreGeneralProblem rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf :hasMoreGeneralVersion ;
+                       owl:inverseOf :hasSubProblem ;
+                       rdfs:domain :Threat ;
+                       rdfs:range :Threat .
+
+
+###  http://scch/technical_standards#hasMoreGeneralVersion
+:hasMoreGeneralVersion rdf:type owl:ObjectProperty ;
+                       owl:inverseOf :hasSubVersion .
+
+
+###  http://scch/technical_standards#hasMoreSecureVersion
+:hasMoreSecureVersion rdf:type owl:ObjectProperty .
+
+
+###  http://scch/technical_standards#hasOS
+:hasOS rdf:type owl:ObjectProperty ;
+       rdfs:domain :Device ;
+       rdfs:range :OperatingSystem .
+
+
+###  http://scch/technical_standards#hasPolicy
+:hasPolicy rdf:type owl:ObjectProperty ;
+           rdfs:range :Policy .
+
+
+###  http://scch/technical_standards#hasPredecessor
+:hasPredecessor rdf:type owl:ObjectProperty ;
+                owl:inverseOf :hasSuccessor .
+
+
+###  http://scch/technical_standards#hasProfile
+:hasProfile rdf:type owl:ObjectProperty ;
+            rdfs:range :Profile ;
+            dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#hasProperty
+:hasProperty rdf:type owl:ObjectProperty ;
+             rdfs:range :GenericProperty .
+
+
+###  http://scch/technical_standards#hasRequirement
+:hasRequirement rdf:type owl:ObjectProperty ;
+                rdfs:domain :System ;
+                rdfs:range :SystemRequirement .
+
+
+###  http://scch/technical_standards#hasScope
+:hasScope rdf:type owl:ObjectProperty ;
+          dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#hasSolutionStructure
+:hasSolutionStructure rdf:type owl:ObjectProperty ;
+                      rdfs:domain :System ;
+                      rdfs:range :SolutionStructure .
+
+
+###  http://scch/technical_standards#hasStatus
+:hasStatus rdf:type owl:ObjectProperty ;
+           rdfs:domain :Publication ;
+           rdfs:range :Status .
+
+
+###  http://scch/technical_standards#hasSubCategory
+:hasSubCategory rdf:type owl:ObjectProperty ,
+                         owl:InverseFunctionalProperty ;
+                rdfs:domain :NISTCategory ;
+                rdfs:range :NISTSubCategory ;
+                dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#hasSubDomain
+:hasSubDomain rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :hasSubVersion ;
+              rdfs:domain :Domain ;
+              rdfs:range :Domain .
+
+
+###  http://scch/technical_standards#hasSubProblem
+:hasSubProblem rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :hasSubVersion ;
+               rdfs:domain :Threat ;
+               rdfs:range :Threat .
+
+
+###  http://scch/technical_standards#hasSubVersion
+:hasSubVersion rdf:type owl:ObjectProperty .
+
+
+###  http://scch/technical_standards#hasSuccessor
+:hasSuccessor rdf:type owl:ObjectProperty ;
+              dcterms:provenance "" .
+
+
+###  http://scch/technical_standards#hasSupplementalGuidance
+:hasSupplementalGuidance rdf:type owl:ObjectProperty ;
+                         owl:inverseOf :isSupplementalGuidanceOf ;
+                         rdfs:domain :Provision ;
+                         rdfs:range :SupplementalGuidance .
+
+
+###  http://scch/technical_standards#hasTier
+:hasTier rdf:type owl:ObjectProperty ;
+         rdfs:range :Tier ;
+         dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#hasTolerance
+:hasTolerance rdf:type owl:ObjectProperty ;
+              rdfs:domain :RiskAssesement ;
+              rdfs:range :Tolerance .
+
+
+###  http://scch/technical_standards#hasType
+:hasType rdf:type owl:ObjectProperty ;
+         rdfs:range :Type .
+
+
+###  http://scch/technical_standards#improvesQA
+:improvesQA rdf:type owl:ObjectProperty ;
+            rdfs:range :NonFunctionalRequirement .
+
+
+###  http://scch/technical_standards#interestedIn
+:interestedIn rdf:type owl:ObjectProperty ;
+              rdfs:domain :Stakeholder ;
+              rdfs:range :Concern .
+
+
+###  http://scch/technical_standards#isAffectedBy
+:isAffectedBy rdf:type owl:ObjectProperty .
+
+
+###  http://scch/technical_standards#isAssetOf
+:isAssetOf rdf:type owl:ObjectProperty ;
+           owl:inverseOf :ownsAsset ;
+           dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#isDelegatedCapabilityOf
+:isDelegatedCapabilityOf rdf:type owl:ObjectProperty .
+
+
+###  http://scch/technical_standards#isDestinationOf
+:isDestinationOf rdf:type owl:ObjectProperty ;
+                 rdfs:comment "ETSI 303645" .
+
+
+###  http://scch/technical_standards#isDevicePhysicalLimitationOf
+:isDevicePhysicalLimitationOf rdf:type owl:ObjectProperty .
+
+
+###  http://scch/technical_standards#isDomainOf
+:isDomainOf rdf:type owl:ObjectProperty .
+
+
+###  http://scch/technical_standards#isSourceOf
+:isSourceOf rdf:type owl:ObjectProperty ;
+            rdfs:comment "ETSI 303645" .
+
+
+###  http://scch/technical_standards#isSupplementalGuidanceOf
+:isSupplementalGuidanceOf rdf:type owl:ObjectProperty .
+
+
+###  http://scch/technical_standards#manufactures
+:manufactures rdf:type owl:ObjectProperty ;
+              dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#ownerOf
+:ownerOf rdf:type owl:ObjectProperty .
+
+
+###  http://scch/technical_standards#ownsAsset
+:ownsAsset rdf:type owl:ObjectProperty ;
+           rdfs:domain :Stakeholder ;
+           rdfs:range :Asset ;
+           dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#partOfComponentSolution
+:partOfComponentSolution rdf:type owl:ObjectProperty ;
+                         rdfs:subPropertyOf :partOfSolution ;
+                         rdfs:domain :Component ;
+                         rdfs:range :ComponentSolution .
+
+
+###  http://scch/technical_standards#partOfDeploymentSolution
+:partOfDeploymentSolution rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf :partOfSolution ;
+                          rdfs:domain :DeploymentNode ;
+                          rdfs:range :DeploymentSolution .
+
+
+###  http://scch/technical_standards#partOfSolution
+:partOfSolution rdf:type owl:ObjectProperty ;
+                owl:inverseOf :solutionOf ;
+                rdfs:range :SolutionStructure .
+
+
+###  http://scch/technical_standards#promotedBy
+:promotedBy rdf:type owl:ObjectProperty .
+
+
+###  http://scch/technical_standards#protocolSupportedBy
+:protocolSupportedBy rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :supportsProtocol ;
+                     dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#protocolUsedBy
+:protocolUsedBy rdf:type owl:ObjectProperty ;
+                owl:inverseOf :usesProtocol .
+
+
+###  http://scch/technical_standards#providesFunction
+:providesFunction rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Component ;
+                  rdfs:range :Function .
+
+
+###  http://scch/technical_standards#providesFunctionality
+:providesFunctionality rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Component ;
+                       rdfs:range :Port ;
+                       dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#providesService
+:providesService rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :serviceProvidedBy ;
+                 rdfs:domain :Component ;
+                 rdfs:range :Service .
+
+
+###  http://scch/technical_standards#published
+:published rdf:type owl:ObjectProperty ;
+           owl:inverseOf :publishedBy ;
+           rdfs:domain :Organization ;
+           rdfs:range :Publication .
+
+
+###  http://scch/technical_standards#publishedBy
+:publishedBy rdf:type owl:ObjectProperty .
+
+
+###  http://scch/technical_standards#referencesArchitecture
+:referencesArchitecture rdf:type owl:ObjectProperty ;
+                        rdfs:domain :ReferenceArchitecture ;
+                        rdfs:range :Architecture ;
+                        dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#refersTo
+:refersTo rdf:type owl:ObjectProperty ;
+          rdfs:domain :PublicationConstraint ;
+          rdfs:range :Publication .
+
+
+###  http://scch/technical_standards#relatedTo
+:relatedTo rdf:type owl:ObjectProperty .
+
+
+###  http://scch/technical_standards#relatedToProblem
+:relatedToProblem rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf :relatedTo ;
+                  rdfs:domain :Problem ;
+                  rdfs:range :Problem ;
+                  dcterms:description "Used to define possible chain of problems." ;
+                  rdfs:comment "ETSI 303645" .
+
+
+###  http://scch/technical_standards#requiresFunctionality
+:requiresFunctionality rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Component ;
+                       rdfs:range :Port ;
+                       dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#requiresService
+:requiresService rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :serviceRequiredBy ;
+                 rdfs:range :Service .
+
+
+###  http://scch/technical_standards#runsOn
+:runsOn rdf:type owl:ObjectProperty ;
+        rdfs:domain :SWApplication ;
+        rdfs:range :Device .
+
+
+###  http://scch/technical_standards#serviceProvidedBy
+:serviceProvidedBy rdf:type owl:ObjectProperty .
+
+
+###  http://scch/technical_standards#serviceRequiredBy
+:serviceRequiredBy rdf:type owl:ObjectProperty .
+
+
+###  http://scch/technical_standards#serviceUsedBy
+:serviceUsedBy rdf:type owl:ObjectProperty ;
+               rdfs:domain :Service ;
+               rdfs:range :Component .
+
+
+###  http://scch/technical_standards#solutionOf
+:solutionOf rdf:type owl:ObjectProperty .
+
+
+###  http://scch/technical_standards#solutionOfArchitecture
+:solutionOfArchitecture rdf:type owl:ObjectProperty ;
+                        dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#suggestsCounterMeasure
+:suggestsCounterMeasure rdf:type owl:ObjectProperty ;
+                        rdfs:domain :Provision ;
+                        rdfs:range :CounterMeasure .
+
+
+###  http://scch/technical_standards#supplies
+:supplies rdf:type owl:ObjectProperty ;
+          rdfs:domain :Supplier ;
+          rdfs:range :Asset ;
+          rdfs:comment "IEC references System or component" ,
+                       "NIST Framework : References an asset" .
+
+
+###  http://scch/technical_standards#supportsProtocol
+:supportsProtocol rdf:type owl:ObjectProperty ;
+                  rdfs:range :Protocol ;
+                  dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#uses
+:uses rdf:type owl:ObjectProperty ;
+      dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#usesAlgorithm
+:usesAlgorithm rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf :uses ;
+               rdfs:domain :Connection ;
+               rdfs:range :Algorithm ;
+               dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#usesChannel
+:usesChannel rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :uses ;
+             rdfs:domain :Connection ;
+             rdfs:range :Channel ;
+             rdfs:comment "ETSI 303645" .
+
+
+###  http://scch/technical_standards#usesEncryption
+:usesEncryption rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :uses ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :Connection
+                                            :Protocol
+                                          )
+                            ] .
+
+
+###  http://scch/technical_standards#usesProtocol
+:usesProtocol rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :uses ;
+              rdfs:domain :Connection ;
+              rdfs:range :Protocol .
+
+
+###  http://scch/technical_standards#vulnerableTo
+:vulnerableTo rdf:type owl:ObjectProperty ;
+              rdfs:range :Vulnerability .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://scch/technical_standards#appliesCryptography
+:appliesCryptography rdf:type owl:DatatypeProperty ,
+                              owl:FunctionalProperty ;
+                     rdfs:range xsd:boolean ;
+                     dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#dateOfAdoption
+:dateOfAdoption rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:range xsd:dateTime ;
+                rdfs:comment "ETSI" .
+
+
+###  http://scch/technical_standards#dateOfPublication
+:dateOfPublication rdf:type owl:DatatypeProperty ,
+                            owl:FunctionalProperty ;
+                   rdfs:range xsd:dateTime ;
+                   rdfs:comment "ETSI" .
+
+
+###  http://scch/technical_standards#dateOfWithdrawal
+:dateOfWithdrawal rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:range xsd:dateTime ;
+                  rdfs:comment "ETSI" .
+
+
+###  http://scch/technical_standards#isAuthenticated
+:isAuthenticated rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :Interface ;
+                 rdfs:range xsd:boolean .
+
+
+###  http://scch/technical_standards#isCritical
+:isCritical rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:range xsd:boolean ;
+            dcterms:provenance "IEC" ,
+                               "NIST Framework" .
+
+
+###  http://scch/technical_standards#isDebugInterface
+:isDebugInterface rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :Interface ;
+                  rdfs:range xsd:boolean ;
+                  dcterms:description "Physical interface used by the manufacturer to communicate with the device during development or to perform triage of issues with the device and that is not used as part of the consumer-facing functionality" ;
+                  dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#isDisclosed
+:isDisclosed rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :Vulnerability ;
+             rdfs:range xsd:boolean ;
+             dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#isEmbedded
+:isEmbedded rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :Device ;
+            rdfs:range xsd:boolean .
+
+
+###  http://scch/technical_standards#isEncrypted
+:isEncrypted rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:range xsd:boolean .
+
+
+###  http://scch/technical_standards#isEssential
+:isEssential rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( :Function
+                                         :Service
+                                       )
+                         ] ;
+             rdfs:range xsd:boolean .
+
+
+###  http://scch/technical_standards#isExternal
+:isExternal rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:range xsd:boolean ;
+            dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#isHard
+:isHard rdf:type owl:DatatypeProperty ,
+                 owl:FunctionalProperty ;
+        rdfs:domain :Constraint ;
+        rdfs:range xsd:boolean .
+
+
+###  http://scch/technical_standards#isInternal
+:isInternal rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :Threat ;
+            rdfs:range xsd:boolean ;
+            dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#isInternational
+:isInternational rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:range xsd:boolean .
+
+
+###  http://scch/technical_standards#isMandatory
+:isMandatory rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:range xsd:boolean .
+
+
+###  http://scch/technical_standards#isNormative
+:isNormative rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( :PublicationConstraint
+                                         :RequirementDependencyConstraint
+                                       )
+                         ] ;
+             rdfs:range xsd:boolean .
+
+
+###  http://scch/technical_standards#isOnline
+:isOnline rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:range xsd:boolean .
+
+
+###  http://scch/technical_standards#isPhysical
+:isPhysical rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :Asset
+                                        :Interface
+                                      )
+                        ] ;
+            rdfs:range xsd:boolean ;
+            dcterms:description "Indicates physical port or air interface (such as radio, audio or optical) used to communicate with the device at the physical layer" ,
+                                "Physical existing asset" ;
+            dcterms:provenance "ETSI 303645" ,
+                               "NIST Framework" .
+
+
+###  http://scch/technical_standards#isPublic
+:isPublic rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:range xsd:boolean ;
+          rdfs:comment "ETSI" .
+
+
+###  http://scch/technical_standards#isRealTime
+:isRealTime rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :OperatingSystem ;
+            rdfs:range xsd:boolean .
+
+
+###  http://scch/technical_standards#isRemote
+:isRemote rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Interface ;
+          rdfs:range xsd:boolean ;
+          dcterms:description "Intended to be accessible from outside the local network" ;
+          dcterms:provenance "ETSI" .
+
+
+###  http://scch/technical_standards#isRoleProtected
+:isRoleProtected rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:range xsd:boolean ;
+                 rdfs:comment """This attribute may indicate if the item can be accessed via role protection. 
+MAy be modelled differently, via Component's property.""" .
+
+
+###  http://scch/technical_standards#isSW
+:isSW rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      rdfs:domain [ rdf:type owl:Class ;
+                    owl:unionOf ( :Component
+                                  :DeploymentNode
+                                )
+                  ] ;
+      rdfs:range xsd:boolean .
+
+
+###  http://scch/technical_standards#isSmart
+:isSmart rdf:type owl:DatatypeProperty ,
+                  owl:FunctionalProperty ;
+         rdfs:range xsd:boolean .
+
+
+###  http://scch/technical_standards#isSolved
+:isSolved rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Vulnerability ;
+          rdfs:range xsd:boolean ;
+          dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#isSpecialPurpose
+:isSpecialPurpose rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :Device ;
+                  rdfs:range xsd:boolean .
+
+
+###  http://scch/technical_standards#isTransportable
+:isTransportable rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :Device ;
+                 rdfs:range xsd:boolean .
+
+
+###  http://scch/technical_standards#isUpdatable
+:isUpdatable rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:range xsd:boolean ;
+             dcterms:provenance "ETSI 303645" ,
+                                "Flag which indiates if the item can be updated." .
+
+
+###  http://scch/technical_standards#isVulnerable
+:isVulnerable rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:range xsd:boolean ;
+              dcterms:provenance "ETSI 303645" ;
+              rdfs:comment "Based on algorithm catalogs, this flag indicates if it is vulnerable in general without explicitely knowing the actual vulnerability." .
+
+
+###  http://scch/technical_standards#isWireless
+:isWireless rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain [ rdf:type owl:Class ;
+                          owl:unionOf ( :Component
+                                        :Connection
+                                      )
+                        ] ;
+            rdfs:range xsd:boolean .
+
+
+###  http://scch/technical_standards#pages
+:pages rdf:type owl:DatatypeProperty ,
+                owl:FunctionalProperty ;
+       rdfs:domain :Publication ;
+       rdfs:range xsd:boolean ;
+       rdfs:comment "ETSI" .
+
+
+###  http://scch/technical_standards#priority
+:priority rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty .
+
+
+###  http://scch/technical_standards#probability
+:probability rdf:type owl:DatatypeProperty ,
+                      owl:FunctionalProperty ;
+             rdfs:domain :Threat ;
+             rdfs:range xsd:float ;
+             dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#receivesData
+:receivesData rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:range xsd:boolean ;
+              dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#securityLevel
+:securityLevel rdf:type owl:DatatypeProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain [ rdf:type owl:Class ;
+                             owl:unionOf ( :Component
+                                           :ComponentRequirement
+                                         )
+                           ] ;
+               rdfs:range xsd:integer .
+
+
+###  http://scch/technical_standards#sendsData
+:sendsData rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:range xsd:boolean ;
+           dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#severity
+:severity rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain [ rdf:type owl:Class ;
+                        owl:unionOf ( :Threat
+                                      :Vulnerability
+                                    )
+                      ] ;
+          rdfs:range xsd:integer ;
+          rdfs:comment "Associates a cuantitave value to evaluated the degree of severity to a problem or threat." .
+
+
+###  http://scch/technical_standards#size
+:size rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      dcterms:provenance "NIST Framework" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://scch/technical_standards#API
+:API rdf:type owl:Class ;
+     rdfs:comment "Application Program Interface, defines the methods and behaviour required and expected for communication" .
+
+
+###  http://scch/technical_standards#APIKind
+:APIKind rdf:type owl:Class ;
+         rdfs:subClassOf :Kind ;
+         rdfs:comment "There are mulitple kinds such as REST, ROA, RMC, RMI" .
+
+
+###  http://scch/technical_standards#AccessControlMechanism
+:AccessControlMechanism rdf:type owl:Class ;
+                        rdfs:subClassOf :Mechanism ;
+                        dcterms:description "Security safeguard designed to detect and deny unauthorized access and permit authorized access to an information system or physical facility." ;
+                        dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#Actuator
+:Actuator rdf:type owl:Class ;
+          rdfs:subClassOf :Device ;
+          dcterms:description "a device that causes a machine or other device to operate" ;
+          dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#Algorithm
+:Algorithm rdf:type owl:Class ;
+           dcterms:description "Process or set of rules to be followed in calculations or other problem-solving operations, especially by a computer." ;
+           dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#Architecture
+:Architecture rdf:type owl:Class ;
+              dcterms:description "Conceptual model that defines the structure, behavior, and more views of a system." ;
+              dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#Asset
+:Asset rdf:type owl:Class ;
+       dcterms:description "An item owned by a person or company, regarded as having value or being useful." ,
+                           "NIST Framework" .
+
+
+###  http://scch/technical_standards#AuthenticationMechanism
+:AuthenticationMechanism rdf:type owl:Class ;
+                         rdfs:subClassOf :Mechanism ;
+                         dcterms:description "Method used to prove the authenticity of an entity" ;
+                         dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#BooleanConstraint
+:BooleanConstraint rdf:type owl:Class ;
+                   rdfs:subClassOf :Constraint ;
+                   dcterms:description "Represents a boolean constraint also interpreted as condition." .
+
+
+###  http://scch/technical_standards#Buyer
+:Buyer rdf:type owl:Class ;
+       rdfs:subClassOf :Stakeholder ;
+       dcterms:description "The people or organizations that consume a given product or service." ;
+       dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#Capability
+:Capability rdf:type owl:Class ;
+            owl:equivalentClass :Functionality ;
+            dcterms:description "Ability to perform a specified task" ;
+            rdfs:comment "A delegated capability is not native to the component,however, the component is considered to posses it as it is inherited from a surrounding system component." .
+
+
+###  http://scch/technical_standards#Category
+:Category rdf:type owl:Class ;
+          dcterms:description "General concept to define possible categories and divivsions of elements." .
+
+
+###  http://scch/technical_standards#Channel
+:Channel rdf:type owl:Class ;
+         dcterms:description "Communication channels are mediums through which you can send information." ,
+                             "Logical or physocal link between assets." ;
+         rdfs:comment "ETSI 303645" .
+
+
+###  http://scch/technical_standards#Component
+:Component rdf:type owl:Class ;
+           dcterms:description "A part or element of a larger wholesuch as a system. It can be seen as a buillding block." .
+
+
+###  http://scch/technical_standards#ComponentRequirement
+:ComponentRequirement rdf:type owl:Class ;
+                      rdfs:subClassOf :Requirement ;
+                      rdfs:comment "A requirement targeting components that build up a system" .
+
+
+###  http://scch/technical_standards#ComponentSolution
+:ComponentSolution rdf:type owl:Class ;
+                   rdfs:subClassOf :SolutionStructure .
+
+
+###  http://scch/technical_standards#Composite
+:Composite rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                 owl:onProperty :composedOf ;
+                                 owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :Component
+                               ] ;
+           dcterms:description "Components may bring their own set of components, which makes it a composition of existing components" .
+
+
+###  http://scch/technical_standards#Concern
+:Concern rdf:type owl:Class .
+
+
+###  http://scch/technical_standards#Configuration
+:Configuration rdf:type owl:Class ;
+               dcterms:description "Arrangement or set-up of the hardware and software that make up a computer system." ;
+               dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#Connection
+:Connection rdf:type owl:Class ;
+            dcterms:description "Object that is used as communication channel between components. This connection can be attributed and configured." .
+
+
+###  http://scch/technical_standards#ConstrainedDevice
+:ConstrainedDevice rdf:type owl:Class ;
+                   rdfs:subClassOf [ owl:intersectionOf ( :Device
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :hasDevicePhysicalLimitation ;
+                                                            owl:someValuesFrom :DevicePhysicalLimitation
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+                   dcterms:description "Device which has physical limitations in either the ability to process data, the ability to communicate data, the ability to store data or the ability to interact with the user, due to restrictions that arise from its intended use" ;
+                   dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#Constraint
+:Constraint rdf:type owl:Class ;
+            dcterms:description "Limitation or restriction. Requirements may have constraints imposed." .
+
+
+###  http://scch/technical_standards#Core
+:Core rdf:type owl:Class ;
+      rdfs:subClassOf :FrameworkElement ;
+      dcterms:description "Set of cybersecurity activities, desired outcomes, and applicable references that are common across critical infrastructure sectors. The Framework Core provides a set of activities to achieve specific cybersecurity outcomes, and references examples of guidance to achieve those outcomes" ;
+      dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#CounterMeasure
+:CounterMeasure rdf:type owl:Class ;
+                dcterms:description "Reduces a threat, vulnerability or the result of an attack. It may be able to discover it and report it so that proper action can be taken." ;
+                rdfs:comment "Measure used to avoid/ mitigate a theat or problem, solve a vulnerability" .
+
+
+###  http://scch/technical_standards#Customer
+:Customer rdf:type owl:Class ;
+          rdfs:subClassOf :Stakeholder ;
+          dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#DeploymentNode
+:DeploymentNode rdf:type owl:Class .
+
+
+###  http://scch/technical_standards#DeploymentSolution
+:DeploymentSolution rdf:type owl:Class ;
+                    rdfs:subClassOf :SolutionStructure .
+
+
+###  http://scch/technical_standards#DetectionMechanism
+:DetectionMechanism rdf:type owl:Class ;
+                    rdfs:subClassOf :Mechanism ;
+                    dcterms:description "Detect the presence of events." ;
+                    dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#Developer
+:Developer rdf:type owl:Class ;
+           rdfs:subClassOf :Stakeholder ;
+           dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#Device
+:Device rdf:type owl:Class ;
+        rdfs:subClassOf :Product ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :isSW ;
+                          owl:hasValue "true"^^xsd:boolean
+                        ] ;
+        rdfs:comment """Device is a kind of component. It is a discrete physical asset that provides a set of capabilitites
+""" .
+
+
+###  http://scch/technical_standards#DevicePhysicalLimitation
+:DevicePhysicalLimitation rdf:type owl:Class ;
+                          dcterms:description "Physical limitations can be due to power supply, battery life, processing power, physical access, limited functionality, limited memory or limited network bandwidth." ;
+                          dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#Domain
+:Domain rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Restriction ;
+                              owl:onProperty :relatedTo ;
+                              owl:someValuesFrom :Domain
+                            ] ;
+        dcterms:description "Concept to define  areas of interest ." .
+
+
+###  http://scch/technical_standards#Driver
+:Driver rdf:type owl:Class ;
+        rdfs:subClassOf :Concern ;
+        dcterms:description "Something that creates and fuels activity, or gives force or impetus regarding the goals of an organization." ;
+        dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#EmbeddedDevice
+:EmbeddedDevice rdf:type owl:Class ;
+                rdfs:subClassOf :Device ;
+                dcterms:description "Device which has physical limitations in either the ability to process data, the ability to communicate data, the ability to store data or the ability to interact with the user, due to restrictions that arise from its intended use" ;
+                dcterms:provenance "IEC 62443 4-2" ;
+                rdfs:comment """A kind of special purpose device 
+""" .
+
+
+###  http://scch/technical_standards#Firmware
+:Firmware rdf:type owl:Class ;
+          rdfs:comment "Permanent software programmed into a read-only memory." .
+
+
+###  http://scch/technical_standards#Framework
+:Framework rdf:type owl:Class ;
+           dcterms:description "Concept that represents real or conceptual structure intended to serve as a support or guide for the building of something that expands the structure into something useful" ;
+           dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#FrameworkElement
+:FrameworkElement rdf:type owl:Class ;
+                  dcterms:description "Concept  used to define building elements of a framework." ;
+                  dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#Function
+:Function rdf:type owl:Class ;
+          rdfs:comment "Components provide set of relatedfunctions with a specific task" .
+
+
+###  http://scch/technical_standards#FunctionalRequirement
+:FunctionalRequirement rdf:type owl:Class ;
+                       rdfs:subClassOf :SystemRequirement ;
+                       dcterms:description "A requisite demanded to define a system or its component" .
+
+
+###  http://scch/technical_standards#Functionality
+:Functionality rdf:type owl:Class ;
+               rdfs:comment "Components provide also functionalities which can trigger special events; be targets of threats; could be part or associated to capabilities" .
+
+
+###  http://scch/technical_standards#GenericProperty
+:GenericProperty rdf:type owl:Class ;
+                 rdfs:comment """Items have properties.  Properties can describe characteristic something.
+Devices may have specific attributes that may be exposed to different threats, while others may reduce the risk of other threats appareances.""" .
+
+
+###  http://scch/technical_standards#Guideline
+:Guideline rdf:type owl:Class ;
+           rdfs:subClassOf :Publication ;
+           dcterms:description "General rule, principle, or piece of advice" .
+
+
+###  http://scch/technical_standards#HUI
+:HUI rdf:type owl:Class ;
+     rdfs:subClassOf :UI ;
+     rdfs:comment "Kind of interface, intended for human use" .
+
+
+###  http://scch/technical_standards#HWSolution
+:HWSolution rdf:type owl:Class ;
+            rdfs:subClassOf :SolutionStructure ;
+            dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#HostDevice
+:HostDevice rdf:type owl:Class ;
+            rdfs:subClassOf :Device ;
+            dcterms:description "Device which has physical limitations in either the ability to process data, the ability to communicate data, the ability to store data or the ability to interact with the user, due to restrictions that arise from its intended use" ;
+            dcterms:provenance "IEC 62443 4-2" ;
+            rdfs:comment """A kind of general purpose device with an OS
+""" .
+
+
+###  http://scch/technical_standards#InputDevice
+:InputDevice rdf:type owl:Class ;
+             rdfs:subClassOf :Device ;
+             dcterms:description "A piece of equipment used to provide data and control signals to an information processing system." ;
+             dcterms:provenance "IEC 62443 4-2" .
+
+
+###  http://scch/technical_standards#Interface
+:Interface rdf:type owl:Class ;
+           rdfs:comment "Components have interfaces such as buttons, keyboards, internet ports, hmdi and other interfaces. Those determine interaction points." .
+
+
+###  http://scch/technical_standards#Kind
+:Kind rdf:type owl:Class ;
+      owl:equivalentClass :Type ;
+      rdfs:comment "A group of  things which share similar characteristics" .
+
+
+###  http://scch/technical_standards#Manufacturer
+:Manufacturer rdf:type owl:Class ;
+              owl:equivalentClass :Supplier ;
+              rdfs:subClassOf :Stakeholder ;
+              dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#Mechanism
+:Mechanism rdf:type owl:Class ;
+           rdfs:subClassOf :CounterMeasure ;
+           dcterms:description "The process, way, or system used to produce a particular result." ;
+           rdfs:comment "ETSI 303645" .
+
+
+###  http://scch/technical_standards#MemoryAccessControl
+:MemoryAccessControl rdf:type owl:Class ;
+                     rdfs:subClassOf :AccessControlMechanism ;
+                     dcterms:description "Way to control memory access rights" ;
+                     dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#MobileDevice
+:MobileDevice rdf:type owl:Class ;
+              rdfs:subClassOf :Device ;
+              dcterms:provenance "IEC 62443 4-2" ;
+              rdfs:comment "A kind of device which can be moved/transported" .
+
+
+###  http://scch/technical_standards#NISTCategory
+:NISTCategory rdf:type owl:Class ;
+              rdfs:subClassOf [ owl:intersectionOf ( :Category
+                                                     :Core
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :hasType ;
+                                                       owl:hasValue :Type_NIST
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+              dcterms:description "Subdivisions of a Function into groups of cybersecurity outcomes closely tied to programmatic needs and particular activities" ;
+              dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#NISTFunction
+:NISTFunction rdf:type owl:Class ;
+              rdfs:subClassOf [ owl:intersectionOf ( :Core
+                                                     [ rdf:type owl:Restriction ;
+                                                       owl:onProperty :hasType ;
+                                                       owl:hasValue :Type_NIST
+                                                     ]
+                                                   ) ;
+                                rdf:type owl:Class
+                              ] ;
+              dcterms:description "One of the main components of the Framework. Functions provide the highest level of structure for organizing basic cybersecurity activities into Categories and Subcategories." ;
+              dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#NISTSubCategory
+:NISTSubCategory rdf:type owl:Class ;
+                 rdfs:subClassOf [ owl:intersectionOf ( :Category
+                                                        :Core
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :hasType ;
+                                                          owl:hasValue :Type_NIST
+                                                        ]
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :hasMainCategory ;
+                                                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                          owl:onClass :Category
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+                 dcterms:description "Specific outcomes of technical and/or management activities. They provide a set of results that help support achievement of the outcomes in each Category. Division of categories into more concrete technical activities." ;
+                 dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#NetworkDevice
+:NetworkDevice rdf:type owl:Class ;
+               rdfs:subClassOf :Device ;
+               dcterms:provenance "IEC 62443 4-2" ;
+               rdfs:comment """A kind of device which deals with data flow and data flow restriction
+""" .
+
+
+###  http://scch/technical_standards#NetworkType
+:NetworkType rdf:type owl:Class ;
+             rdfs:subClassOf :Type ;
+             rdfs:comment "A network type might be usefull to determine the type of connection security" .
+
+
+###  http://scch/technical_standards#NonFunctionalRequirement
+:NonFunctionalRequirement rdf:type owl:Class ;
+                          owl:equivalentClass :QualityAttribute ;
+                          rdfs:subClassOf :SystemRequirement ;
+                          dcterms:description "A system attribute demanded. They serve as constraints or restrictions on the design of the system" .
+
+
+###  http://scch/technical_standards#OperatingSystem
+:OperatingSystem rdf:type owl:Class ;
+                 rdfs:comment "Operating system that can run on a device. It supports a device's basic functions, such as controlling peripherals and interfaces." .
+
+
+###  http://scch/technical_standards#Organization
+:Organization rdf:type owl:Class ;
+              rdfs:comment "Entity in charge of making standards" .
+
+
+###  http://scch/technical_standards#Outcome
+:Outcome rdf:type owl:Class ;
+         rdfs:subClassOf :Concern ;
+         dcterms:description "Result or a conclusion reached through a process of logical thinking or motivated by a driver." ;
+         dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#Policy
+:Policy rdf:type owl:Class ;
+        rdfs:subClassOf :CounterMeasure ;
+        rdfs:comment "A policy is a set of rules or guidelines to follow in or to achieve compliance. Components  consider policies, policies are addressed or demanded by requirements." .
+
+
+###  http://scch/technical_standards#Port
+:Port rdf:type owl:Class ;
+      dcterms:description "A port is a virtual point where network connections start and end. They are associated to services provided by components." ;
+      dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#Practice
+:Practice rdf:type owl:Class ;
+          rdfs:subClassOf :CounterMeasure ;
+          dcterms:description "Procedures that are accepted or prescribed as being correct or most effective" .
+
+
+###  http://scch/technical_standards#Problem
+:Problem rdf:type owl:Class ;
+         rdfs:comment "ETSI 303645" ,
+                      "General concept that defines a probllem that may affect any kind of asset." .
+
+
+###  http://scch/technical_standards#Product
+:Product rdf:type owl:Class ;
+         rdfs:subClassOf :Asset .
+
+
+###  http://scch/technical_standards#Profile
+:Profile rdf:type owl:Class ;
+         rdfs:subClassOf :FrameworkElement ;
+         dcterms:description "Component of the framework. It represents the alignment of the Functions, Categories, and Subcategories with the business requirements, risk tolerance, and resources of the organization. A Profile enables organizations to establish a roadmap for reducing cybersecurity risk that is well aligned with organizational and sector goals, considers legal/regulatory requirements and industry best practices, and reflects risk management priorities" ;
+         dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#Protocol
+:Protocol rdf:type owl:Class ;
+          rdfs:comment "Used by components to communicate" .
+
+
+###  http://scch/technical_standards#ProtocolProperty
+:ProtocolProperty rdf:type owl:Class ;
+                  rdfs:subClassOf :GenericProperty ;
+                  dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#Provision
+:Provision rdf:type owl:Class .
+
+
+###  http://scch/technical_standards#Publication
+:Publication rdf:type owl:Class ;
+             rdfs:comment "Document developed by an organization that is published" .
+
+
+###  http://scch/technical_standards#PublicationConstraint
+:PublicationConstraint rdf:type owl:Class ;
+                       rdfs:subClassOf :Constraint .
+
+
+###  http://scch/technical_standards#QualityAttribute
+:QualityAttribute rdf:type owl:Class ;
+                  dcterms:provenance "ETSI 303645" ;
+                  rdfs:seeAlso :NonFunctionalRequirement .
+
+
+###  http://scch/technical_standards#Recommendation
+:Recommendation rdf:type owl:Class ;
+                rdfs:subClassOf [ owl:intersectionOf ( :Provision
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :isMandatory ;
+                                                         owl:hasValue "false"^^xsd:boolean
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+                dcterms:description "A provision that is not mandatory but is proposed as to the best course of action" .
+
+
+###  http://scch/technical_standards#ReferenceArchitecture
+:ReferenceArchitecture rdf:type owl:Class ;
+                       rdfs:subClassOf :SolutionStructure ;
+                       dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#Requirement
+:Requirement rdf:type owl:Class ;
+             rdfs:subClassOf [ owl:intersectionOf ( :Provision
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :isMandatory ;
+                                                      owl:hasValue "true"^^xsd:boolean
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ;
+             rdfs:comment "A requisite demanded for quality reasons" .
+
+
+###  http://scch/technical_standards#RequirementDependencyConstraint
+:RequirementDependencyConstraint rdf:type owl:Class ;
+                                 rdfs:subClassOf :Constraint .
+
+
+###  http://scch/technical_standards#Risk
+:Risk rdf:type owl:Class ;
+      dcterms:description "A measure of the extent to which an entity is threatened by a potential circumstance or event, and typically a function of: (i) the adverse impacts that would arise if the circumstance or event occurs; and (ii) the likelihood of occurrence." ;
+      dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#RiskAssesement
+:RiskAssesement rdf:type owl:Class ;
+                dcterms:description "Association object between assets and risk. It can be attributed e.g. priority, effect, likelihood" ;
+                dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#SWApplication
+:SWApplication rdf:type owl:Class ;
+               rdfs:subClassOf :Product ;
+               rdfs:comment "A kind of component that builds an IACS" .
+
+
+###  http://scch/technical_standards#SWSolution
+:SWSolution rdf:type owl:Class ;
+            rdfs:subClassOf :SolutionStructure ;
+            dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#Scope
+:Scope rdf:type owl:Class ;
+       dcterms:description "Extent of the area or subject matter that something deals with or to which it is relevant" ;
+       dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#SecureBootMechanism
+:SecureBootMechanism rdf:type owl:Class ;
+                     rdfs:subClassOf :Mechanism ;
+                     dcterms:description "Mechanism that verifies the integrity of every code being loaded, before it's allowed to execute" ;
+                     rdfs:comment "ETSI 303645" .
+
+
+###  http://scch/technical_standards#Sensor
+:Sensor rdf:type owl:Class ;
+        rdfs:subClassOf :Device ;
+        dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#Service
+:Service rdf:type owl:Class ;
+         rdfs:subClassOf :Product ;
+         rdfs:comment "Components provide services, which are units of funtionality that can run independently." .
+
+
+###  http://scch/technical_standards#SolutionStructure
+:SolutionStructure rdf:type owl:Class ;
+                   rdfs:comment "Generic concept that represents solution structures for systems." .
+
+
+###  http://scch/technical_standards#Stakeholder
+:Stakeholder rdf:type owl:Class ;
+             dcterms:description "Person with an interest or concern in something" ;
+             dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#Standard
+:Standard rdf:type owl:Class ;
+          rdfs:subClassOf :Publication ;
+          dcterms:description "A standard is a document that provides rules or guidelines to achieve order in a given context." ;
+          rdfs:comment "ETSI 303645" .
+
+
+###  http://scch/technical_standards#Status
+:Status rdf:type owl:Class ;
+        rdfs:comment """Status of a document
+""" .
+
+
+###  http://scch/technical_standards#StorageMechanism
+:StorageMechanism rdf:type owl:Class ;
+                  rdfs:subClassOf :Mechanism ;
+                  dcterms:description "Mechanism that enables a computer or system to retain data, either temporarily or permanently" ;
+                  dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#SupplementalGuidance
+:SupplementalGuidance rdf:type owl:Class ;
+                      rdfs:comment "Generic class for extra informative content" .
+
+
+###  http://scch/technical_standards#Supplier
+:Supplier rdf:type owl:Class ;
+          rdfs:subClassOf :Stakeholder ;
+          dcterms:description "Product and service providers used for an organization’s internal purposes (e.g., IT infrastructure) or integrated into the products of services provided to that organization’s Buyers." ;
+          rdfs:comment "Certain suppliers are expected to provide documentation, and other kinds of information regarding their products, also safety related points" ,
+                       "Person or organization that provides a product or service" .
+
+
+###  http://scch/technical_standards#System
+:System rdf:type owl:Class ;
+        rdfs:subClassOf :Asset ;
+        rdfs:comment "System for which components will be defined" .
+
+
+###  http://scch/technical_standards#SystemRequirement
+:SystemRequirement rdf:type owl:Class ;
+                   rdfs:subClassOf :Concern ;
+                   rdfs:comment "Statement that identifies the functionality and characteristics of a system to satisfy the stakeholder’s requirements/needs/concerns" ;
+                   rdfs:seeAlso "https://www.umsl.edu/~sauterv/analysis/F2015/System%20Requirements.html.htm" .
+
+
+###  http://scch/technical_standards#TechnicalCommittee
+:TechnicalCommittee rdf:type owl:Class ;
+                    rdfs:comment """Entity part of an organization in charge of developing standard
+""" .
+
+
+###  http://scch/technical_standards#Technology
+:Technology rdf:type owl:Class ;
+            rdfs:subClassOf :CounterMeasure ;
+            dcterms:description "Application of scientific knowledge for practical purposes" .
+
+
+###  http://scch/technical_standards#Threat
+:Threat rdf:type owl:Class ;
+        owl:equivalentClass [ rdf:type owl:Restriction ;
+                              owl:onProperty :relatedTo ;
+                              owl:someValuesFrom :Threat
+                            ] ;
+        rdfs:subClassOf :Problem ;
+        rdfs:comment "Something that can harm a system,component. A requirement can mitigate such threats. Multipple concepts such as System, components, technologies can be target of threats; while requirements and techonologies, and other items can mitigate them. " .
+
+
+###  http://scch/technical_standards#Tier
+:Tier rdf:type owl:Class ;
+      rdfs:subClassOf :FrameworkElement ;
+      dcterms:description "Tiers describe the degree to which an organization’s cybersecurity risk management practices exhibit the characteristics defined in the Framework (e.g., risk and threat aware, repeatable, and adaptive)" ;
+      dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#Tolerance
+:Tolerance rdf:type owl:Class ;
+           dcterms:description "Value that describes the tolerance of a risk accepted by an organization" ;
+           dcterms:provenance "NIST Framework" .
+
+
+###  http://scch/technical_standards#Tool
+:Tool rdf:type owl:Class ;
+      rdfs:subClassOf :Technology ;
+      dcterms:description "A thing or technology used to help perform a job, e.g. SW that carries out a particular function, typically creating or modifying another program." .
+
+
+###  http://scch/technical_standards#Type
+:Type rdf:type owl:Class ;
+      rdfs:comment """Type is used to define a category of things having common characteristics
+Items can have types, devices also.""" .
+
+
+###  http://scch/technical_standards#UI
+:UI rdf:type owl:Class ;
+    rdfs:subClassOf :Interface ;
+    rdfs:comment "Kind of interface, intended for a users" .
+
+
+###  http://scch/technical_standards#UpdateMechanism
+:UpdateMechanism rdf:type owl:Class ;
+                 rdfs:subClassOf :Mechanism ;
+                 dcterms:description "Ways of updating SW" ;
+                 dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#User
+:User rdf:type owl:Class ;
+      rdfs:subClassOf :Stakeholder ;
+      dcterms:description "Natural person or organization" ;
+      dcterms:provenance "ETSI 303645" .
+
+
+###  http://scch/technical_standards#Vulnerability
+:Vulnerability rdf:type owl:Class ;
+               rdfs:subClassOf :Problem ;
+               rdfs:comment "Weakness within a system or component" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://scch/technical_standards#IEC
+:IEC rdf:type owl:NamedIndividual ;
+     :abbr "IEC" ;
+     rdfs:label "Internation Electrotechincal Commission" .
+
+
+###  http://scch/technical_standards#IEC_62443_4-2
+:IEC_62443_4-2 rdf:type owl:NamedIndividual ;
+               :developedBy :IEC_TC_65 ;
+               :publishedBy :IEC ;
+               dcterms:creator :IEC_TechnicalCommittee_65 ;
+               dcterms:hasVersion 2 ;
+               dcterms:language "en"^^xsd:language ,
+                                "fr"^^xsd:language ;
+               dcterms:publisher :IEC ;
+               dcterms:title "Security for industrial automation and control systems - Part 4-2: Technical security requirements for IACS components" ;
+               rdfs:label "IEC 62443 4-2" .
+
+
+###  http://scch/technical_standards#IEC_TC_65
+:IEC_TC_65 rdf:type owl:NamedIndividual ;
+           :belongsTo :IEC ;
+           rdfs:label "IEC technical committee 65" ,
+                      "Industrial-process measurement, control and automation" .
+
+
+###  http://scch/technical_standards#ISO
+:ISO rdf:type owl:NamedIndividual ;
+     :abbr "ISO" ;
+     rdfs:label "International Organization for Standarization" .
+
+
+###  http://scch/technical_standards#MIT_License
+:MIT_License rdf:type owl:NamedIndividual ;
+             rdfs:label "MIT License" ;
+             rdfs:seeAlso "https://choosealicense.com/licenses/mit/" .
+
+
+###  http://scch/technical_standards#NIST
+:NIST rdf:type owl:NamedIndividual ;
+      :abbr "NIST" ;
+      rdfs:label "National Institute Of Standards and Technology" .
+
+
+###  http://scch/technical_standards#Status_Published
+:Status_Published rdf:type owl:NamedIndividual ;
+                  rdfs:label "Published" .
+
+
+###  http://scch/technical_standards#Status_Withdrawn
+:Status_Withdrawn rdf:type owl:NamedIndividual ;
+                  rdfs:label "Withdrawn" .
+
+
+###  http://scch/technical_standards#Type_NIST
+:Type_NIST rdf:type owl:NamedIndividual ,
+                    :Type .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
