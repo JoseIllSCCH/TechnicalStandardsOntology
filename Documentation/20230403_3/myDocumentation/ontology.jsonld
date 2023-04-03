@@ -1,0 +1,2870 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Capability"
+    }, {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#CounterMeasure"
+    }, {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Provision"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Connection"
+    }, {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Protocol"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Function"
+    }, {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Service"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#PublicationConstraint"
+    }, {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#RequirementDependencyConstraint"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Asset"
+    }, {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Interface"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Component"
+    }, {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#DeploymentNode"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Component"
+    }, {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Connection"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Component"
+    }, {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#ComponentRequirement"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Threat"
+    }, {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Vulnerability"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Component"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#composedOf"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Device"
+    }, {
+      "@id" : "_:genid38"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasDevicePhysicalLimitation"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#DevicePhysicalLimitation"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isSW"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#relatedTo"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Domain"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Category"
+    }, {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Core"
+    }, {
+      "@id" : "_:genid44"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Type_NIST"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasType"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Core"
+    }, {
+      "@id" : "_:genid49"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Type_NIST"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasType"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Component"
+    }, {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#System"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Category"
+    }, {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Core"
+    }, {
+      "@id" : "_:genid55"
+    }, {
+      "@id" : "_:genid53"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Category"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasMainCategory"
+  } ],
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Type_NIST"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasType"
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Provision"
+    }, {
+      "@id" : "_:genid60"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isMandatory"
+  } ]
+}, {
+  "@id" : "_:genid62",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Provision"
+    }, {
+      "@id" : "_:genid64"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid64",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isMandatory"
+  } ]
+}, {
+  "@id" : "_:genid66",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#relatedTo"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Threat"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#HUI"
+    }, {
+      "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#InputDevice"
+    } ]
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/dateAccepted",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/hasVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/provenance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/replaces",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/requires",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://scch/technical_standards",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "This ontology serves as the basis to represent technical standards in a machine readable way. It provides elements to define publications, their provisions, their dependencies and possible constraints, among other constructs.\n\nThis ontology is based on three technical standars, namely the IEC 62443 4-2, ETSI 303645 and the more general NIST Framework  for Improving\nCritical Infrastructure Cybersecurity.\n\nTherefore, besides providing the schematic elements,  it also considers system related concepts to describe system solutions, their components, etc.\n\nMaking it possible to define not only project or system specific information but also project independent information. This makes it more robust for engineering design tasks."
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@language" : "en",
+    "@value" : "Techincal Security Standards Ontology"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@language" : "en",
+    "@value" : "January 2023"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@language" : "en",
+    "@value" : "Gandalf Denk"
+  }, {
+    "@language" : "en",
+    "@value" : "Georg Buchgeher"
+  }, {
+    "@language" : "en",
+    "@value" : "Jose Illescas"
+  }, {
+    "@language" : "en",
+    "@value" : "Lisa Ehrlinger"
+  }, {
+    "@language" : "en",
+    "@value" : "Peter Panholzer"
+  }, {
+    "@language" : "en",
+    "@value" : "Thomas Brandstetter"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "https://choosealicense.com/licenses/mit/"
+  }, {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#MIT_License"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://scch/technical_standards/0.1"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@language" : "en",
+    "@value" : "0.1"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#comment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#label",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#boolean",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#integer",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#language",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#string",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#API",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Application Program Interface, defines the methods and behaviour required and expected for communication"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#APIKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "There are mulitple kinds such as REST, ROA, RMC, RMI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Kind"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#AccessControlMechanism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Security safeguard designed to detect and deny unauthorized access and permit authorized access to an information system or physical facility."
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Mechanism"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Actuator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "a device that causes a machine or other device to operate"
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Device"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Algorithm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Process or set of rules to be followed in calculations or other problem-solving operations, especially by a computer."
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Architecture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Conceptual model that defines the structure, behavior, and more views of a system."
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Asset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "An item owned by a person or company, regarded as having value or being useful."
+  }, {
+    "@value" : "NIST Framework"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#AuthenticationMechanism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Method used to prove the authenticity of an entity"
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Mechanism"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#BooleanConstraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Represents a boolean constraint also interpreted as condition."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Constraint"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Buyer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "The people or organizations that consume a given product or service."
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Stakeholder"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Capability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Ability to perform a specified task"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A delegated capability is not native to the component,however, the component is considered to posses it as it is inherited from a surrounding system component."
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Functionality"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "General concept to define possible categories and divivsions of elements."
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Channel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Communication channels are mediums through which you can send information."
+  }, {
+    "@value" : "Logical or physocal link between assets."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ETSI 303645"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Component",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "A part or element of a larger wholesuch as a system. It can be seen as a buillding block."
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#ComponentRequirement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A requirement targeting components that build up a system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Requirement"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#ComponentSolution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#SolutionStructure"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Composite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Components may bring their own set of components, which makes it a composition of existing components"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid35"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Concern",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Configuration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Arrangement or set-up of the hardware and software that make up a computer system."
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Connection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Object that is used as communication channel between components. This connection can be attributed and configured."
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#ConstrainedDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Device which has physical limitations in either the ability to process data, the ability to communicate data, the ability to store data or the ability to interact with the user, due to restrictions that arise from its intended use"
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid36"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Constraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Limitation or restriction. Requirements may have constraints imposed."
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Core",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Set of cybersecurity activities, desired outcomes, and applicable references that are common across critical infrastructure sectors. The Framework Core provides a set of activities to achieve specific cybersecurity outcomes, and references examples of guidance to achieve those outcomes"
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#FrameworkElement"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#CounterMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Reduces a threat, vulnerability or the result of an attack. It may be able to discover it and report it so that proper action can be taken."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Measure used to avoid/ mitigate a theat or problem, solve a vulnerability"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Customer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Stakeholder"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#DeploymentNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#DeploymentSolution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#SolutionStructure"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#DetectionMechanism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Detect the presence of events."
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Mechanism"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Developer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Stakeholder"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Device is a kind of component. It is a discrete physical asset that provides a set of capabilitites\n"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Product"
+  }, {
+    "@id" : "_:genid40"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#DevicePhysicalLimitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Physical limitations can be due to power supply, battery life, processing power, physical access, limited functionality, limited memory or limited network bandwidth."
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Domain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Concept to define  areas of interest ."
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid41"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Driver",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Something that creates and fuels activity, or gives force or impetus regarding the goals of an organization."
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Concern"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#EmbeddedDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Device which has physical limitations in either the ability to process data, the ability to communicate data, the ability to store data or the ability to interact with the user, due to restrictions that arise from its intended use"
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "IEC 62443 4-2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A kind of special purpose device \n"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Device"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Firmware",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Permanent software programmed into a read-only memory."
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Framework",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Concept that represents real or conceptual structure intended to serve as a support or guide for the building of something that expands the structure into something useful"
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#FrameworkElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Concept  used to define building elements of a framework."
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Function",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Components provide set of relatedfunctions with a specific task"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#FunctionalRequirement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "A requisite demanded to define a system or its component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#SystemRequirement"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Functionality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Components provide also functionalities which can trigger special events; be targets of threats; could be part or associated to capabilities"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#GenericProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Items have properties.  Properties can describe characteristic something.\nDevices may have specific attributes that may be exposed to different threats, while others may reduce the risk of other threats appareances."
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Guideline",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "General rule, principle, or piece of advice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Publication"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#HUI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Kind of interface, intended for human use"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#UI"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#HWSolution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#SolutionStructure"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#HostDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Device which has physical limitations in either the ability to process data, the ability to communicate data, the ability to store data or the ability to interact with the user, due to restrictions that arise from its intended use"
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "IEC 62443 4-2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A kind of general purpose device with an OS\n"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Device"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#IEC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Internation Electrotechincal Commission"
+  } ],
+  "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#abbr" : [ {
+    "@value" : "IEC"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#IEC_62443_4-2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://scch/technical_standards#IEC_TechnicalCommittee_65"
+  } ],
+  "http://purl.org/dc/terms/hasVersion" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "2"
+  } ],
+  "http://purl.org/dc/terms/language" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#language",
+    "@value" : "en"
+  }, {
+    "@type" : "http://www.w3.org/2001/XMLSchema#language",
+    "@value" : "fr"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#IEC"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "Security for industrial automation and control systems - Part 4-2: Technical security requirements for IACS components"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "IEC 62443 4-2"
+  } ],
+  "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#developedBy" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#IEC_TC_65"
+  } ],
+  "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#publishedBy" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#IEC"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#IEC_TC_65",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "IEC technical committee 65"
+  }, {
+    "@value" : "Industrial-process measurement, control and automation"
+  } ],
+  "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#belongsTo" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#IEC"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#ISO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "International Organization for Standarization"
+  } ],
+  "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#abbr" : [ {
+    "@value" : "ISO"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#InputDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "A piece of equipment used to provide data and control signals to an information processing system."
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "IEC 62443 4-2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Device"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Interface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Components have interfaces such as buttons, keyboards, internet ports, hmdi and other interfaces. Those determine interaction points."
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Kind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A group of  things which share similar characteristics"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Type"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#MIT_License",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MIT License"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://choosealicense.com/licenses/mit/"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Manufacturer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Stakeholder"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Supplier"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Mechanism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "The process, way, or system used to produce a particular result."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#CounterMeasure"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#MemoryAccessControl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Way to control memory access rights"
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#AccessControlMechanism"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#MobileDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "IEC 62443 4-2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A kind of device which can be moved/transported"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Device"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#NIST",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "National Institute Of Standards and Technology"
+  } ],
+  "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#abbr" : [ {
+    "@value" : "NIST"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#NISTCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Subdivisions of a Function into groups of cybersecurity outcomes closely tied to programmatic needs and particular activities"
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid42"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#NISTFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "One of the main components of the Framework. Functions provide the highest level of structure for organizing basic cybersecurity activities into Categories and Subcategories."
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid47"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#NISTSubCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Specific outcomes of technical and/or management activities. They provide a set of results that help support achievement of the outcomes in each Category. Division of categories into more concrete technical activities."
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid51"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#NetworkDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "IEC 62443 4-2"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A kind of device which deals with data flow and data flow restriction\n"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Device"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#NetworkType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A network type might be usefull to determine the type of connection security"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Type"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#NonFunctionalRequirement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "A system attribute demanded. They serve as constraints or restrictions on the design of the system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#SystemRequirement"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#QualityAttribute"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#OperatingSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Operating system that can run on a device. It supports a device's basic functions, such as controlling peripherals and interfaces."
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Entity in charge of making standards"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Outcome",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Result or a conclusion reached through a process of logical thinking or motivated by a driver."
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Concern"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Policy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A policy is a set of rules or guidelines to follow in or to achieve compliance. Components  consider policies, policies are addressed or demanded by requirements."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#CounterMeasure"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Port",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "A port is a virtual point where network connections start and end. They are associated to services provided by components."
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Practice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Procedures that are accepted or prescribed as being correct or most effective"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#CounterMeasure"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Problem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ETSI 303645"
+  }, {
+    "@value" : "General concept that defines a probllem that may affect any kind of asset."
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Product",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Asset"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Profile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Component of the framework. It represents the alignment of the Functions, Categories, and Subcategories with the business requirements, risk tolerance, and resources of the organization. A Profile enables organizations to establish a roadmap for reducing cybersecurity risk that is well aligned with organizational and sector goals, considers legal/regulatory requirements and industry best practices, and reflects risk management priorities"
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#FrameworkElement"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Protocol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Used by components to communicate"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#ProtocolProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#GenericProperty"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Provision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Publication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Document developed by an organization that is published"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#PublicationConstraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Constraint"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#QualityAttribute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#NonFunctionalRequirement"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Recommendation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "A provision that is not mandatory but is proposed as to the best course of action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid58"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#ReferenceArchitecture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#SolutionStructure"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Requirement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A requisite demanded for quality reasons"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid62"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#RequirementDependencyConstraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Constraint"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Risk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "A measure of the extent to which an entity is threatened by a potential circumstance or event, and typically a function of: (i) the adverse impacts that would arise if the circumstance or event occurs; and (ii) the likelihood of occurrence."
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#RiskAssesement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Association object between assets and risk. It can be attributed e.g. priority, effect, likelihood"
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#SWApplication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A kind of component that builds an IACS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Product"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#SWSolution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#SolutionStructure"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Scope",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Extent of the area or subject matter that something deals with or to which it is relevant"
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#SecureBootMechanism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Mechanism that verifies the integrity of every code being loaded, before it's allowed to execute"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Mechanism"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Sensor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Device"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Service",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Components provide services, which are units of funtionality that can run independently."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Product"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#SolutionStructure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Generic concept that represents solution structures for systems."
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Stakeholder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Person with an interest or concern in something"
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Standard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "A standard is a document that provides rules or guidelines to achieve order in a given context."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Publication"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Status of a document\n"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Status_Published",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Published"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Status_Withdrawn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Withdrawn"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#StorageMechanism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Mechanism that enables a computer or system to retain data, either temporarily or permanently"
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Mechanism"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#SupplementalGuidance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Generic class for extra informative content"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Supplier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Product and service providers used for an organization’s internal purposes (e.g., IT infrastructure) or integrated into the products of services provided to that organization’s Buyers."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Certain suppliers are expected to provide documentation, and other kinds of information regarding their products, also safety related points"
+  }, {
+    "@value" : "Person or organization that provides a product or service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Stakeholder"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#System",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "System for which components will be defined"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Asset"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#SystemRequirement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Statement that identifies the functionality and characteristics of a system to satisfy the stakeholder’s requirements/needs/concerns"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://www.umsl.edu/~sauterv/analysis/F2015/System%20Requirements.html.htm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Concern"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#TechnicalCommittee",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Entity part of an organization in charge of developing standard\n"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Technology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Application of scientific knowledge for practical purposes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#CounterMeasure"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Threat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Something that can harm a system,component. A requirement can mitigate such threats. Multipple concepts such as System, components, technologies can be target of threats; while requirements and techonologies, and other items can mitigate them. "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Problem"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid66"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Tier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Tiers describe the degree to which an organization’s cybersecurity risk management practices exhibit the characteristics defined in the Framework (e.g., risk and threat aware, repeatable, and adaptive)"
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#FrameworkElement"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Tolerance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Value that describes the tolerance of a risk accepted by an organization"
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Tool",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "A thing or technology used to help perform a job, e.g. SW that carries out a particular function, typically creating or modifying another program."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Technology"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Type is used to define a category of things having common characteristics\nItems can have types, devices also."
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Type_NIST",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Type" ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#UI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Kind of interface, intended for a users"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Interface"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#UpdateMechanism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Ways of updating SW"
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Mechanism"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#User",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Natural person or organization"
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Stakeholder"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Vulnerability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Weakness within a system or component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Problem"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#abbr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#achieves",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Outcome"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Driver"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#promotedBy"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#addressedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#addresses"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#addresses",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Threat"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#addressesConcern",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Concern"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#affects",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Problem"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isAffectedBy"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#applicableTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#ComponentRequirement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Component"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#applies"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#applies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#ComponentRequirement"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#appliesCryptography",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#associatedToSubCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NISTSubCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Provision"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#NISTSubCategory"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#considersProvision"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#belongsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#TechnicalCommittee"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Organization"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#ownerOf"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#channelUsedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#usesChannel"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#composedOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Component"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#composes"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#composes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#configurationOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasConfiguration"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#connects",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Connection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Component"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#connectsDestination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Connection"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isDestinationOf"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#connectsSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Connection"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isSourceOf"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#considersAsset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#RiskAssesement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Asset"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#considersProvision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#NISTSubCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Provision"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#considersRisk",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Risk"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#considersThreat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Threat"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#considersVulnerability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Risk management"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Risk"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Vulnerability"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#consistOfFrameworkElement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#FrameworkElement"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#containedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#contains"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#contains",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Provision"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#dateOfAdoption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ETSI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#dateOfPublication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ETSI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#dateOfWithdrawal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ETSI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#demandsCapability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Provision"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Capability"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#dependsOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Association between a constraint to a specific provision. Implying that the item holding the constraint depends on the referenced provision, making this provision a requirement."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#RequirementDependencyConstraint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Provision"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#describesSolution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Architecture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#SolutionStructure"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#solutionOfArchitecture"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#developedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#develops"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#develops",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Relates a publication to its developer."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Maybe replaced by annotation property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#TechnicalCommittee"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Publication"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#enhancementOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Provision"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Provision"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasEnhancement"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#exposedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Vulnerability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Threat"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#exposes"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#exposes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Threat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Vulnerability"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#handledBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Vulnerability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#CounterMeasure"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#handles"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#handles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#CounterMeasure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Vulnerability"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasArchitecture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Architecture"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasCapability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid5"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Capability"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#NISTFunction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#NISTCategory"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasConfiguration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Configuration"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasConstraint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Constraint"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasDelegatedCapability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Capability that is not native to the item, but can be used by it.\nCertain components may not be able to provide a capability but \ncan work within a system or component which provides it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Capability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasCapability"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isDelegatedCapabilityOf"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasDevicePhysicalLimitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#DevicePhysicalLimitation"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isDevicePhysicalLimitationOf"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasDomain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Domain"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isDomainOf"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasEnhancement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasFW",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Firmware"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Function"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasHMI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid8"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasInterface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Interface"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasLighterVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasMoreSecureVersion"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasMainCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasSubCategory"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasMoreGeneralDomain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Domain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Domain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasMoreGeneralVersion"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasSubDomain"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasMoreGeneralProblem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Threat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Threat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasMoreGeneralVersion"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasSubProblem"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasMoreGeneralVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasSubVersion"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasMoreSecureVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasOS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#OperatingSystem"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasPolicy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Policy"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasPredecessor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasSuccessor"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasProfile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Profile"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#GenericProperty"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasRequirement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#System"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#SystemRequirement"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasScope",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasSolutionStructure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#System"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#SolutionStructure"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Status"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasSubCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#NISTCategory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#NISTSubCategory"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasSubDomain",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Domain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Domain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasSubVersion"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasSubProblem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Threat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Threat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasSubVersion"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasSubVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasSuccessor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : ""
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasSupplementalGuidance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Provision"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#SupplementalGuidance"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isSupplementalGuidanceOf"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasTier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Tier"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasTolerance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#RiskAssesement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Tolerance"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#hasType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Type"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#improvesQA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#NonFunctionalRequirement"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#interestedIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Stakeholder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Concern"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isAffectedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isAssetOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#ownsAsset"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isAuthenticated",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Interface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isCritical",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "IEC"
+  }, {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isDebugInterface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Physical interface used by the manufacturer to communicate with the device during development or to perform triage of issues with the device and that is not used as part of the consumer-facing functionality"
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Interface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isDelegatedCapabilityOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isDestinationOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ETSI 303645"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isDevicePhysicalLimitationOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isDisclosed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Vulnerability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isDomainOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isEmbedded",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isEncrypted",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isEssential",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid14"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isExternal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isHard",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Constraint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isInternal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Threat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isInternational",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isMandatory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isNormative",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid17"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isOnline",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isPhysical",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Indicates physical port or air interface (such as radio, audio or optical) used to communicate with the device at the physical layer"
+  }, {
+    "@value" : "Physical existing asset"
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  }, {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid20"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isPublic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ETSI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isRealTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#OperatingSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isRemote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Intended to be accessible from outside the local network"
+  } ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Interface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isRoleProtected",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This attribute may indicate if the item can be accessed via role protection. \nMAy be modelled differently, via Component's property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isSW",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid23"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isSmart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isSolved",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Vulnerability"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isSourceOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ETSI 303645"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isSpecialPurpose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isSupplementalGuidanceOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isTransportable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isUpdatable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  }, {
+    "@value" : "Flag which indiates if the item can be updated."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isVulnerable",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Based on algorithm catalogs, this flag indicates if it is vulnerable in general without explicitely knowing the actual vulnerability."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#isWireless",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid26"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#manufactures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#ownerOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#ownsAsset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Stakeholder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Asset"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#pages",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ETSI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#partOfComponentSolution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#ComponentSolution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#partOfSolution"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#partOfDeploymentSolution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#DeploymentNode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#DeploymentSolution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#partOfSolution"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#partOfSolution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#SolutionStructure"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#solutionOf"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#priority",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#probability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Threat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#promotedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#protocolSupportedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#supportsProtocol"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#protocolUsedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#usesProtocol"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#providesFunction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Function"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#providesFunctionality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Port"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#providesService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Service"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#serviceProvidedBy"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#published",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Publication"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#publishedBy"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#publishedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#receivesData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#referencesArchitecture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#ReferenceArchitecture"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Architecture"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#refersTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#PublicationConstraint"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Publication"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#relatedTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#relatedToProblem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Used to define possible chain of problems."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Problem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Problem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#relatedTo"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#requiresFunctionality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Component"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Port"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#requiresService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Service"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#serviceRequiredBy"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#runsOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#SWApplication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Device"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#securityLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid29"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#sendsData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#serviceProvidedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#serviceRequiredBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#serviceUsedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Component"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#severity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Associates a cuantitave value to evaluated the degree of severity to a problem or threat."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid32"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#size",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "NIST Framework"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#solutionOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#solutionOfArchitecture",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#suggestsCounterMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Provision"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#CounterMeasure"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#supplies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "IEC references System or component"
+  }, {
+    "@value" : "NIST Framework : References an asset"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Supplier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Asset"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#supportsProtocol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Protocol"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#uses",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#usesAlgorithm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/dc/terms/provenance" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Connection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Algorithm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#uses"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#usesChannel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ETSI 303645"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Connection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Channel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#uses"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#usesEncryption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid11"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#uses"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#usesProtocol",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Connection"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Protocol"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#uses"
+  } ]
+}, {
+  "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#vulnerableTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://github.com/JoseIllSCCH/TechnicalStandardsOntology/blob/main/Documentation/20230403_2/myDocumentation/ontology.ttl#Vulnerability"
+  } ]
+} ]
