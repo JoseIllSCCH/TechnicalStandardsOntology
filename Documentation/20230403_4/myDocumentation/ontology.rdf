@@ -1,0 +1,3199 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://scch.org/technical_standards#"
+     xml:base="https://scch.org/technical_standards"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:technical_standards="https://scch.org/technical_standards#">
+    <owl:Ontology rdf:about="https://scch.org/technical_standards">
+        <owl:versionIRI rdf:resource="https://scch.org/technical_standards/0.1"/>
+        <dc:description xml:lang="en">This ontology serves as the basis to represent technical standards in a machine readable way. It provides elements to define publications, their provisions, their dependencies and possible constraints, among other constructs.
+
+This ontology is based on three technical standars, namely the IEC 62443 4-2, ETSI 303645 and the more general NIST Framework  for Improving
+Critical Infrastructure Cybersecurity.
+
+Therefore, besides providing the schematic elements,  it also considers system related concepts to describe system solutions, their components, etc.
+
+Making it possible to define not only project or system specific information but also project independent information. This makes it more robust for engineering design tasks.</dc:description>
+        <dc:title xml:lang="en">Techincal Security Standards Ontology</dc:title>
+        <terms:created xml:lang="en">January 2023</terms:created>
+        <terms:creator xml:lang="en">Gandalf Denk</terms:creator>
+        <terms:creator xml:lang="en">Georg Buchgeher</terms:creator>
+        <terms:creator xml:lang="en">Jose Illescas</terms:creator>
+        <terms:creator xml:lang="en">Lisa Ehrlinger</terms:creator>
+        <terms:creator xml:lang="en">Peter Panholzer</terms:creator>
+        <terms:creator xml:lang="en">Thomas Brandstetter</terms:creator>
+        <terms:license rdf:resource="https://choosealicense.com/licenses/mit/"/>
+        <terms:license rdf:resource="https://scch.org/technical_standards#MIT_License"/>
+        <vann:preferredNamespacePrefix xml:lang="en">tsso</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri xml:lang="en">https://scch.org/technical_standards</vann:preferredNamespaceUri>
+        <owl:versionInfo xml:lang="en">0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/dateAccepted -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/dateAccepted"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasVersion -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasVersion"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/provenance -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/provenance"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/replaces -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/replaces"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/requires -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/requires"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    
+
+
+    <!-- https://scch.org/technical_standards#abbr -->
+
+
+    <owl:AnnotationProperty rdf:about="https://scch.org/technical_standards#abbr"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Literal -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#boolean -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#boolean"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#integer -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#integer"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#language -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#language"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#string -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://scch.org/technical_standards#achieves -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#achieves">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#promotedBy"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Outcome"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Driver"/>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#addressedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#addressedBy">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#addresses"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#addresses -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#addresses">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#Capability"/>
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#CounterMeasure"/>
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#Provision"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Threat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#addressesConcern -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#addressesConcern">
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Concern"/>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#affects -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#affects">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#isAffectedBy"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Problem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#applicableTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#applicableTo">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#applies"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#ComponentRequirement"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Component"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#applies -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#applies">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Component"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#ComponentRequirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#associatedToSubCategory -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#associatedToSubCategory">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#considersProvision"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Provision"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#NISTSubCategory"/>
+        <terms:provenance>NISTSubCategory</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#belongsTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#belongsTo">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#ownerOf"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#TechnicalCommittee"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#channelUsedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#channelUsedBy">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#usesChannel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#composedOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#composedOf">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#composes"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Component"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Component"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#composes -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#composes"/>
+    
+
+
+    <!-- https://scch.org/technical_standards#configurationOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#configurationOf">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#hasConfiguration"/>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#connects -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#connects">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Connection"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Component"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#connectsDestination -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#connectsDestination">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#isDestinationOf"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Connection"/>
+        <rdfs:comment>ETSI 303645</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#connectsSource -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#connectsSource">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#isSourceOf"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Connection"/>
+        <rdfs:comment>ETSI 303645</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#considersAsset -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#considersAsset">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#RiskAssesement"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Asset"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#considersProvision -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#considersProvision">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#NISTSubCategory"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Provision"/>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#considersRisk -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#considersRisk">
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Risk"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#considersThreat -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#considersThreat">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Risk"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Threat"/>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#considersVulnerability -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#considersVulnerability">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Risk"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Vulnerability"/>
+        <terms:provenance>NIST Framework</terms:provenance>
+        <rdfs:comment>Risk management</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#consistOfFrameworkElement -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#consistOfFrameworkElement">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Framework"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#FrameworkElement"/>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#containedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#containedBy">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#contains"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#contains -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#contains">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Publication"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Provision"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#demandsCapability -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#demandsCapability">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Provision"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Capability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#dependsOn -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#dependsOn">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#RequirementDependencyConstraint"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Provision"/>
+        <dc:description>Association between a constraint to a specific provision. Implying that the item holding the constraint depends on the referenced provision, making this provision a requirement.</dc:description>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#describesSolution -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#describesSolution">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#solutionOfArchitecture"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Architecture"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#SolutionStructure"/>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#developedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#developedBy">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#develops"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#develops -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#develops">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#TechnicalCommittee"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Publication"/>
+        <dc:description>Relates a publication to its developer.</dc:description>
+        <rdfs:comment>Maybe replaced by annotation property.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#enhancementOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#enhancementOf">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#hasEnhancement"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Provision"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Provision"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#exposedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#exposedBy">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#exposes"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Vulnerability"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Threat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#exposes -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#exposes">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Threat"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Vulnerability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#handledBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#handledBy">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#handles"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Vulnerability"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#CounterMeasure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#handles -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#handles">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#CounterMeasure"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Vulnerability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasArchitecture -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasArchitecture">
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Architecture"/>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasCapability -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasCapability">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#Component"/>
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#System"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Capability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasCategory -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasCategory">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#NISTFunction"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#NISTCategory"/>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasConfiguration -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasConfiguration">
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Configuration"/>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasConstraint -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasConstraint">
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Constraint"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasDelegatedCapability -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasDelegatedCapability">
+        <rdfs:subPropertyOf rdf:resource="https://scch.org/technical_standards#hasCapability"/>
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#isDelegatedCapabilityOf"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Capability"/>
+        <rdfs:comment>Capability that is not native to the item, but can be used by it.
+Certain components may not be able to provide a capability but 
+can work within a system or component which provides it.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasDevicePhysicalLimitation -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasDevicePhysicalLimitation">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#isDevicePhysicalLimitationOf"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Device"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#DevicePhysicalLimitation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasDomain -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasDomain">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#isDomainOf"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Domain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasEnhancement -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasEnhancement"/>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasFW -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasFW">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Device"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Firmware"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasFunction -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasFunction">
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Function"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasHMI -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasHMI">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Device"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#HUI"/>
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#InputDevice"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasInterface -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasInterface">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Component"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Interface"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasLighterVersion -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasLighterVersion">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#hasMoreSecureVersion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasMainCategory -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasMainCategory">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#hasSubCategory"/>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasMoreGeneralDomain -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasMoreGeneralDomain">
+        <rdfs:subPropertyOf rdf:resource="https://scch.org/technical_standards#hasMoreGeneralVersion"/>
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#hasSubDomain"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Domain"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Domain"/>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasMoreGeneralProblem -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasMoreGeneralProblem">
+        <rdfs:subPropertyOf rdf:resource="https://scch.org/technical_standards#hasMoreGeneralVersion"/>
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#hasSubProblem"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Threat"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Threat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasMoreGeneralVersion -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasMoreGeneralVersion">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#hasSubVersion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasMoreSecureVersion -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasMoreSecureVersion"/>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasOS -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasOS">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Device"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#OperatingSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasPolicy -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasPolicy">
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Policy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasPredecessor -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasPredecessor">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#hasSuccessor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasProfile -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasProfile">
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Profile"/>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasProperty">
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#GenericProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasRequirement -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasRequirement">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#System"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#SystemRequirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasScope -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasScope">
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasSolutionStructure -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasSolutionStructure">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#System"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#SolutionStructure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasStatus -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasStatus">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Publication"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Status"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasSubCategory -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasSubCategory">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#NISTCategory"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#NISTSubCategory"/>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasSubDomain -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasSubDomain">
+        <rdfs:subPropertyOf rdf:resource="https://scch.org/technical_standards#hasSubVersion"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Domain"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Domain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasSubProblem -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasSubProblem">
+        <rdfs:subPropertyOf rdf:resource="https://scch.org/technical_standards#hasSubVersion"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Threat"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Threat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasSubVersion -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasSubVersion"/>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasSuccessor -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasSuccessor">
+        <terms:provenance></terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasSupplementalGuidance -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasSupplementalGuidance">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#isSupplementalGuidanceOf"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Provision"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#SupplementalGuidance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasTier -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasTier">
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Tier"/>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasTolerance -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasTolerance">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#RiskAssesement"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Tolerance"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#hasType -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#hasType">
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#improvesQA -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#improvesQA">
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#NonFunctionalRequirement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#interestedIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#interestedIn">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Stakeholder"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Concern"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isAffectedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#isAffectedBy"/>
+    
+
+
+    <!-- https://scch.org/technical_standards#isAssetOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#isAssetOf">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#ownsAsset"/>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isDelegatedCapabilityOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#isDelegatedCapabilityOf"/>
+    
+
+
+    <!-- https://scch.org/technical_standards#isDestinationOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#isDestinationOf">
+        <rdfs:comment>ETSI 303645</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isDevicePhysicalLimitationOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#isDevicePhysicalLimitationOf"/>
+    
+
+
+    <!-- https://scch.org/technical_standards#isDomainOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#isDomainOf"/>
+    
+
+
+    <!-- https://scch.org/technical_standards#isSourceOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#isSourceOf">
+        <rdfs:comment>ETSI 303645</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isSupplementalGuidanceOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#isSupplementalGuidanceOf"/>
+    
+
+
+    <!-- https://scch.org/technical_standards#manufactures -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#manufactures">
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#ownerOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#ownerOf"/>
+    
+
+
+    <!-- https://scch.org/technical_standards#ownsAsset -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#ownsAsset">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Stakeholder"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Asset"/>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#partOfComponentSolution -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#partOfComponentSolution">
+        <rdfs:subPropertyOf rdf:resource="https://scch.org/technical_standards#partOfSolution"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Component"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#ComponentSolution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#partOfDeploymentSolution -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#partOfDeploymentSolution">
+        <rdfs:subPropertyOf rdf:resource="https://scch.org/technical_standards#partOfSolution"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#DeploymentNode"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#DeploymentSolution"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#partOfSolution -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#partOfSolution">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#solutionOf"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#SolutionStructure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#promotedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#promotedBy"/>
+    
+
+
+    <!-- https://scch.org/technical_standards#protocolSupportedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#protocolSupportedBy">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#supportsProtocol"/>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#protocolUsedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#protocolUsedBy">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#usesProtocol"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#providesFunction -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#providesFunction">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Component"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Function"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#providesFunctionality -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#providesFunctionality">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Component"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Port"/>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#providesService -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#providesService">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#serviceProvidedBy"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Component"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#published -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#published">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#publishedBy"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Organization"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Publication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#publishedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#publishedBy"/>
+    
+
+
+    <!-- https://scch.org/technical_standards#referencesArchitecture -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#referencesArchitecture">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#ReferenceArchitecture"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Architecture"/>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#refersTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#refersTo">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#PublicationConstraint"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Publication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#relatedTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#relatedTo"/>
+    
+
+
+    <!-- https://scch.org/technical_standards#relatedToProblem -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#relatedToProblem">
+        <rdfs:subPropertyOf rdf:resource="https://scch.org/technical_standards#relatedTo"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Problem"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Problem"/>
+        <dc:description>Used to define possible chain of problems.</dc:description>
+        <rdfs:comment>ETSI 303645</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#requiresFunctionality -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#requiresFunctionality">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Component"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Port"/>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#requiresService -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#requiresService">
+        <owl:inverseOf rdf:resource="https://scch.org/technical_standards#serviceRequiredBy"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Service"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#runsOn -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#runsOn">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#SWApplication"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Device"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#serviceProvidedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#serviceProvidedBy"/>
+    
+
+
+    <!-- https://scch.org/technical_standards#serviceRequiredBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#serviceRequiredBy"/>
+    
+
+
+    <!-- https://scch.org/technical_standards#serviceUsedBy -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#serviceUsedBy">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Service"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Component"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#solutionOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#solutionOf"/>
+    
+
+
+    <!-- https://scch.org/technical_standards#solutionOfArchitecture -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#solutionOfArchitecture">
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#suggestsCounterMeasure -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#suggestsCounterMeasure">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Provision"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#CounterMeasure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#supplies -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#supplies">
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Supplier"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Asset"/>
+        <rdfs:comment>IEC references System or component</rdfs:comment>
+        <rdfs:comment>NIST Framework : References an asset</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#supportsProtocol -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#supportsProtocol">
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Protocol"/>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#uses -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#uses">
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#usesAlgorithm -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#usesAlgorithm">
+        <rdfs:subPropertyOf rdf:resource="https://scch.org/technical_standards#uses"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Connection"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Algorithm"/>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#usesChannel -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#usesChannel">
+        <rdfs:subPropertyOf rdf:resource="https://scch.org/technical_standards#uses"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Connection"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Channel"/>
+        <rdfs:comment>ETSI 303645</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#usesEncryption -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#usesEncryption">
+        <rdfs:subPropertyOf rdf:resource="https://scch.org/technical_standards#uses"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#Connection"/>
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#Protocol"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#usesProtocol -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#usesProtocol">
+        <rdfs:subPropertyOf rdf:resource="https://scch.org/technical_standards#uses"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Connection"/>
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Protocol"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#vulnerableTo -->
+
+
+    <owl:ObjectProperty rdf:about="https://scch.org/technical_standards#vulnerableTo">
+        <rdfs:range rdf:resource="https://scch.org/technical_standards#Vulnerability"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://scch.org/technical_standards#appliesCryptography -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#appliesCryptography">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#dateOfAdoption -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#dateOfAdoption">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>ETSI</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#dateOfPublication -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#dateOfPublication">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>ETSI</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#dateOfWithdrawal -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#dateOfWithdrawal">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>ETSI</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isAuthenticated -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isAuthenticated">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Interface"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isCritical -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isCritical">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <terms:provenance>IEC</terms:provenance>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isDebugInterface -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isDebugInterface">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Interface"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <dc:description>Physical interface used by the manufacturer to communicate with the device during development or to perform triage of issues with the device and that is not used as part of the consumer-facing functionality</dc:description>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isDisclosed -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isDisclosed">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Vulnerability"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isEmbedded -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isEmbedded">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isEncrypted -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isEncrypted">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isEssential -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isEssential">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#Function"/>
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#Service"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isExternal -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isExternal">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isHard -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isHard">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Constraint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isInternal -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isInternal">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Threat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isInternational -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isInternational">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isMandatory -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isMandatory">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isNormative -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isNormative">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#PublicationConstraint"/>
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#RequirementDependencyConstraint"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isOnline -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isOnline">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isPhysical -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isPhysical">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#Asset"/>
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#Interface"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <dc:description>Indicates physical port or air interface (such as radio, audio or optical) used to communicate with the device at the physical layer</dc:description>
+        <dc:description>Physical existing asset</dc:description>
+        <terms:provenance>ETSI 303645</terms:provenance>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isPublic -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isPublic">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>ETSI</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isRealTime -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isRealTime">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#OperatingSystem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isRemote -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isRemote">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Interface"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <dc:description>Intended to be accessible from outside the local network</dc:description>
+        <terms:provenance>ETSI</terms:provenance>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isRoleProtected -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isRoleProtected">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>This attribute may indicate if the item can be accessed via role protection. 
+MAy be modelled differently, via Component&apos;s property.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isSW -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isSW">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#Component"/>
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#DeploymentNode"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isSmart -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isSmart">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isSolved -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isSolved">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Vulnerability"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isSpecialPurpose -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isSpecialPurpose">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isTransportable -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isTransportable">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isUpdatable -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isUpdatable">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <terms:provenance>ETSI 303645</terms:provenance>
+        <terms:provenance>Flag which indiates if the item can be updated.</terms:provenance>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isVulnerable -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isVulnerable">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <terms:provenance>ETSI 303645</terms:provenance>
+        <rdfs:comment>Based on algorithm catalogs, this flag indicates if it is vulnerable in general without explicitely knowing the actual vulnerability.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#isWireless -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#isWireless">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#Component"/>
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#Connection"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#pages -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#pages">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Publication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>ETSI</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#priority -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#priority">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#probability -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#probability">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://scch.org/technical_standards#Threat"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#receivesData -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#receivesData">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#securityLevel -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#securityLevel">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#Component"/>
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#ComponentRequirement"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#sendsData -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#sendsData">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#severity -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#severity">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#Threat"/>
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#Vulnerability"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Associates a cuantitave value to evaluated the degree of severity to a problem or threat.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://scch.org/technical_standards#size -->
+
+
+    <owl:DatatypeProperty rdf:about="https://scch.org/technical_standards#size">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://scch.org/technical_standards#API -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#API">
+        <rdfs:comment>Application Program Interface, defines the methods and behaviour required and expected for communication</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#APIKind -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#APIKind">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Kind"/>
+        <rdfs:comment>There are mulitple kinds such as REST, ROA, RMC, RMI</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#AccessControlMechanism -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#AccessControlMechanism">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Mechanism"/>
+        <dc:description>Security safeguard designed to detect and deny unauthorized access and permit authorized access to an information system or physical facility.</dc:description>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Actuator -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Actuator">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Device"/>
+        <dc:description>a device that causes a machine or other device to operate</dc:description>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Algorithm -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Algorithm">
+        <dc:description>Process or set of rules to be followed in calculations or other problem-solving operations, especially by a computer.</dc:description>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Architecture -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Architecture">
+        <dc:description>Conceptual model that defines the structure, behavior, and more views of a system.</dc:description>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Asset -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Asset">
+        <dc:description>An item owned by a person or company, regarded as having value or being useful.</dc:description>
+        <dc:description>NIST Framework</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#AuthenticationMechanism -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#AuthenticationMechanism">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Mechanism"/>
+        <dc:description>Method used to prove the authenticity of an entity</dc:description>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#BooleanConstraint -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#BooleanConstraint">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Constraint"/>
+        <dc:description>Represents a boolean constraint also interpreted as condition.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Buyer -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Buyer">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Stakeholder"/>
+        <dc:description>The people or organizations that consume a given product or service.</dc:description>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Capability -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Capability">
+        <owl:equivalentClass rdf:resource="https://scch.org/technical_standards#Functionality"/>
+        <dc:description>Ability to perform a specified task</dc:description>
+        <rdfs:comment>A delegated capability is not native to the component,however, the component is considered to posses it as it is inherited from a surrounding system component.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Category -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Category">
+        <dc:description>General concept to define possible categories and divivsions of elements.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Channel -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Channel">
+        <dc:description>Communication channels are mediums through which you can send information.</dc:description>
+        <dc:description>Logical or physocal link between assets.</dc:description>
+        <rdfs:comment>ETSI 303645</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Component -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Component">
+        <dc:description>A part or element of a larger wholesuch as a system. It can be seen as a buillding block.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#ComponentRequirement -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#ComponentRequirement">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Requirement"/>
+        <rdfs:comment>A requirement targeting components that build up a system</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#ComponentSolution -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#ComponentSolution">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#SolutionStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Composite -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Composite">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://scch.org/technical_standards#composedOf"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://scch.org/technical_standards#Component"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <dc:description>Components may bring their own set of components, which makes it a composition of existing components</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Concern -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Concern"/>
+    
+
+
+    <!-- https://scch.org/technical_standards#Configuration -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Configuration">
+        <dc:description>Arrangement or set-up of the hardware and software that make up a computer system.</dc:description>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Connection -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Connection">
+        <dc:description>Object that is used as communication channel between components. This connection can be attributed and configured.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#ConstrainedDevice -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#ConstrainedDevice">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#Device"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://scch.org/technical_standards#hasDevicePhysicalLimitation"/>
+                        <owl:someValuesFrom rdf:resource="https://scch.org/technical_standards#DevicePhysicalLimitation"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <dc:description>Device which has physical limitations in either the ability to process data, the ability to communicate data, the ability to store data or the ability to interact with the user, due to restrictions that arise from its intended use</dc:description>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Constraint -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Constraint">
+        <dc:description>Limitation or restriction. Requirements may have constraints imposed.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Core -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Core">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#FrameworkElement"/>
+        <dc:description>Set of cybersecurity activities, desired outcomes, and applicable references that are common across critical infrastructure sectors. The Framework Core provides a set of activities to achieve specific cybersecurity outcomes, and references examples of guidance to achieve those outcomes</dc:description>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#CounterMeasure -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#CounterMeasure">
+        <dc:description>Reduces a threat, vulnerability or the result of an attack. It may be able to discover it and report it so that proper action can be taken.</dc:description>
+        <rdfs:comment>Measure used to avoid/ mitigate a theat or problem, solve a vulnerability</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Customer -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Customer">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Stakeholder"/>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#DeploymentNode -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#DeploymentNode"/>
+    
+
+
+    <!-- https://scch.org/technical_standards#DeploymentSolution -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#DeploymentSolution">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#SolutionStructure"/>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#DetectionMechanism -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#DetectionMechanism">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Mechanism"/>
+        <dc:description>Detect the presence of events.</dc:description>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Developer -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Developer">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Stakeholder"/>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Device -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Device">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Product"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://scch.org/technical_standards#isSW"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Device is a kind of component. It is a discrete physical asset that provides a set of capabilitites
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#DevicePhysicalLimitation -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#DevicePhysicalLimitation">
+        <dc:description>Physical limitations can be due to power supply, battery life, processing power, physical access, limited functionality, limited memory or limited network bandwidth.</dc:description>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Domain -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Domain">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://scch.org/technical_standards#relatedTo"/>
+                <owl:someValuesFrom rdf:resource="https://scch.org/technical_standards#Domain"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <dc:description>Concept to define  areas of interest .</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Driver -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Driver">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Concern"/>
+        <dc:description>Something that creates and fuels activity, or gives force or impetus regarding the goals of an organization.</dc:description>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#EmbeddedDevice -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#EmbeddedDevice">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Device"/>
+        <dc:description>Device which has physical limitations in either the ability to process data, the ability to communicate data, the ability to store data or the ability to interact with the user, due to restrictions that arise from its intended use</dc:description>
+        <terms:provenance>IEC 62443 4-2</terms:provenance>
+        <rdfs:comment>A kind of special purpose device 
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Firmware -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Firmware">
+        <rdfs:comment>Permanent software programmed into a read-only memory.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Framework -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Framework">
+        <dc:description>Concept that represents real or conceptual structure intended to serve as a support or guide for the building of something that expands the structure into something useful</dc:description>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#FrameworkElement -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#FrameworkElement">
+        <dc:description>Concept  used to define building elements of a framework.</dc:description>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Function -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Function">
+        <rdfs:comment>Components provide set of relatedfunctions with a specific task</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#FunctionalRequirement -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#FunctionalRequirement">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#SystemRequirement"/>
+        <dc:description>A requisite demanded to define a system or its component</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Functionality -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Functionality">
+        <rdfs:comment>Components provide also functionalities which can trigger special events; be targets of threats; could be part or associated to capabilities</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#GenericProperty -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#GenericProperty">
+        <rdfs:comment>Items have properties.  Properties can describe characteristic something.
+Devices may have specific attributes that may be exposed to different threats, while others may reduce the risk of other threats appareances.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Guideline -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Guideline">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Publication"/>
+        <dc:description>General rule, principle, or piece of advice</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#HUI -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#HUI">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#UI"/>
+        <rdfs:comment>Kind of interface, intended for human use</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#HWSolution -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#HWSolution">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#SolutionStructure"/>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#HostDevice -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#HostDevice">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Device"/>
+        <dc:description>Device which has physical limitations in either the ability to process data, the ability to communicate data, the ability to store data or the ability to interact with the user, due to restrictions that arise from its intended use</dc:description>
+        <terms:provenance>IEC 62443 4-2</terms:provenance>
+        <rdfs:comment>A kind of general purpose device with an OS
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#InputDevice -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#InputDevice">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Device"/>
+        <dc:description>A piece of equipment used to provide data and control signals to an information processing system.</dc:description>
+        <terms:provenance>IEC 62443 4-2</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Interface -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Interface">
+        <rdfs:comment>Components have interfaces such as buttons, keyboards, internet ports, hmdi and other interfaces. Those determine interaction points.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Kind -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Kind">
+        <owl:equivalentClass rdf:resource="https://scch.org/technical_standards#Type"/>
+        <rdfs:comment>A group of  things which share similar characteristics</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Manufacturer -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Manufacturer">
+        <owl:equivalentClass rdf:resource="https://scch.org/technical_standards#Supplier"/>
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Stakeholder"/>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Mechanism -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Mechanism">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#CounterMeasure"/>
+        <dc:description>The process, way, or system used to produce a particular result.</dc:description>
+        <rdfs:comment>ETSI 303645</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#MemoryAccessControl -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#MemoryAccessControl">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#AccessControlMechanism"/>
+        <dc:description>Way to control memory access rights</dc:description>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#MobileDevice -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#MobileDevice">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Device"/>
+        <terms:provenance>IEC 62443 4-2</terms:provenance>
+        <rdfs:comment>A kind of device which can be moved/transported</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#NISTCategory -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#NISTCategory">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#Category"/>
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#Core"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://scch.org/technical_standards#hasType"/>
+                        <owl:hasValue rdf:resource="https://scch.org/technical_standards#Type_NIST"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <dc:description>Subdivisions of a Function into groups of cybersecurity outcomes closely tied to programmatic needs and particular activities</dc:description>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#NISTFunction -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#NISTFunction">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#Core"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://scch.org/technical_standards#hasType"/>
+                        <owl:hasValue rdf:resource="https://scch.org/technical_standards#Type_NIST"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <dc:description>One of the main components of the Framework. Functions provide the highest level of structure for organizing basic cybersecurity activities into Categories and Subcategories.</dc:description>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#NISTSubCategory -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#NISTSubCategory">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#Category"/>
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#Core"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://scch.org/technical_standards#hasType"/>
+                        <owl:hasValue rdf:resource="https://scch.org/technical_standards#Type_NIST"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://scch.org/technical_standards#hasMainCategory"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="https://scch.org/technical_standards#Category"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <dc:description>Specific outcomes of technical and/or management activities. They provide a set of results that help support achievement of the outcomes in each Category. Division of categories into more concrete technical activities.</dc:description>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#NetworkDevice -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#NetworkDevice">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Device"/>
+        <terms:provenance>IEC 62443 4-2</terms:provenance>
+        <rdfs:comment>A kind of device which deals with data flow and data flow restriction
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#NetworkType -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#NetworkType">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Type"/>
+        <rdfs:comment>A network type might be usefull to determine the type of connection security</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#NonFunctionalRequirement -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#NonFunctionalRequirement">
+        <owl:equivalentClass rdf:resource="https://scch.org/technical_standards#QualityAttribute"/>
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#SystemRequirement"/>
+        <dc:description>A system attribute demanded. They serve as constraints or restrictions on the design of the system</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#OperatingSystem -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#OperatingSystem">
+        <rdfs:comment>Operating system that can run on a device. It supports a device&apos;s basic functions, such as controlling peripherals and interfaces.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Organization -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Organization">
+        <rdfs:comment>Entity in charge of making standards</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Outcome -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Outcome">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Concern"/>
+        <dc:description>Result or a conclusion reached through a process of logical thinking or motivated by a driver.</dc:description>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Policy -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Policy">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#CounterMeasure"/>
+        <rdfs:comment>A policy is a set of rules or guidelines to follow in or to achieve compliance. Components  consider policies, policies are addressed or demanded by requirements.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Port -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Port">
+        <dc:description>A port is a virtual point where network connections start and end. They are associated to services provided by components.</dc:description>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Practice -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Practice">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#CounterMeasure"/>
+        <dc:description>Procedures that are accepted or prescribed as being correct or most effective</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Problem -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Problem">
+        <rdfs:comment>ETSI 303645</rdfs:comment>
+        <rdfs:comment>General concept that defines a probllem that may affect any kind of asset.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Product -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Product">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Profile -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Profile">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#FrameworkElement"/>
+        <dc:description>Component of the framework. It represents the alignment of the Functions, Categories, and Subcategories with the business requirements, risk tolerance, and resources of the organization. A Profile enables organizations to establish a roadmap for reducing cybersecurity risk that is well aligned with organizational and sector goals, considers legal/regulatory requirements and industry best practices, and reflects risk management priorities</dc:description>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Protocol -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Protocol">
+        <rdfs:comment>Used by components to communicate</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#ProtocolProperty -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#ProtocolProperty">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#GenericProperty"/>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Provision -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Provision"/>
+    
+
+
+    <!-- https://scch.org/technical_standards#Publication -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Publication">
+        <rdfs:comment>Document developed by an organization that is published</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#PublicationConstraint -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#PublicationConstraint">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Constraint"/>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#QualityAttribute -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#QualityAttribute">
+        <terms:provenance>ETSI 303645</terms:provenance>
+        <rdfs:seeAlso rdf:resource="https://scch.org/technical_standards#NonFunctionalRequirement"/>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Recommendation -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Recommendation">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#Provision"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://scch.org/technical_standards#isMandatory"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <dc:description>A provision that is not mandatory but is proposed as to the best course of action</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#ReferenceArchitecture -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#ReferenceArchitecture">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#SolutionStructure"/>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Requirement -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Requirement">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://scch.org/technical_standards#Provision"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://scch.org/technical_standards#isMandatory"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>A requisite demanded for quality reasons</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#RequirementDependencyConstraint -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#RequirementDependencyConstraint">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Constraint"/>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Risk -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Risk">
+        <dc:description>A measure of the extent to which an entity is threatened by a potential circumstance or event, and typically a function of: (i) the adverse impacts that would arise if the circumstance or event occurs; and (ii) the likelihood of occurrence.</dc:description>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#RiskAssesement -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#RiskAssesement">
+        <dc:description>Association object between assets and risk. It can be attributed e.g. priority, effect, likelihood</dc:description>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#SWApplication -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#SWApplication">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Product"/>
+        <rdfs:comment>A kind of component that builds an IACS</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#SWSolution -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#SWSolution">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#SolutionStructure"/>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Scope -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Scope">
+        <dc:description>Extent of the area or subject matter that something deals with or to which it is relevant</dc:description>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#SecureBootMechanism -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#SecureBootMechanism">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Mechanism"/>
+        <dc:description>Mechanism that verifies the integrity of every code being loaded, before it&apos;s allowed to execute</dc:description>
+        <rdfs:comment>ETSI 303645</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Sensor -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Sensor">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Device"/>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Service -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Service">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Product"/>
+        <rdfs:comment>Components provide services, which are units of funtionality that can run independently.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#SolutionStructure -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#SolutionStructure">
+        <rdfs:comment>Generic concept that represents solution structures for systems.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Stakeholder -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Stakeholder">
+        <dc:description>Person with an interest or concern in something</dc:description>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Standard -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Standard">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Publication"/>
+        <dc:description>A standard is a document that provides rules or guidelines to achieve order in a given context.</dc:description>
+        <rdfs:comment>ETSI 303645</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Status -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Status">
+        <rdfs:comment>Status of a document
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#StorageMechanism -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#StorageMechanism">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Mechanism"/>
+        <dc:description>Mechanism that enables a computer or system to retain data, either temporarily or permanently</dc:description>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#SupplementalGuidance -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#SupplementalGuidance">
+        <rdfs:comment>Generic class for extra informative content</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Supplier -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Supplier">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Stakeholder"/>
+        <dc:description>Product and service providers used for an organization’s internal purposes (e.g., IT infrastructure) or integrated into the products of services provided to that organization’s Buyers.</dc:description>
+        <rdfs:comment>Certain suppliers are expected to provide documentation, and other kinds of information regarding their products, also safety related points</rdfs:comment>
+        <rdfs:comment>Person or organization that provides a product or service</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#System -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#System">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Asset"/>
+        <rdfs:comment>System for which components will be defined</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#SystemRequirement -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#SystemRequirement">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Concern"/>
+        <rdfs:comment>Statement that identifies the functionality and characteristics of a system to satisfy the stakeholder’s requirements/needs/concerns</rdfs:comment>
+        <rdfs:seeAlso>https://www.umsl.edu/~sauterv/analysis/F2015/System%20Requirements.html.htm</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#TechnicalCommittee -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#TechnicalCommittee">
+        <rdfs:comment>Entity part of an organization in charge of developing standard
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Technology -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Technology">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#CounterMeasure"/>
+        <dc:description>Application of scientific knowledge for practical purposes</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Threat -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Threat">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://scch.org/technical_standards#relatedTo"/>
+                <owl:someValuesFrom rdf:resource="https://scch.org/technical_standards#Threat"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Problem"/>
+        <rdfs:comment>Something that can harm a system,component. A requirement can mitigate such threats. Multipple concepts such as System, components, technologies can be target of threats; while requirements and techonologies, and other items can mitigate them. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Tier -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Tier">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#FrameworkElement"/>
+        <dc:description>Tiers describe the degree to which an organization’s cybersecurity risk management practices exhibit the characteristics defined in the Framework (e.g., risk and threat aware, repeatable, and adaptive)</dc:description>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Tolerance -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Tolerance">
+        <dc:description>Value that describes the tolerance of a risk accepted by an organization</dc:description>
+        <terms:provenance>NIST Framework</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Tool -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Tool">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Technology"/>
+        <dc:description>A thing or technology used to help perform a job, e.g. SW that carries out a particular function, typically creating or modifying another program.</dc:description>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Type -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Type">
+        <rdfs:comment>Type is used to define a category of things having common characteristics
+Items can have types, devices also.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#UI -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#UI">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Interface"/>
+        <rdfs:comment>Kind of interface, intended for a users</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#UpdateMechanism -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#UpdateMechanism">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Mechanism"/>
+        <dc:description>Ways of updating SW</dc:description>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#User -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#User">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Stakeholder"/>
+        <dc:description>Natural person or organization</dc:description>
+        <terms:provenance>ETSI 303645</terms:provenance>
+    </owl:Class>
+    
+
+
+    <!-- https://scch.org/technical_standards#Vulnerability -->
+
+
+    <owl:Class rdf:about="https://scch.org/technical_standards#Vulnerability">
+        <rdfs:subClassOf rdf:resource="https://scch.org/technical_standards#Problem"/>
+        <rdfs:comment>Weakness within a system or component</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://scch.org/technical_standards#IEC -->
+
+
+    <owl:NamedIndividual rdf:about="https://scch.org/technical_standards#IEC">
+        <rdfs:label>Internation Electrotechincal Commission</rdfs:label>
+        <abbr>IEC</abbr>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://scch.org/technical_standards#IEC_62443_4-2 -->
+
+
+    <owl:NamedIndividual rdf:about="https://scch.org/technical_standards#IEC_62443_4-2">
+        <developedBy rdf:resource="https://scch.org/technical_standards#IEC_TC_65"/>
+        <publishedBy rdf:resource="https://scch.org/technical_standards#IEC"/>
+        <terms:creator rdf:resource="http://scch/technical_standards#IEC_TechnicalCommittee_65"/>
+        <terms:hasVersion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</terms:hasVersion>
+        <terms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">en</terms:language>
+        <terms:language rdf:datatype="http://www.w3.org/2001/XMLSchema#language">fr</terms:language>
+        <terms:publisher rdf:resource="https://scch.org/technical_standards#IEC"/>
+        <terms:title>Security for industrial automation and control systems - Part 4-2: Technical security requirements for IACS components</terms:title>
+        <rdfs:label>IEC 62443 4-2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://scch.org/technical_standards#IEC_TC_65 -->
+
+
+    <owl:NamedIndividual rdf:about="https://scch.org/technical_standards#IEC_TC_65">
+        <belongsTo rdf:resource="https://scch.org/technical_standards#IEC"/>
+        <rdfs:label>IEC technical committee 65</rdfs:label>
+        <rdfs:label>Industrial-process measurement, control and automation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://scch.org/technical_standards#ISO -->
+
+
+    <owl:NamedIndividual rdf:about="https://scch.org/technical_standards#ISO">
+        <rdfs:label>International Organization for Standarization</rdfs:label>
+        <abbr>ISO</abbr>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://scch.org/technical_standards#MIT_License -->
+
+
+    <owl:NamedIndividual rdf:about="https://scch.org/technical_standards#MIT_License">
+        <rdfs:label>MIT License</rdfs:label>
+        <rdfs:seeAlso>https://choosealicense.com/licenses/mit/</rdfs:seeAlso>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://scch.org/technical_standards#NIST -->
+
+
+    <owl:NamedIndividual rdf:about="https://scch.org/technical_standards#NIST">
+        <rdfs:label>National Institute Of Standards and Technology</rdfs:label>
+        <abbr>NIST</abbr>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://scch.org/technical_standards#Status_Published -->
+
+
+    <owl:NamedIndividual rdf:about="https://scch.org/technical_standards#Status_Published">
+        <rdfs:label>Published</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://scch.org/technical_standards#Status_Withdrawn -->
+
+
+    <owl:NamedIndividual rdf:about="https://scch.org/technical_standards#Status_Withdrawn">
+        <rdfs:label>Withdrawn</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://scch.org/technical_standards#Type_NIST -->
+
+
+    <owl:NamedIndividual rdf:about="https://scch.org/technical_standards#Type_NIST">
+        <rdf:type rdf:resource="https://scch.org/technical_standards#Type"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+
