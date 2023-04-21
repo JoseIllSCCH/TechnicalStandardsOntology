@@ -3,11 +3,11 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://scch.org/technical_standards#Capability"
+      "@id" : "https://w3id.org/tsso#Capability"
     }, {
-      "@id" : "https://scch.org/technical_standards#CounterMeasure"
+      "@id" : "https://w3id.org/tsso#CounterMeasure"
     }, {
-      "@id" : "https://scch.org/technical_standards#Provision"
+      "@id" : "https://w3id.org/tsso#Provision"
     } ]
   } ]
 }, {
@@ -15,9 +15,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://scch.org/technical_standards#Connection"
+      "@id" : "https://w3id.org/tsso#Connection"
     }, {
-      "@id" : "https://scch.org/technical_standards#Protocol"
+      "@id" : "https://w3id.org/tsso#Protocol"
     } ]
   } ]
 }, {
@@ -25,9 +25,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://scch.org/technical_standards#Function"
+      "@id" : "https://w3id.org/tsso#Function"
     }, {
-      "@id" : "https://scch.org/technical_standards#Service"
+      "@id" : "https://w3id.org/tsso#Service"
     } ]
   } ]
 }, {
@@ -35,9 +35,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://scch.org/technical_standards#PublicationConstraint"
+      "@id" : "https://w3id.org/tsso#PublicationConstraint"
     }, {
-      "@id" : "https://scch.org/technical_standards#RequirementDependencyConstraint"
+      "@id" : "https://w3id.org/tsso#RequirementDependencyConstraint"
     } ]
   } ]
 }, {
@@ -45,9 +45,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://scch.org/technical_standards#Asset"
+      "@id" : "https://w3id.org/tsso#Asset"
     }, {
-      "@id" : "https://scch.org/technical_standards#Interface"
+      "@id" : "https://w3id.org/tsso#Interface"
     } ]
   } ]
 }, {
@@ -55,9 +55,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://scch.org/technical_standards#Component"
+      "@id" : "https://w3id.org/tsso#Component"
     }, {
-      "@id" : "https://scch.org/technical_standards#DeploymentNode"
+      "@id" : "https://w3id.org/tsso#DeploymentNode"
     } ]
   } ]
 }, {
@@ -65,9 +65,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://scch.org/technical_standards#Component"
+      "@id" : "https://w3id.org/tsso#Component"
     }, {
-      "@id" : "https://scch.org/technical_standards#Connection"
+      "@id" : "https://w3id.org/tsso#Connection"
     } ]
   } ]
 }, {
@@ -75,9 +75,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://scch.org/technical_standards#Component"
+      "@id" : "https://w3id.org/tsso#Component"
     }, {
-      "@id" : "https://scch.org/technical_standards#ComponentRequirement"
+      "@id" : "https://w3id.org/tsso#ComponentRequirement"
     } ]
   } ]
 }, {
@@ -85,9 +85,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://scch.org/technical_standards#Threat"
+      "@id" : "https://w3id.org/tsso#Threat"
     }, {
-      "@id" : "https://scch.org/technical_standards#Vulnerability"
+      "@id" : "https://w3id.org/tsso#Vulnerability"
     } ]
   } ]
 }, {
@@ -98,17 +98,17 @@
     "@value" : "1"
   } ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://scch.org/technical_standards#Component"
+    "@id" : "https://w3id.org/tsso#Component"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://scch.org/technical_standards#composedOf"
+    "@id" : "https://w3id.org/tsso#composedOf"
   } ]
 }, {
   "@id" : "_:genid36",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "https://scch.org/technical_standards#Device"
+      "@id" : "https://w3id.org/tsso#Device"
     }, {
       "@id" : "_:genid38"
     } ]
@@ -117,10 +117,10 @@
   "@id" : "_:genid38",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://scch.org/technical_standards#hasDevicePhysicalLimitation"
+    "@id" : "https://w3id.org/tsso#hasDevicePhysicalLimitation"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://scch.org/technical_standards#DevicePhysicalLimitation"
+    "@id" : "https://w3id.org/tsso#DevicePhysicalLimitation"
   } ]
 }, {
   "@id" : "_:genid40",
@@ -130,25 +130,25 @@
     "@value" : "true"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://scch.org/technical_standards#isSW"
+    "@id" : "https://w3id.org/tsso#isSW"
   } ]
 }, {
   "@id" : "_:genid41",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://scch.org/technical_standards#relatedTo"
+    "@id" : "https://w3id.org/tsso#relatedTo"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://scch.org/technical_standards#Domain"
+    "@id" : "https://w3id.org/tsso#Domain"
   } ]
 }, {
   "@id" : "_:genid42",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "https://scch.org/technical_standards#Category"
+      "@id" : "https://w3id.org/tsso#Category"
     }, {
-      "@id" : "https://scch.org/technical_standards#Core"
+      "@id" : "https://w3id.org/tsso#Core"
     }, {
       "@id" : "_:genid44"
     } ]
@@ -157,17 +157,17 @@
   "@id" : "_:genid44",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "https://scch.org/technical_standards#Type_NIST"
+    "@id" : "https://w3id.org/tsso#Type_NIST"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://scch.org/technical_standards#hasType"
+    "@id" : "https://w3id.org/tsso#hasType"
   } ]
 }, {
   "@id" : "_:genid47",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "https://scch.org/technical_standards#Core"
+      "@id" : "https://w3id.org/tsso#Core"
     }, {
       "@id" : "_:genid49"
     } ]
@@ -176,19 +176,19 @@
   "@id" : "_:genid49",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "https://scch.org/technical_standards#Type_NIST"
+    "@id" : "https://w3id.org/tsso#Type_NIST"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://scch.org/technical_standards#hasType"
+    "@id" : "https://w3id.org/tsso#hasType"
   } ]
 }, {
   "@id" : "_:genid5",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://scch.org/technical_standards#Component"
+      "@id" : "https://w3id.org/tsso#Component"
     }, {
-      "@id" : "https://scch.org/technical_standards#System"
+      "@id" : "https://w3id.org/tsso#System"
     } ]
   } ]
 }, {
@@ -196,9 +196,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "https://scch.org/technical_standards#Category"
+      "@id" : "https://w3id.org/tsso#Category"
     }, {
-      "@id" : "https://scch.org/technical_standards#Core"
+      "@id" : "https://w3id.org/tsso#Core"
     }, {
       "@id" : "_:genid55"
     }, {
@@ -209,10 +209,10 @@
   "@id" : "_:genid53",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
-    "@id" : "https://scch.org/technical_standards#Category"
+    "@id" : "https://w3id.org/tsso#Category"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://scch.org/technical_standards#hasMainCategory"
+    "@id" : "https://w3id.org/tsso#hasMainCategory"
   } ],
   "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
@@ -222,17 +222,17 @@
   "@id" : "_:genid55",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "https://scch.org/technical_standards#Type_NIST"
+    "@id" : "https://w3id.org/tsso#Type_NIST"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://scch.org/technical_standards#hasType"
+    "@id" : "https://w3id.org/tsso#hasType"
   } ]
 }, {
   "@id" : "_:genid58",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "https://scch.org/technical_standards#Provision"
+      "@id" : "https://w3id.org/tsso#Provision"
     }, {
       "@id" : "_:genid60"
     } ]
@@ -245,14 +245,14 @@
     "@value" : "false"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://scch.org/technical_standards#isMandatory"
+    "@id" : "https://w3id.org/tsso#isMandatory"
   } ]
 }, {
   "@id" : "_:genid62",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
-      "@id" : "https://scch.org/technical_standards#Provision"
+      "@id" : "https://w3id.org/tsso#Provision"
     }, {
       "@id" : "_:genid64"
     } ]
@@ -265,25 +265,25 @@
     "@value" : "true"
   } ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://scch.org/technical_standards#isMandatory"
+    "@id" : "https://w3id.org/tsso#isMandatory"
   } ]
 }, {
   "@id" : "_:genid66",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://scch.org/technical_standards#relatedTo"
+    "@id" : "https://w3id.org/tsso#relatedTo"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://scch.org/technical_standards#Threat"
+    "@id" : "https://w3id.org/tsso#Threat"
   } ]
 }, {
   "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
-      "@id" : "https://scch.org/technical_standards#HUI"
+      "@id" : "https://w3id.org/tsso#HUI"
     }, {
-      "@id" : "https://scch.org/technical_standards#InputDevice"
+      "@id" : "https://w3id.org/tsso#InputDevice"
     } ]
   } ]
 }, {
@@ -326,6 +326,9 @@
   "@id" : "http://purl.org/dc/terms/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/ontology/bibo#doi",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -359,15 +362,15 @@
   "@id" : "http://www.w3.org/2001/XMLSchema#string",
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
 }, {
-  "@id" : "https://scch.org/technical_standards",
+  "@id" : "https://w3id.org/tsso",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@language" : "en",
-    "@value" : "This ontology serves as the basis to represent technical standards in a machine readable way. It provides elements to define publications, their provisions, their dependencies and possible constraints, among other constructs.\n\nThis ontology is based on three technical standars, namely the IEC 62443 4-2, ETSI 303645 and the more general NIST Framework  for Improving\nCritical Infrastructure Cybersecurity.\n\nTherefore, besides providing the schematic elements,  it also considers system related concepts to describe system solutions, their components, etc.\n\nMaking it possible to define not only project or system specific information but also project independent information. This makes it more robust for engineering design tasks."
+    "@value" : "This ontology serves as the basis to represent technical standards in a machine readable way. It provides elements to define publications, their provisions, their dependencies and possible constraints, among other constructs.\n\nThis ontology is based on three technical standards, namely the IEC 62443 4-2, ETSI 303645 and the more general NIST Framework  for Improving\nCritical Infrastructure Cybersecurity.\n\nTherefore, besides providing the schematic elements,  it also considers system related concepts to describe system solutions, their components, etc.\n\nMaking it possible to define not only project or system specific information but also project independent information. This makes it more robust for engineering design tasks."
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "en",
-    "@value" : "Techincal Security Standards Ontology"
+    "@value" : "Technical Security Standards Ontology"
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@language" : "en",
@@ -394,8 +397,9 @@
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "https://creativecommons.org/licenses/by/4.0/"
-  }, {
-    "@id" : "https://scch.org/technical_standards#CC_Attribution_4-0_International_License"
+  } ],
+  "http://purl.org/ontology/bibo#doi" : [ {
+    "@value" : "10.5281/zenodo.7844994"
   } ],
   "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
     "@language" : "en",
@@ -403,17 +407,17 @@
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
     "@language" : "en",
-    "@value" : "https://scch.org/technical_standards"
+    "@value" : "https://w3id.org/tsso"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "https://scch.org/technical_standards/0.1"
+    "@id" : "https://w3id.org/tsso/0.1"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@language" : "en",
     "@value" : "0.1"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#API",
+  "@id" : "https://w3id.org/tsso#API",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Application Program Interface, defines the methods and behaviour required and expected for communication"
@@ -423,7 +427,7 @@
     "@value" : "API"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#APIKind",
+  "@id" : "https://w3id.org/tsso#APIKind",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "There are mulitple kinds such as REST, ROA, RMC, RMI"
@@ -433,10 +437,10 @@
     "@value" : "API Kind"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Kind"
+    "@id" : "https://w3id.org/tsso#Kind"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#AccessControlMechanism",
+  "@id" : "https://w3id.org/tsso#AccessControlMechanism",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Security safeguard designed to detect and deny unauthorized access and permit authorized access to an information system or physical facility."
@@ -449,10 +453,10 @@
     "@value" : "Access Control Mechanism"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Mechanism"
+    "@id" : "https://w3id.org/tsso#Mechanism"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Actuator",
+  "@id" : "https://w3id.org/tsso#Actuator",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "a device that causes a machine or other device to operate"
@@ -465,10 +469,10 @@
     "@value" : "Actuator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Device"
+    "@id" : "https://w3id.org/tsso#Device"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Algorithm",
+  "@id" : "https://w3id.org/tsso#Algorithm",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Process or set of rules to be followed in calculations or other problem-solving operations, especially by a computer."
@@ -480,11 +484,11 @@
     "@language" : "en",
     "@value" : "Algorithm"
   } ],
-  "https://scch.org/technical_standards#replaceBy" : [ {
+  "https://w3id.org/tsso#replaceBy" : [ {
     "@value" : "fabio:Algorithm"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Architecture",
+  "@id" : "https://w3id.org/tsso#Architecture",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Conceptual model that defines the structure, behavior, and more views of a system."
@@ -497,7 +501,7 @@
     "@value" : "Architecture"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Asset",
+  "@id" : "https://w3id.org/tsso#Asset",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "An item owned by a person or company, regarded as having value or being useful."
@@ -509,7 +513,7 @@
     "@value" : "Asset"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#AuthenticationMechanism",
+  "@id" : "https://w3id.org/tsso#AuthenticationMechanism",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Method used to prove the authenticity of an entity"
@@ -522,10 +526,10 @@
     "@value" : "Authentication Mechanism"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Mechanism"
+    "@id" : "https://w3id.org/tsso#Mechanism"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#BooleanConstraint",
+  "@id" : "https://w3id.org/tsso#BooleanConstraint",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Represents a boolean constraint also interpreted as condition."
@@ -535,10 +539,10 @@
     "@value" : "Boolean Constraint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Constraint"
+    "@id" : "https://w3id.org/tsso#Constraint"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Buyer",
+  "@id" : "https://w3id.org/tsso#Buyer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "The people or organizations that consume a given product or service."
@@ -551,10 +555,10 @@
     "@value" : "Buyer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Stakeholder"
+    "@id" : "https://w3id.org/tsso#Stakeholder"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#CC_Attribution_4-0_International_License",
+  "@id" : "https://w3id.org/tsso#CC_Attribution_4-0_International_License",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Creative Commons Attribution 4.0 International"
@@ -563,7 +567,7 @@
     "@id" : "https://creativecommons.org/licenses/by/4.0/"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Capability",
+  "@id" : "https://w3id.org/tsso#Capability",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Ability to perform a specified task"
@@ -576,10 +580,10 @@
     "@value" : "Capability"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "https://scch.org/technical_standards#Functionality"
+    "@id" : "https://w3id.org/tsso#Functionality"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Category",
+  "@id" : "https://w3id.org/tsso#Category",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "General concept to define possible categories and divivsions of elements."
@@ -589,7 +593,7 @@
     "@value" : "Category"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Channel",
+  "@id" : "https://w3id.org/tsso#Channel",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Communication channels are mediums through which you can send information."
@@ -604,7 +608,7 @@
     "@value" : "Channel"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Component",
+  "@id" : "https://w3id.org/tsso#Component",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "A part or element of a larger wholesuch as a system. It can be seen as a buillding block."
@@ -614,7 +618,7 @@
     "@value" : "Component"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#ComponentRequirement",
+  "@id" : "https://w3id.org/tsso#ComponentRequirement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A requirement targeting components that build up a system"
@@ -624,20 +628,20 @@
     "@value" : "Component Requirement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Requirement"
+    "@id" : "https://w3id.org/tsso#Requirement"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#ComponentSolution",
+  "@id" : "https://w3id.org/tsso#ComponentSolution",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Component Solution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#SolutionStructure"
+    "@id" : "https://w3id.org/tsso#SolutionStructure"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Composite",
+  "@id" : "https://w3id.org/tsso#Composite",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Components may bring their own set of components, which makes it a composition of existing components"
@@ -650,14 +654,14 @@
     "@id" : "_:genid35"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Concern",
+  "@id" : "https://w3id.org/tsso#Concern",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Concern"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Configuration",
+  "@id" : "https://w3id.org/tsso#Configuration",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Arrangement or set-up of the hardware and software that make up a computer system."
@@ -670,7 +674,7 @@
     "@value" : "Configuration"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Connection",
+  "@id" : "https://w3id.org/tsso#Connection",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Object that is used as communication channel between components. This connection can be attributed and configured."
@@ -680,7 +684,7 @@
     "@value" : "Connection"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#ConstrainedDevice",
+  "@id" : "https://w3id.org/tsso#ConstrainedDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Device which has physical limitations in either the ability to process data, the ability to communicate data, the ability to store data or the ability to interact with the user, due to restrictions that arise from its intended use"
@@ -696,7 +700,7 @@
     "@id" : "_:genid36"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Constraint",
+  "@id" : "https://w3id.org/tsso#Constraint",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Limitation or restriction. Requirements may have constraints imposed."
@@ -706,7 +710,7 @@
     "@value" : "Constraint"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Core",
+  "@id" : "https://w3id.org/tsso#Core",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Set of cybersecurity activities, desired outcomes, and applicable references that are common across critical infrastructure sectors. The Framework Core provides a set of activities to achieve specific cybersecurity outcomes, and references examples of guidance to achieve those outcomes"
@@ -719,10 +723,10 @@
     "@value" : "Core"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#FrameworkElement"
+    "@id" : "https://w3id.org/tsso#FrameworkElement"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#CounterMeasure",
+  "@id" : "https://w3id.org/tsso#CounterMeasure",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Reduces a threat, vulnerability or the result of an attack. It may be able to discover it and report it so that proper action can be taken."
@@ -735,7 +739,7 @@
     "@value" : "Counter Measure"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Customer",
+  "@id" : "https://w3id.org/tsso#Customer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "NIST Framework"
@@ -745,10 +749,10 @@
     "@value" : "Customer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Stakeholder"
+    "@id" : "https://w3id.org/tsso#Stakeholder"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#DeploymentNode",
+  "@id" : "https://w3id.org/tsso#DeploymentNode",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@language" : "en",
@@ -762,17 +766,17 @@
     "@value" : "Deployment node"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#DeploymentSolution",
+  "@id" : "https://w3id.org/tsso#DeploymentSolution",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Deployment Solution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#SolutionStructure"
+    "@id" : "https://w3id.org/tsso#SolutionStructure"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#DetectionMechanism",
+  "@id" : "https://w3id.org/tsso#DetectionMechanism",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Detect the presence of events."
@@ -785,10 +789,10 @@
     "@value" : "Detection Mechanism"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Mechanism"
+    "@id" : "https://w3id.org/tsso#Mechanism"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Developer",
+  "@id" : "https://w3id.org/tsso#Developer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
@@ -798,10 +802,10 @@
     "@value" : "Developer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Stakeholder"
+    "@id" : "https://w3id.org/tsso#Stakeholder"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Device",
+  "@id" : "https://w3id.org/tsso#Device",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Device is a kind of component. It is a discrete physical asset that provides a set of capabilitites\n"
@@ -811,12 +815,12 @@
     "@value" : "Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Product"
+    "@id" : "https://w3id.org/tsso#Product"
   }, {
     "@id" : "_:genid40"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#DevicePhysicalLimitation",
+  "@id" : "https://w3id.org/tsso#DevicePhysicalLimitation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Physical limitations can be due to power supply, battery life, processing power, physical access, limited functionality, limited memory or limited network bandwidth."
@@ -829,7 +833,7 @@
     "@value" : "Device Physical Limitation"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Domain",
+  "@id" : "https://w3id.org/tsso#Domain",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Concept to define  areas of interest ."
@@ -842,7 +846,7 @@
     "@id" : "_:genid41"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Driver",
+  "@id" : "https://w3id.org/tsso#Driver",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Something that creates and fuels activity, or gives force or impetus regarding the goals of an organization."
@@ -855,10 +859,10 @@
     "@value" : "Driver"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Concern"
+    "@id" : "https://w3id.org/tsso#Concern"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#EmbeddedDevice",
+  "@id" : "https://w3id.org/tsso#EmbeddedDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Device which has physical limitations in either the ability to process data, the ability to communicate data, the ability to store data or the ability to interact with the user, due to restrictions that arise from its intended use"
@@ -874,10 +878,10 @@
     "@value" : "Embedded Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Device"
+    "@id" : "https://w3id.org/tsso#Device"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Firmware",
+  "@id" : "https://w3id.org/tsso#Firmware",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Permanent software programmed into a read-only memory."
@@ -887,7 +891,7 @@
     "@value" : "Firmware"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Framework",
+  "@id" : "https://w3id.org/tsso#Framework",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Concept that represents real or conceptual structure intended to serve as a support or guide for the building of something that expands the structure into something useful"
@@ -900,7 +904,7 @@
     "@value" : "Framework"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#FrameworkElement",
+  "@id" : "https://w3id.org/tsso#FrameworkElement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Concept  used to define building elements of a framework."
@@ -913,7 +917,7 @@
     "@value" : "Framework Element"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Function",
+  "@id" : "https://w3id.org/tsso#Function",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Components provide set of relatedfunctions with a specific task"
@@ -923,7 +927,7 @@
     "@value" : "Function"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#FunctionalRequirement",
+  "@id" : "https://w3id.org/tsso#FunctionalRequirement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "A requisite demanded to define a system or its component"
@@ -933,10 +937,10 @@
     "@value" : "Functional Requirement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#SystemRequirement"
+    "@id" : "https://w3id.org/tsso#SystemRequirement"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Functionality",
+  "@id" : "https://w3id.org/tsso#Functionality",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Components provide also functionalities which can trigger special events; be targets of threats; could be part or associated to capabilities"
@@ -946,7 +950,7 @@
     "@value" : "Functionality"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#GenericProperty",
+  "@id" : "https://w3id.org/tsso#GenericProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Items have properties.  Properties can describe characteristic something.\nDevices may have specific attributes that may be exposed to different threats, while others may reduce the risk of other threats appareances."
@@ -956,7 +960,7 @@
     "@value" : "Generic Property"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Guideline",
+  "@id" : "https://w3id.org/tsso#Guideline",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@language" : "en",
@@ -967,10 +971,10 @@
     "@value" : "Guideline"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Publication"
+    "@id" : "https://w3id.org/tsso#Publication"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#HUI",
+  "@id" : "https://w3id.org/tsso#HUI",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Kind of interface, intended for human use"
@@ -980,10 +984,10 @@
     "@value" : "HUI"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#UI"
+    "@id" : "https://w3id.org/tsso#UI"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#HWSolution",
+  "@id" : "https://w3id.org/tsso#HWSolution",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
@@ -993,10 +997,10 @@
     "@value" : "HW Solution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#SolutionStructure"
+    "@id" : "https://w3id.org/tsso#SolutionStructure"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#HostDevice",
+  "@id" : "https://w3id.org/tsso#HostDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Device which has physical limitations in either the ability to process data, the ability to communicate data, the ability to store data or the ability to interact with the user, due to restrictions that arise from its intended use"
@@ -1012,10 +1016,10 @@
     "@value" : "Host Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Device"
+    "@id" : "https://w3id.org/tsso#Device"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#IEC",
+  "@id" : "https://w3id.org/tsso#IEC",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1023,11 +1027,11 @@
   }, {
     "@value" : "Internation Electrotechincal Commission"
   } ],
-  "https://scch.org/technical_standards#abbr" : [ {
+  "https://w3id.org/tsso#abbr" : [ {
     "@value" : "IEC"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#IEC_62443_4-2",
+  "@id" : "https://w3id.org/tsso#IEC_62443_4-2",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://purl.org/dc/terms/creator" : [ {
     "@id" : "http://scch/technical_standards#IEC_TechnicalCommittee_65"
@@ -1044,7 +1048,7 @@
     "@value" : "fr"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://scch.org/technical_standards#IEC"
+    "@id" : "https://w3id.org/tsso#IEC"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@value" : "Security for industrial automation and control systems - Part 4-2: Technical security requirements for IACS components"
@@ -1055,14 +1059,14 @@
   }, {
     "@value" : "IEC 62443 4-2"
   } ],
-  "https://scch.org/technical_standards#developedBy" : [ {
-    "@id" : "https://scch.org/technical_standards#IEC_TC_65"
+  "https://w3id.org/tsso#developedBy" : [ {
+    "@id" : "https://w3id.org/tsso#IEC_TC_65"
   } ],
-  "https://scch.org/technical_standards#publishedBy" : [ {
-    "@id" : "https://scch.org/technical_standards#IEC"
+  "https://w3id.org/tsso#publishedBy" : [ {
+    "@id" : "https://w3id.org/tsso#IEC"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#IEC_TC_65",
+  "@id" : "https://w3id.org/tsso#IEC_TC_65",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1072,11 +1076,11 @@
   }, {
     "@value" : "Industrial-process measurement, control and automation"
   } ],
-  "https://scch.org/technical_standards#belongsTo" : [ {
-    "@id" : "https://scch.org/technical_standards#IEC"
+  "https://w3id.org/tsso#belongsTo" : [ {
+    "@id" : "https://w3id.org/tsso#IEC"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#ISO",
+  "@id" : "https://w3id.org/tsso#ISO",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1084,11 +1088,11 @@
   }, {
     "@value" : "International Organization for Standarization"
   } ],
-  "https://scch.org/technical_standards#abbr" : [ {
+  "https://w3id.org/tsso#abbr" : [ {
     "@value" : "ISO"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#InputDevice",
+  "@id" : "https://w3id.org/tsso#InputDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "A piece of equipment used to provide data and control signals to an information processing system."
@@ -1101,10 +1105,10 @@
     "@value" : "Input Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Device"
+    "@id" : "https://w3id.org/tsso#Device"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Interface",
+  "@id" : "https://w3id.org/tsso#Interface",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Components have interfaces such as buttons, keyboards, internet ports, hmdi and other interfaces. Those determine interaction points."
@@ -1114,7 +1118,7 @@
     "@value" : "Interface"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Kind",
+  "@id" : "https://w3id.org/tsso#Kind",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A group of  things which share similar characteristics"
@@ -1124,10 +1128,10 @@
     "@value" : "Kind"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "https://scch.org/technical_standards#Type"
+    "@id" : "https://w3id.org/tsso#Type"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#MIT_License",
+  "@id" : "https://w3id.org/tsso#MIT_License",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1139,7 +1143,7 @@
     "@value" : "https://choosealicense.com/licenses/mit/"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Manufacturer",
+  "@id" : "https://w3id.org/tsso#Manufacturer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
@@ -1149,13 +1153,13 @@
     "@value" : "Manufacturer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Stakeholder"
+    "@id" : "https://w3id.org/tsso#Stakeholder"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "https://scch.org/technical_standards#Supplier"
+    "@id" : "https://w3id.org/tsso#Supplier"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Mechanism",
+  "@id" : "https://w3id.org/tsso#Mechanism",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "The process, way, or system used to produce a particular result."
@@ -1168,10 +1172,10 @@
     "@value" : "Mechanism"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#CounterMeasure"
+    "@id" : "https://w3id.org/tsso#CounterMeasure"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#MemoryAccessControl",
+  "@id" : "https://w3id.org/tsso#MemoryAccessControl",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Way to control memory access rights"
@@ -1184,10 +1188,10 @@
     "@value" : "Memory Access Control"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#AccessControlMechanism"
+    "@id" : "https://w3id.org/tsso#AccessControlMechanism"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#MobileDevice",
+  "@id" : "https://w3id.org/tsso#MobileDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "IEC 62443 4-2"
@@ -1200,10 +1204,10 @@
     "@value" : "Mobile Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Device"
+    "@id" : "https://w3id.org/tsso#Device"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#NIST",
+  "@id" : "https://w3id.org/tsso#NIST",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1211,11 +1215,11 @@
   }, {
     "@value" : "National Institute Of Standards and Technology"
   } ],
-  "https://scch.org/technical_standards#abbr" : [ {
+  "https://w3id.org/tsso#abbr" : [ {
     "@value" : "NIST"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#NISTCategory",
+  "@id" : "https://w3id.org/tsso#NISTCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Subdivisions of a Function into groups of cybersecurity outcomes closely tied to programmatic needs and particular activities"
@@ -1231,7 +1235,7 @@
     "@id" : "_:genid42"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#NISTFunction",
+  "@id" : "https://w3id.org/tsso#NISTFunction",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "One of the main components of the Framework. Functions provide the highest level of structure for organizing basic cybersecurity activities into Categories and Subcategories."
@@ -1247,7 +1251,7 @@
     "@id" : "_:genid47"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#NISTSubCategory",
+  "@id" : "https://w3id.org/tsso#NISTSubCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Specific outcomes of technical and/or management activities. They provide a set of results that help support achievement of the outcomes in each Category. Division of categories into more concrete technical activities."
@@ -1263,7 +1267,7 @@
     "@id" : "_:genid51"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#NetworkDevice",
+  "@id" : "https://w3id.org/tsso#NetworkDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "IEC 62443 4-2"
@@ -1276,10 +1280,10 @@
     "@value" : "Network Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Device"
+    "@id" : "https://w3id.org/tsso#Device"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#NetworkType",
+  "@id" : "https://w3id.org/tsso#NetworkType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A network type might be usefull to determine the type of connection security"
@@ -1289,10 +1293,10 @@
     "@value" : "Network Type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Type"
+    "@id" : "https://w3id.org/tsso#Type"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#NonFunctionalRequirement",
+  "@id" : "https://w3id.org/tsso#NonFunctionalRequirement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "A system attribute demanded. They serve as constraints or restrictions on the design of the system"
@@ -1302,13 +1306,13 @@
     "@value" : "Non Functional Requirement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#SystemRequirement"
+    "@id" : "https://w3id.org/tsso#SystemRequirement"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "https://scch.org/technical_standards#QualityAttribute"
+    "@id" : "https://w3id.org/tsso#QualityAttribute"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#OperatingSystem",
+  "@id" : "https://w3id.org/tsso#OperatingSystem",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Operating system that can run on a device. It supports a device's basic functions, such as controlling peripherals and interfaces."
@@ -1318,7 +1322,7 @@
     "@value" : "Operating System"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Organization",
+  "@id" : "https://w3id.org/tsso#Organization",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Entity in charge of making standards"
@@ -1328,7 +1332,7 @@
     "@value" : "Organization"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Outcome",
+  "@id" : "https://w3id.org/tsso#Outcome",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Result or a conclusion reached through a process of logical thinking or motivated by a driver."
@@ -1341,10 +1345,10 @@
     "@value" : "Outcome"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Concern"
+    "@id" : "https://w3id.org/tsso#Concern"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Policy",
+  "@id" : "https://w3id.org/tsso#Policy",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A policy is a set of rules or guidelines to follow in or to achieve compliance. Components  consider policies, policies are addressed or demanded by requirements."
@@ -1354,10 +1358,10 @@
     "@value" : "Policy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#CounterMeasure"
+    "@id" : "https://w3id.org/tsso#CounterMeasure"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Port",
+  "@id" : "https://w3id.org/tsso#Port",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "A port is a virtual point where network connections start and end. They are associated to services provided by components."
@@ -1370,7 +1374,7 @@
     "@value" : "Port"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Practice",
+  "@id" : "https://w3id.org/tsso#Practice",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Procedures that are accepted or prescribed as being correct or most effective"
@@ -1380,10 +1384,10 @@
     "@value" : "Practice"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#CounterMeasure"
+    "@id" : "https://w3id.org/tsso#CounterMeasure"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Problem",
+  "@id" : "https://w3id.org/tsso#Problem",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "ETSI 303645"
@@ -1395,17 +1399,17 @@
     "@value" : "Problem"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Product",
+  "@id" : "https://w3id.org/tsso#Product",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Product"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Asset"
+    "@id" : "https://w3id.org/tsso#Asset"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Profile",
+  "@id" : "https://w3id.org/tsso#Profile",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Component of the framework. It represents the alignment of the Functions, Categories, and Subcategories with the business requirements, risk tolerance, and resources of the organization. A Profile enables organizations to establish a roadmap for reducing cybersecurity risk that is well aligned with organizational and sector goals, considers legal/regulatory requirements and industry best practices, and reflects risk management priorities"
@@ -1418,10 +1422,10 @@
     "@value" : "Profile"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#FrameworkElement"
+    "@id" : "https://w3id.org/tsso#FrameworkElement"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Protocol",
+  "@id" : "https://w3id.org/tsso#Protocol",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Used by components to communicate"
@@ -1431,7 +1435,7 @@
     "@value" : "Protocol"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#ProtocolProperty",
+  "@id" : "https://w3id.org/tsso#ProtocolProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
@@ -1441,17 +1445,17 @@
     "@value" : "Protocol Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#GenericProperty"
+    "@id" : "https://w3id.org/tsso#GenericProperty"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Provision",
+  "@id" : "https://w3id.org/tsso#Provision",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Provision"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Publication",
+  "@id" : "https://w3id.org/tsso#Publication",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -1462,17 +1466,17 @@
     "@value" : "Publication"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#PublicationConstraint",
+  "@id" : "https://w3id.org/tsso#PublicationConstraint",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Publication Constraint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Constraint"
+    "@id" : "https://w3id.org/tsso#Constraint"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#QualityAttribute",
+  "@id" : "https://w3id.org/tsso#QualityAttribute",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
@@ -1482,10 +1486,10 @@
     "@value" : "Quality Attribute"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@id" : "https://scch.org/technical_standards#NonFunctionalRequirement"
+    "@id" : "https://w3id.org/tsso#NonFunctionalRequirement"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Recommendation",
+  "@id" : "https://w3id.org/tsso#Recommendation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "A provision that is not mandatory but is proposed as to the best course of action"
@@ -1498,7 +1502,7 @@
     "@id" : "_:genid58"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#ReferenceArchitecture",
+  "@id" : "https://w3id.org/tsso#ReferenceArchitecture",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
@@ -1508,10 +1512,10 @@
     "@value" : "Reference Architecture"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#SolutionStructure"
+    "@id" : "https://w3id.org/tsso#SolutionStructure"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Requirement",
+  "@id" : "https://w3id.org/tsso#Requirement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A requisite demanded for quality reasons"
@@ -1524,17 +1528,17 @@
     "@id" : "_:genid62"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#RequirementDependencyConstraint",
+  "@id" : "https://w3id.org/tsso#RequirementDependencyConstraint",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Requirement Dependency Constraint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Constraint"
+    "@id" : "https://w3id.org/tsso#Constraint"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Risk",
+  "@id" : "https://w3id.org/tsso#Risk",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "A measure of the extent to which an entity is threatened by a potential circumstance or event, and typically a function of: (i) the adverse impacts that would arise if the circumstance or event occurs; and (ii) the likelihood of occurrence."
@@ -1547,7 +1551,7 @@
     "@value" : "Risk"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#RiskAssesement",
+  "@id" : "https://w3id.org/tsso#RiskAssesement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Association object between assets and risk. It can be attributed e.g. priority, effect, likelihood"
@@ -1560,7 +1564,7 @@
     "@value" : "Risk Assesement"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#SWApplication",
+  "@id" : "https://w3id.org/tsso#SWApplication",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "A kind of component that builds an IACS"
@@ -1570,10 +1574,10 @@
     "@value" : "SW Application"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Product"
+    "@id" : "https://w3id.org/tsso#Product"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#SWSolution",
+  "@id" : "https://w3id.org/tsso#SWSolution",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
@@ -1583,10 +1587,10 @@
     "@value" : "SW Solution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#SolutionStructure"
+    "@id" : "https://w3id.org/tsso#SolutionStructure"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Scope",
+  "@id" : "https://w3id.org/tsso#Scope",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Extent of the area or subject matter that something deals with or to which it is relevant"
@@ -1599,7 +1603,7 @@
     "@value" : "Scope"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#SecureBootMechanism",
+  "@id" : "https://w3id.org/tsso#SecureBootMechanism",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Mechanism that verifies the integrity of every code being loaded, before it's allowed to execute"
@@ -1612,10 +1616,10 @@
     "@value" : "Secure Boot Mechanism"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Mechanism"
+    "@id" : "https://w3id.org/tsso#Mechanism"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Sensor",
+  "@id" : "https://w3id.org/tsso#Sensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
@@ -1625,10 +1629,10 @@
     "@value" : "Sensor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Device"
+    "@id" : "https://w3id.org/tsso#Device"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Service",
+  "@id" : "https://w3id.org/tsso#Service",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Components provide services, which are units of funtionality that can run independently."
@@ -1638,10 +1642,10 @@
     "@value" : "Service"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Product"
+    "@id" : "https://w3id.org/tsso#Product"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#SolutionStructure",
+  "@id" : "https://w3id.org/tsso#SolutionStructure",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Generic concept that represents solution structures for systems."
@@ -1651,7 +1655,7 @@
     "@value" : "Solution Structure"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Stakeholder",
+  "@id" : "https://w3id.org/tsso#Stakeholder",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Person with an interest or concern in something"
@@ -1664,7 +1668,7 @@
     "@value" : "Stakeholder"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Standard",
+  "@id" : "https://w3id.org/tsso#Standard",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@language" : "en",
@@ -1678,10 +1682,10 @@
     "@value" : "Standard"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Publication"
+    "@id" : "https://w3id.org/tsso#Publication"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Status",
+  "@id" : "https://w3id.org/tsso#Status",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Status of a document\n"
@@ -1691,7 +1695,7 @@
     "@value" : "Status"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Status_Published",
+  "@id" : "https://w3id.org/tsso#Status_Published",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1700,7 +1704,7 @@
     "@value" : "Published"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Status_Withdrawn",
+  "@id" : "https://w3id.org/tsso#Status_Withdrawn",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1709,7 +1713,7 @@
     "@value" : "Withdrawn"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#StorageMechanism",
+  "@id" : "https://w3id.org/tsso#StorageMechanism",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Mechanism that enables a computer or system to retain data, either temporarily or permanently"
@@ -1722,10 +1726,10 @@
     "@value" : "Storage Mechanism"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Mechanism"
+    "@id" : "https://w3id.org/tsso#Mechanism"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#SupplementalGuidance",
+  "@id" : "https://w3id.org/tsso#SupplementalGuidance",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Generic class for extra informative content"
@@ -1735,7 +1739,7 @@
     "@value" : "Supplemental Guidance"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Supplier",
+  "@id" : "https://w3id.org/tsso#Supplier",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Product and service providers used for an organization’s internal purposes (e.g., IT infrastructure) or integrated into the products of services provided to that organization’s Buyers."
@@ -1750,10 +1754,10 @@
     "@value" : "Supplier"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Stakeholder"
+    "@id" : "https://w3id.org/tsso#Stakeholder"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#System",
+  "@id" : "https://w3id.org/tsso#System",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "System for which components will be defined"
@@ -1763,10 +1767,10 @@
     "@value" : "System"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Asset"
+    "@id" : "https://w3id.org/tsso#Asset"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#SystemRequirement",
+  "@id" : "https://w3id.org/tsso#SystemRequirement",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Statement that identifies the functionality and characteristics of a system to satisfy the stakeholder’s requirements/needs/concerns"
@@ -1779,10 +1783,10 @@
     "@value" : "https://www.umsl.edu/~sauterv/analysis/F2015/System%20Requirements.html.htm"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Concern"
+    "@id" : "https://w3id.org/tsso#Concern"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#TechnicalCommittee",
+  "@id" : "https://w3id.org/tsso#TechnicalCommittee",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Entity part of an organization in charge of developing standard\n"
@@ -1792,7 +1796,7 @@
     "@value" : "Technical Committee"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Technology",
+  "@id" : "https://w3id.org/tsso#Technology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Application of scientific knowledge for practical purposes"
@@ -1802,10 +1806,10 @@
     "@value" : "Technology"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#CounterMeasure"
+    "@id" : "https://w3id.org/tsso#CounterMeasure"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Threat",
+  "@id" : "https://w3id.org/tsso#Threat",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Something that can harm a system,component. A requirement can mitigate such threats. Multipple concepts such as System, components, technologies can be target of threats; while requirements and techonologies, and other items can mitigate them. "
@@ -1815,13 +1819,13 @@
     "@value" : "Threat"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Problem"
+    "@id" : "https://w3id.org/tsso#Problem"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "_:genid66"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Tier",
+  "@id" : "https://w3id.org/tsso#Tier",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Tiers describe the degree to which an organization’s cybersecurity risk management practices exhibit the characteristics defined in the Framework (e.g., risk and threat aware, repeatable, and adaptive)"
@@ -1834,10 +1838,10 @@
     "@value" : "Tier"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#FrameworkElement"
+    "@id" : "https://w3id.org/tsso#FrameworkElement"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Tolerance",
+  "@id" : "https://w3id.org/tsso#Tolerance",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@language" : "en",
@@ -1851,7 +1855,7 @@
     "@value" : "Tolerance"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Tool",
+  "@id" : "https://w3id.org/tsso#Tool",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "A thing or technology used to help perform a job, e.g. SW that carries out a particular function, typically creating or modifying another program."
@@ -1861,10 +1865,10 @@
     "@value" : "Tool"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Technology"
+    "@id" : "https://w3id.org/tsso#Technology"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Type",
+  "@id" : "https://w3id.org/tsso#Type",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Type is used to define a category of things having common characteristics\nItems can have types, devices also."
@@ -1874,17 +1878,17 @@
     "@value" : "Type"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Type_NIST",
+  "@id" : "https://w3id.org/tsso#Type_NIST",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-    "@id" : "https://scch.org/technical_standards#Type"
+    "@id" : "https://w3id.org/tsso#Type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Type _ NIST"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#UI",
+  "@id" : "https://w3id.org/tsso#UI",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Kind of interface, intended for a users"
@@ -1894,10 +1898,10 @@
     "@value" : "UI"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Interface"
+    "@id" : "https://w3id.org/tsso#Interface"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#UpdateMechanism",
+  "@id" : "https://w3id.org/tsso#UpdateMechanism",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Ways of updating SW"
@@ -1910,10 +1914,10 @@
     "@value" : "Update Mechanism"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Mechanism"
+    "@id" : "https://w3id.org/tsso#Mechanism"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#User",
+  "@id" : "https://w3id.org/tsso#User",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Natural person or organization"
@@ -1926,10 +1930,10 @@
     "@value" : "User"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Stakeholder"
+    "@id" : "https://w3id.org/tsso#Stakeholder"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#Vulnerability",
+  "@id" : "https://w3id.org/tsso#Vulnerability",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Weakness within a system or component"
@@ -1939,46 +1943,46 @@
     "@value" : "Vulnerability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://scch.org/technical_standards#Problem"
+    "@id" : "https://w3id.org/tsso#Problem"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#abbr",
+  "@id" : "https://w3id.org/tsso#abbr",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "abbr"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#achieves",
+  "@id" : "https://w3id.org/tsso#achieves",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "NIST Framework"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Outcome"
+    "@id" : "https://w3id.org/tsso#Outcome"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "achieves"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Driver"
+    "@id" : "https://w3id.org/tsso#Driver"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#promotedBy"
+    "@id" : "https://w3id.org/tsso#promotedBy"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#addressedBy",
+  "@id" : "https://w3id.org/tsso#addressedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "addressed By"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#addresses"
+    "@id" : "https://w3id.org/tsso#addresses"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#addresses",
+  "@id" : "https://w3id.org/tsso#addresses",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid1"
@@ -1988,10 +1992,10 @@
     "@value" : "addresses"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Threat"
+    "@id" : "https://w3id.org/tsso#Threat"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#addressesConcern",
+  "@id" : "https://w3id.org/tsso#addressesConcern",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "NIST Framework"
@@ -2001,52 +2005,52 @@
     "@value" : "addresses Concern"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Concern"
+    "@id" : "https://w3id.org/tsso#Concern"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#affects",
+  "@id" : "https://w3id.org/tsso#affects",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Problem"
+    "@id" : "https://w3id.org/tsso#Problem"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "affects"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#isAffectedBy"
+    "@id" : "https://w3id.org/tsso#isAffectedBy"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#applicableTo",
+  "@id" : "https://w3id.org/tsso#applicableTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#ComponentRequirement"
+    "@id" : "https://w3id.org/tsso#ComponentRequirement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "applicable To"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Component"
+    "@id" : "https://w3id.org/tsso#Component"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#applies"
+    "@id" : "https://w3id.org/tsso#applies"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#applies",
+  "@id" : "https://w3id.org/tsso#applies",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Component"
+    "@id" : "https://w3id.org/tsso#Component"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "applies"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#ComponentRequirement"
+    "@id" : "https://w3id.org/tsso#ComponentRequirement"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#appliesCryptography",
+  "@id" : "https://w3id.org/tsso#appliesCryptography",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
@@ -2059,75 +2063,75 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#associatedToSubCategory",
+  "@id" : "https://w3id.org/tsso#associatedToSubCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "NISTSubCategory"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Provision"
+    "@id" : "https://w3id.org/tsso#Provision"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "associated To Sub Category"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#NISTSubCategory"
+    "@id" : "https://w3id.org/tsso#NISTSubCategory"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#considersProvision"
+    "@id" : "https://w3id.org/tsso#considersProvision"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#belongsTo",
+  "@id" : "https://w3id.org/tsso#belongsTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#TechnicalCommittee"
+    "@id" : "https://w3id.org/tsso#TechnicalCommittee"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "belongs To"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Organization"
+    "@id" : "https://w3id.org/tsso#Organization"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#ownerOf"
+    "@id" : "https://w3id.org/tsso#ownerOf"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#channelUsedBy",
+  "@id" : "https://w3id.org/tsso#channelUsedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "channel Used By"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#usesChannel"
+    "@id" : "https://w3id.org/tsso#usesChannel"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#composedOf",
+  "@id" : "https://w3id.org/tsso#composedOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Component"
+    "@id" : "https://w3id.org/tsso#Component"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "composed Of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Component"
+    "@id" : "https://w3id.org/tsso#Component"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#composes"
+    "@id" : "https://w3id.org/tsso#composes"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#composes",
+  "@id" : "https://w3id.org/tsso#composes",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "composes"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#configurationOf",
+  "@id" : "https://w3id.org/tsso#configurationOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
@@ -2137,110 +2141,110 @@
     "@value" : "configuration Of"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#hasConfiguration"
+    "@id" : "https://w3id.org/tsso#hasConfiguration"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#connects",
+  "@id" : "https://w3id.org/tsso#connects",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Connection"
+    "@id" : "https://w3id.org/tsso#Connection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "connects"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Component"
+    "@id" : "https://w3id.org/tsso#Component"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#connectsDestination",
+  "@id" : "https://w3id.org/tsso#connectsDestination",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "ETSI 303645"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Connection"
+    "@id" : "https://w3id.org/tsso#Connection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "connects Destination"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#isDestinationOf"
+    "@id" : "https://w3id.org/tsso#isDestinationOf"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#connectsSource",
+  "@id" : "https://w3id.org/tsso#connectsSource",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "ETSI 303645"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Connection"
+    "@id" : "https://w3id.org/tsso#Connection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "connects Source"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#isSourceOf"
+    "@id" : "https://w3id.org/tsso#isSourceOf"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#considersAsset",
+  "@id" : "https://w3id.org/tsso#considersAsset",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#RiskAssesement"
+    "@id" : "https://w3id.org/tsso#RiskAssesement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "considers Asset"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Asset"
+    "@id" : "https://w3id.org/tsso#Asset"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#considersProvision",
+  "@id" : "https://w3id.org/tsso#considersProvision",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "NIST Framework"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#NISTSubCategory"
+    "@id" : "https://w3id.org/tsso#NISTSubCategory"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "considers Provision"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Provision"
+    "@id" : "https://w3id.org/tsso#Provision"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#considersRisk",
+  "@id" : "https://w3id.org/tsso#considersRisk",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "considers Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Risk"
+    "@id" : "https://w3id.org/tsso#Risk"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#considersThreat",
+  "@id" : "https://w3id.org/tsso#considersThreat",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "NIST Framework"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Risk"
+    "@id" : "https://w3id.org/tsso#Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "considers Threat"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Threat"
+    "@id" : "https://w3id.org/tsso#Threat"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#considersVulnerability",
+  "@id" : "https://w3id.org/tsso#considersVulnerability",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "NIST Framework"
@@ -2249,56 +2253,56 @@
     "@value" : "Risk management"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Risk"
+    "@id" : "https://w3id.org/tsso#Risk"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "considers Vulnerability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Vulnerability"
+    "@id" : "https://w3id.org/tsso#Vulnerability"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#consistOfFrameworkElement",
+  "@id" : "https://w3id.org/tsso#consistOfFrameworkElement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "NIST Framework"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Framework"
+    "@id" : "https://w3id.org/tsso#Framework"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "consist Of Framework Element"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#FrameworkElement"
+    "@id" : "https://w3id.org/tsso#FrameworkElement"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#containedBy",
+  "@id" : "https://w3id.org/tsso#containedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "contained By"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#contains"
+    "@id" : "https://w3id.org/tsso#contains"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#contains",
+  "@id" : "https://w3id.org/tsso#contains",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Publication"
+    "@id" : "https://w3id.org/tsso#Publication"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "contains"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Provision"
+    "@id" : "https://w3id.org/tsso#Provision"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#dateOfAdoption",
+  "@id" : "https://w3id.org/tsso#dateOfAdoption",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "ETSI"
@@ -2311,7 +2315,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#dateOfPublication",
+  "@id" : "https://w3id.org/tsso#dateOfPublication",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "ETSI"
@@ -2324,7 +2328,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#dateOfWithdrawal",
+  "@id" : "https://w3id.org/tsso#dateOfWithdrawal",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "ETSI"
@@ -2337,65 +2341,65 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#demandsCapability",
+  "@id" : "https://w3id.org/tsso#demandsCapability",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Provision"
+    "@id" : "https://w3id.org/tsso#Provision"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "demands Capability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Capability"
+    "@id" : "https://w3id.org/tsso#Capability"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#dependsOn",
+  "@id" : "https://w3id.org/tsso#dependsOn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Association between a constraint to a specific provision. Implying that the item holding the constraint depends on the referenced provision, making this provision a requirement."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#RequirementDependencyConstraint"
+    "@id" : "https://w3id.org/tsso#RequirementDependencyConstraint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "depends On"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Provision"
+    "@id" : "https://w3id.org/tsso#Provision"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#describesSolution",
+  "@id" : "https://w3id.org/tsso#describesSolution",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Architecture"
+    "@id" : "https://w3id.org/tsso#Architecture"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "describes Solution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#SolutionStructure"
+    "@id" : "https://w3id.org/tsso#SolutionStructure"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#solutionOfArchitecture"
+    "@id" : "https://w3id.org/tsso#solutionOfArchitecture"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#developedBy",
+  "@id" : "https://w3id.org/tsso#developedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "developed By"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#develops"
+    "@id" : "https://w3id.org/tsso#develops"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#develops",
+  "@id" : "https://w3id.org/tsso#develops",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Relates a publication to its developer."
@@ -2404,91 +2408,91 @@
     "@value" : "Maybe replaced by annotation property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#TechnicalCommittee"
+    "@id" : "https://w3id.org/tsso#TechnicalCommittee"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "develops"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Publication"
+    "@id" : "https://w3id.org/tsso#Publication"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#enhancementOf",
+  "@id" : "https://w3id.org/tsso#enhancementOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Provision"
+    "@id" : "https://w3id.org/tsso#Provision"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "enhancement Of"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Provision"
+    "@id" : "https://w3id.org/tsso#Provision"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#hasEnhancement"
+    "@id" : "https://w3id.org/tsso#hasEnhancement"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#exposedBy",
+  "@id" : "https://w3id.org/tsso#exposedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Vulnerability"
+    "@id" : "https://w3id.org/tsso#Vulnerability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "exposed By"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Threat"
+    "@id" : "https://w3id.org/tsso#Threat"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#exposes"
+    "@id" : "https://w3id.org/tsso#exposes"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#exposes",
+  "@id" : "https://w3id.org/tsso#exposes",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Threat"
+    "@id" : "https://w3id.org/tsso#Threat"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "exposes"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Vulnerability"
+    "@id" : "https://w3id.org/tsso#Vulnerability"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#handledBy",
+  "@id" : "https://w3id.org/tsso#handledBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Vulnerability"
+    "@id" : "https://w3id.org/tsso#Vulnerability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "handled By"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#CounterMeasure"
+    "@id" : "https://w3id.org/tsso#CounterMeasure"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#handles"
+    "@id" : "https://w3id.org/tsso#handles"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#handles",
+  "@id" : "https://w3id.org/tsso#handles",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#CounterMeasure"
+    "@id" : "https://w3id.org/tsso#CounterMeasure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "handles"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Vulnerability"
+    "@id" : "https://w3id.org/tsso#Vulnerability"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasArchitecture",
+  "@id" : "https://w3id.org/tsso#hasArchitecture",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
@@ -2498,10 +2502,10 @@
     "@value" : "has Architecture"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Architecture"
+    "@id" : "https://w3id.org/tsso#Architecture"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasCapability",
+  "@id" : "https://w3id.org/tsso#hasCapability",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid5"
@@ -2511,26 +2515,26 @@
     "@value" : "has Capability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Capability"
+    "@id" : "https://w3id.org/tsso#Capability"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasCategory",
+  "@id" : "https://w3id.org/tsso#hasCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "NIST Framework"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#NISTFunction"
+    "@id" : "https://w3id.org/tsso#NISTFunction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has Category"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#NISTCategory"
+    "@id" : "https://w3id.org/tsso#NISTCategory"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasConfiguration",
+  "@id" : "https://w3id.org/tsso#hasConfiguration",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
@@ -2540,20 +2544,20 @@
     "@value" : "has Configuration"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Configuration"
+    "@id" : "https://w3id.org/tsso#Configuration"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasConstraint",
+  "@id" : "https://w3id.org/tsso#hasConstraint",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has Constraint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Constraint"
+    "@id" : "https://w3id.org/tsso#Constraint"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasDelegatedCapability",
+  "@id" : "https://w3id.org/tsso#hasDelegatedCapability",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Capability that is not native to the item, but can be used by it.\nCertain components may not be able to provide a capability but \ncan work within a system or component which provides it."
@@ -2563,78 +2567,78 @@
     "@value" : "has Delegated Capability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Capability"
+    "@id" : "https://w3id.org/tsso#Capability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://scch.org/technical_standards#hasCapability"
+    "@id" : "https://w3id.org/tsso#hasCapability"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#isDelegatedCapabilityOf"
+    "@id" : "https://w3id.org/tsso#isDelegatedCapabilityOf"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasDevicePhysicalLimitation",
+  "@id" : "https://w3id.org/tsso#hasDevicePhysicalLimitation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Device"
+    "@id" : "https://w3id.org/tsso#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has Device Physical Limitation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#DevicePhysicalLimitation"
+    "@id" : "https://w3id.org/tsso#DevicePhysicalLimitation"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#isDevicePhysicalLimitationOf"
+    "@id" : "https://w3id.org/tsso#isDevicePhysicalLimitationOf"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasDomain",
+  "@id" : "https://w3id.org/tsso#hasDomain",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has Domain"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Domain"
+    "@id" : "https://w3id.org/tsso#Domain"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#isDomainOf"
+    "@id" : "https://w3id.org/tsso#isDomainOf"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasEnhancement",
+  "@id" : "https://w3id.org/tsso#hasEnhancement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has Enhancement"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasFW",
+  "@id" : "https://w3id.org/tsso#hasFW",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Device"
+    "@id" : "https://w3id.org/tsso#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has FW"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Firmware"
+    "@id" : "https://w3id.org/tsso#Firmware"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasFunction",
+  "@id" : "https://w3id.org/tsso#hasFunction",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has Function"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Function"
+    "@id" : "https://w3id.org/tsso#Function"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasHMI",
+  "@id" : "https://w3id.org/tsso#hasHMI",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Device"
+    "@id" : "https://w3id.org/tsso#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2644,30 +2648,30 @@
     "@id" : "_:genid8"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasInterface",
+  "@id" : "https://w3id.org/tsso#hasInterface",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Component"
+    "@id" : "https://w3id.org/tsso#Component"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has Interface"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Interface"
+    "@id" : "https://w3id.org/tsso#Interface"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasLighterVersion",
+  "@id" : "https://w3id.org/tsso#hasLighterVersion",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has Lighter Version"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#hasMoreSecureVersion"
+    "@id" : "https://w3id.org/tsso#hasMoreSecureVersion"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasMainCategory",
+  "@id" : "https://w3id.org/tsso#hasMainCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "NIST Framework"
@@ -2677,101 +2681,101 @@
     "@value" : "has Main Category"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#hasSubCategory"
+    "@id" : "https://w3id.org/tsso#hasSubCategory"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasMoreGeneralDomain",
+  "@id" : "https://w3id.org/tsso#hasMoreGeneralDomain",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "NIST Framework"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Domain"
+    "@id" : "https://w3id.org/tsso#Domain"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has More General Domain"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Domain"
+    "@id" : "https://w3id.org/tsso#Domain"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://scch.org/technical_standards#hasMoreGeneralVersion"
+    "@id" : "https://w3id.org/tsso#hasMoreGeneralVersion"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#hasSubDomain"
+    "@id" : "https://w3id.org/tsso#hasSubDomain"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasMoreGeneralProblem",
+  "@id" : "https://w3id.org/tsso#hasMoreGeneralProblem",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Threat"
+    "@id" : "https://w3id.org/tsso#Threat"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has More General Problem"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Threat"
+    "@id" : "https://w3id.org/tsso#Threat"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://scch.org/technical_standards#hasMoreGeneralVersion"
+    "@id" : "https://w3id.org/tsso#hasMoreGeneralVersion"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#hasSubProblem"
+    "@id" : "https://w3id.org/tsso#hasSubProblem"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasMoreGeneralVersion",
+  "@id" : "https://w3id.org/tsso#hasMoreGeneralVersion",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has More General Version"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#hasSubVersion"
+    "@id" : "https://w3id.org/tsso#hasSubVersion"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasMoreSecureVersion",
+  "@id" : "https://w3id.org/tsso#hasMoreSecureVersion",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has More Secure Version"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasOS",
+  "@id" : "https://w3id.org/tsso#hasOS",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Device"
+    "@id" : "https://w3id.org/tsso#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has OS"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#OperatingSystem"
+    "@id" : "https://w3id.org/tsso#OperatingSystem"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasPolicy",
+  "@id" : "https://w3id.org/tsso#hasPolicy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has Policy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Policy"
+    "@id" : "https://w3id.org/tsso#Policy"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasPredecessor",
+  "@id" : "https://w3id.org/tsso#hasPredecessor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has Predecessor"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#hasSuccessor"
+    "@id" : "https://w3id.org/tsso#hasSuccessor"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasProfile",
+  "@id" : "https://w3id.org/tsso#hasProfile",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "NIST Framework"
@@ -2781,33 +2785,33 @@
     "@value" : "has Profile"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Profile"
+    "@id" : "https://w3id.org/tsso#Profile"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasProperty",
+  "@id" : "https://w3id.org/tsso#hasProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has Property"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#GenericProperty"
+    "@id" : "https://w3id.org/tsso#GenericProperty"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasRequirement",
+  "@id" : "https://w3id.org/tsso#hasRequirement",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#System"
+    "@id" : "https://w3id.org/tsso#System"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has Requirement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#SystemRequirement"
+    "@id" : "https://w3id.org/tsso#SystemRequirement"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasScope",
+  "@id" : "https://w3id.org/tsso#hasScope",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
@@ -2817,88 +2821,88 @@
     "@value" : "has Scope"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasSolutionStructure",
+  "@id" : "https://w3id.org/tsso#hasSolutionStructure",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#System"
+    "@id" : "https://w3id.org/tsso#System"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has Solution Structure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#SolutionStructure"
+    "@id" : "https://w3id.org/tsso#SolutionStructure"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasStatus",
+  "@id" : "https://w3id.org/tsso#hasStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Publication"
+    "@id" : "https://w3id.org/tsso#Publication"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has Status"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Status"
+    "@id" : "https://w3id.org/tsso#Status"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasSubCategory",
+  "@id" : "https://w3id.org/tsso#hasSubCategory",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "NIST Framework"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#NISTCategory"
+    "@id" : "https://w3id.org/tsso#NISTCategory"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has Sub Category"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#NISTSubCategory"
+    "@id" : "https://w3id.org/tsso#NISTSubCategory"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasSubDomain",
+  "@id" : "https://w3id.org/tsso#hasSubDomain",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Domain"
+    "@id" : "https://w3id.org/tsso#Domain"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has Sub Domain"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Domain"
+    "@id" : "https://w3id.org/tsso#Domain"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://scch.org/technical_standards#hasSubVersion"
+    "@id" : "https://w3id.org/tsso#hasSubVersion"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasSubProblem",
+  "@id" : "https://w3id.org/tsso#hasSubProblem",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Threat"
+    "@id" : "https://w3id.org/tsso#Threat"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has Sub Problem"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Threat"
+    "@id" : "https://w3id.org/tsso#Threat"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://scch.org/technical_standards#hasSubVersion"
+    "@id" : "https://w3id.org/tsso#hasSubVersion"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasSubVersion",
+  "@id" : "https://w3id.org/tsso#hasSubVersion",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has Sub Version"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasSuccessor",
+  "@id" : "https://w3id.org/tsso#hasSuccessor",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : ""
@@ -2908,23 +2912,23 @@
     "@value" : "has Successor"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasSupplementalGuidance",
+  "@id" : "https://w3id.org/tsso#hasSupplementalGuidance",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Provision"
+    "@id" : "https://w3id.org/tsso#Provision"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has Supplemental Guidance"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#SupplementalGuidance"
+    "@id" : "https://w3id.org/tsso#SupplementalGuidance"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#isSupplementalGuidanceOf"
+    "@id" : "https://w3id.org/tsso#isSupplementalGuidanceOf"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasTier",
+  "@id" : "https://w3id.org/tsso#hasTier",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "NIST Framework"
@@ -2934,63 +2938,63 @@
     "@value" : "has Tier"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Tier"
+    "@id" : "https://w3id.org/tsso#Tier"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasTolerance",
+  "@id" : "https://w3id.org/tsso#hasTolerance",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#RiskAssesement"
+    "@id" : "https://w3id.org/tsso#RiskAssesement"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has Tolerance"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Tolerance"
+    "@id" : "https://w3id.org/tsso#Tolerance"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#hasType",
+  "@id" : "https://w3id.org/tsso#hasType",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has Type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Type"
+    "@id" : "https://w3id.org/tsso#Type"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#improvesQA",
+  "@id" : "https://w3id.org/tsso#improvesQA",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "improves QA"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#NonFunctionalRequirement"
+    "@id" : "https://w3id.org/tsso#NonFunctionalRequirement"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#interestedIn",
+  "@id" : "https://w3id.org/tsso#interestedIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Stakeholder"
+    "@id" : "https://w3id.org/tsso#Stakeholder"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "interested In"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Concern"
+    "@id" : "https://w3id.org/tsso#Concern"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isAffectedBy",
+  "@id" : "https://w3id.org/tsso#isAffectedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "is Affected By"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isAssetOf",
+  "@id" : "https://w3id.org/tsso#isAssetOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "NIST Framework"
@@ -3000,13 +3004,13 @@
     "@value" : "is Asset Of"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#ownsAsset"
+    "@id" : "https://w3id.org/tsso#ownsAsset"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isAuthenticated",
+  "@id" : "https://w3id.org/tsso#isAuthenticated",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Interface"
+    "@id" : "https://w3id.org/tsso#Interface"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3016,7 +3020,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isCritical",
+  "@id" : "https://w3id.org/tsso#isCritical",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "IEC"
@@ -3031,7 +3035,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isDebugInterface",
+  "@id" : "https://w3id.org/tsso#isDebugInterface",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Physical interface used by the manufacturer to communicate with the device during development or to perform triage of issues with the device and that is not used as part of the consumer-facing functionality"
@@ -3040,7 +3044,7 @@
     "@value" : "ETSI 303645"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Interface"
+    "@id" : "https://w3id.org/tsso#Interface"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3050,14 +3054,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isDelegatedCapabilityOf",
+  "@id" : "https://w3id.org/tsso#isDelegatedCapabilityOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "is Delegated Capability Of"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isDestinationOf",
+  "@id" : "https://w3id.org/tsso#isDestinationOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "ETSI 303645"
@@ -3067,20 +3071,20 @@
     "@value" : "is Destination Of"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isDevicePhysicalLimitationOf",
+  "@id" : "https://w3id.org/tsso#isDevicePhysicalLimitationOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "is Device Physical Limitation Of"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isDisclosed",
+  "@id" : "https://w3id.org/tsso#isDisclosed",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Vulnerability"
+    "@id" : "https://w3id.org/tsso#Vulnerability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3090,17 +3094,17 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isDomainOf",
+  "@id" : "https://w3id.org/tsso#isDomainOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "is Domain Of"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isEmbedded",
+  "@id" : "https://w3id.org/tsso#isEmbedded",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Device"
+    "@id" : "https://w3id.org/tsso#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3110,7 +3114,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isEncrypted",
+  "@id" : "https://w3id.org/tsso#isEncrypted",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3120,7 +3124,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isEssential",
+  "@id" : "https://w3id.org/tsso#isEssential",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid14"
@@ -3133,7 +3137,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isExternal",
+  "@id" : "https://w3id.org/tsso#isExternal",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
@@ -3146,10 +3150,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isHard",
+  "@id" : "https://w3id.org/tsso#isHard",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Constraint"
+    "@id" : "https://w3id.org/tsso#Constraint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3159,13 +3163,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isInternal",
+  "@id" : "https://w3id.org/tsso#isInternal",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "NIST Framework"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Threat"
+    "@id" : "https://w3id.org/tsso#Threat"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3175,7 +3179,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isInternational",
+  "@id" : "https://w3id.org/tsso#isInternational",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3185,7 +3189,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isMandatory",
+  "@id" : "https://w3id.org/tsso#isMandatory",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3195,7 +3199,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isNormative",
+  "@id" : "https://w3id.org/tsso#isNormative",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid17"
@@ -3208,7 +3212,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isOnline",
+  "@id" : "https://w3id.org/tsso#isOnline",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3218,7 +3222,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isPhysical",
+  "@id" : "https://w3id.org/tsso#isPhysical",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Indicates physical port or air interface (such as radio, audio or optical) used to communicate with the device at the physical layer"
@@ -3241,7 +3245,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isPublic",
+  "@id" : "https://w3id.org/tsso#isPublic",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "ETSI"
@@ -3254,10 +3258,10 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isRealTime",
+  "@id" : "https://w3id.org/tsso#isRealTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#OperatingSystem"
+    "@id" : "https://w3id.org/tsso#OperatingSystem"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3267,7 +3271,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isRemote",
+  "@id" : "https://w3id.org/tsso#isRemote",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Intended to be accessible from outside the local network"
@@ -3276,7 +3280,7 @@
     "@value" : "ETSI"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Interface"
+    "@id" : "https://w3id.org/tsso#Interface"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3286,7 +3290,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isRoleProtected",
+  "@id" : "https://w3id.org/tsso#isRoleProtected",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "This attribute may indicate if the item can be accessed via role protection. \nMAy be modelled differently, via Component's property."
@@ -3299,7 +3303,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isSW",
+  "@id" : "https://w3id.org/tsso#isSW",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid23"
@@ -3312,7 +3316,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isSmart",
+  "@id" : "https://w3id.org/tsso#isSmart",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3322,13 +3326,13 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isSolved",
+  "@id" : "https://w3id.org/tsso#isSolved",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Vulnerability"
+    "@id" : "https://w3id.org/tsso#Vulnerability"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3338,7 +3342,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isSourceOf",
+  "@id" : "https://w3id.org/tsso#isSourceOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "ETSI 303645"
@@ -3348,10 +3352,10 @@
     "@value" : "is Source Of"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isSpecialPurpose",
+  "@id" : "https://w3id.org/tsso#isSpecialPurpose",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Device"
+    "@id" : "https://w3id.org/tsso#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3361,17 +3365,17 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isSupplementalGuidanceOf",
+  "@id" : "https://w3id.org/tsso#isSupplementalGuidanceOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "is Supplemental Guidance Of"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isTransportable",
+  "@id" : "https://w3id.org/tsso#isTransportable",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Device"
+    "@id" : "https://w3id.org/tsso#Device"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3381,7 +3385,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isUpdatable",
+  "@id" : "https://w3id.org/tsso#isUpdatable",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
@@ -3396,7 +3400,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isVulnerable",
+  "@id" : "https://w3id.org/tsso#isVulnerable",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
@@ -3412,7 +3416,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#isWireless",
+  "@id" : "https://w3id.org/tsso#isWireless",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid26"
@@ -3425,7 +3429,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#manufactures",
+  "@id" : "https://w3id.org/tsso#manufactures",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
@@ -3435,36 +3439,36 @@
     "@value" : "manufactures"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#ownerOf",
+  "@id" : "https://w3id.org/tsso#ownerOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "owner Of"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#ownsAsset",
+  "@id" : "https://w3id.org/tsso#ownsAsset",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "NIST Framework"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Stakeholder"
+    "@id" : "https://w3id.org/tsso#Stakeholder"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "owns Asset"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Asset"
+    "@id" : "https://w3id.org/tsso#Asset"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#pages",
+  "@id" : "https://w3id.org/tsso#pages",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "ETSI"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Publication"
+    "@id" : "https://w3id.org/tsso#Publication"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3474,65 +3478,65 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#partOfComponentSolution",
+  "@id" : "https://w3id.org/tsso#partOfComponentSolution",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Component"
+    "@id" : "https://w3id.org/tsso#Component"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "part Of Component Solution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#ComponentSolution"
+    "@id" : "https://w3id.org/tsso#ComponentSolution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://scch.org/technical_standards#partOfSolution"
+    "@id" : "https://w3id.org/tsso#partOfSolution"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#partOfDeploymentSolution",
+  "@id" : "https://w3id.org/tsso#partOfDeploymentSolution",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#DeploymentNode"
+    "@id" : "https://w3id.org/tsso#DeploymentNode"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "part Of Deployment Solution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#DeploymentSolution"
+    "@id" : "https://w3id.org/tsso#DeploymentSolution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://scch.org/technical_standards#partOfSolution"
+    "@id" : "https://w3id.org/tsso#partOfSolution"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#partOfSolution",
+  "@id" : "https://w3id.org/tsso#partOfSolution",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "part Of Solution"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#SolutionStructure"
+    "@id" : "https://w3id.org/tsso#SolutionStructure"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#solutionOf"
+    "@id" : "https://w3id.org/tsso#solutionOf"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#priority",
+  "@id" : "https://w3id.org/tsso#priority",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "priority"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#probability",
+  "@id" : "https://w3id.org/tsso#probability",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "NIST Framework"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Threat"
+    "@id" : "https://w3id.org/tsso#Threat"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3542,14 +3546,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#promotedBy",
+  "@id" : "https://w3id.org/tsso#promotedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "promoted By"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#protocolSupportedBy",
+  "@id" : "https://w3id.org/tsso#protocolSupportedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
@@ -3559,88 +3563,88 @@
     "@value" : "protocol Supported By"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#supportsProtocol"
+    "@id" : "https://w3id.org/tsso#supportsProtocol"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#protocolUsedBy",
+  "@id" : "https://w3id.org/tsso#protocolUsedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "protocol Used By"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#usesProtocol"
+    "@id" : "https://w3id.org/tsso#usesProtocol"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#providesFunction",
+  "@id" : "https://w3id.org/tsso#providesFunction",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Component"
+    "@id" : "https://w3id.org/tsso#Component"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "provides Function"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Function"
+    "@id" : "https://w3id.org/tsso#Function"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#providesFunctionality",
+  "@id" : "https://w3id.org/tsso#providesFunctionality",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Component"
+    "@id" : "https://w3id.org/tsso#Component"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "provides Functionality"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Port"
+    "@id" : "https://w3id.org/tsso#Port"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#providesService",
+  "@id" : "https://w3id.org/tsso#providesService",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Component"
+    "@id" : "https://w3id.org/tsso#Component"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "provides Service"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Service"
+    "@id" : "https://w3id.org/tsso#Service"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#serviceProvidedBy"
+    "@id" : "https://w3id.org/tsso#serviceProvidedBy"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#published",
+  "@id" : "https://w3id.org/tsso#published",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Organization"
+    "@id" : "https://w3id.org/tsso#Organization"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "published"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Publication"
+    "@id" : "https://w3id.org/tsso#Publication"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#publishedBy"
+    "@id" : "https://w3id.org/tsso#publishedBy"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#publishedBy",
+  "@id" : "https://w3id.org/tsso#publishedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "published By"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#receivesData",
+  "@id" : "https://w3id.org/tsso#receivesData",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
@@ -3653,43 +3657,43 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#referencesArchitecture",
+  "@id" : "https://w3id.org/tsso#referencesArchitecture",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#ReferenceArchitecture"
+    "@id" : "https://w3id.org/tsso#ReferenceArchitecture"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "references Architecture"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Architecture"
+    "@id" : "https://w3id.org/tsso#Architecture"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#refersTo",
+  "@id" : "https://w3id.org/tsso#refersTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#PublicationConstraint"
+    "@id" : "https://w3id.org/tsso#PublicationConstraint"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "refers To"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Publication"
+    "@id" : "https://w3id.org/tsso#Publication"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#relatedTo",
+  "@id" : "https://w3id.org/tsso#relatedTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "related To"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#relatedToProblem",
+  "@id" : "https://w3id.org/tsso#relatedToProblem",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
     "@value" : "Used to define possible chain of problems."
@@ -3698,65 +3702,65 @@
     "@value" : "ETSI 303645"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Problem"
+    "@id" : "https://w3id.org/tsso#Problem"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "related To Problem"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Problem"
+    "@id" : "https://w3id.org/tsso#Problem"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://scch.org/technical_standards#relatedTo"
+    "@id" : "https://w3id.org/tsso#relatedTo"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#replaceBy",
+  "@id" : "https://w3id.org/tsso#replaceBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
-  "@id" : "https://scch.org/technical_standards#requiresFunctionality",
+  "@id" : "https://w3id.org/tsso#requiresFunctionality",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Component"
+    "@id" : "https://w3id.org/tsso#Component"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "requires Functionality"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Port"
+    "@id" : "https://w3id.org/tsso#Port"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#requiresService",
+  "@id" : "https://w3id.org/tsso#requiresService",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "requires Service"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Service"
+    "@id" : "https://w3id.org/tsso#Service"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "https://scch.org/technical_standards#serviceRequiredBy"
+    "@id" : "https://w3id.org/tsso#serviceRequiredBy"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#runsOn",
+  "@id" : "https://w3id.org/tsso#runsOn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#SWApplication"
+    "@id" : "https://w3id.org/tsso#SWApplication"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "runs On"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Device"
+    "@id" : "https://w3id.org/tsso#Device"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#securityLevel",
+  "@id" : "https://w3id.org/tsso#securityLevel",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid29"
@@ -3769,7 +3773,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#sendsData",
+  "@id" : "https://w3id.org/tsso#sendsData",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
@@ -3782,34 +3786,34 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#serviceProvidedBy",
+  "@id" : "https://w3id.org/tsso#serviceProvidedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "service Provided By"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#serviceRequiredBy",
+  "@id" : "https://w3id.org/tsso#serviceRequiredBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "service Required By"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#serviceUsedBy",
+  "@id" : "https://w3id.org/tsso#serviceUsedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Service"
+    "@id" : "https://w3id.org/tsso#Service"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "service Used By"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Component"
+    "@id" : "https://w3id.org/tsso#Component"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#severity",
+  "@id" : "https://w3id.org/tsso#severity",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Associates a cuantitave value to evaluated the degree of severity to a problem or threat."
@@ -3825,7 +3829,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#size",
+  "@id" : "https://w3id.org/tsso#size",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "NIST Framework"
@@ -3835,14 +3839,14 @@
     "@value" : "size"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#solutionOf",
+  "@id" : "https://w3id.org/tsso#solutionOf",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "solution Of"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#solutionOfArchitecture",
+  "@id" : "https://w3id.org/tsso#solutionOfArchitecture",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
@@ -3852,20 +3856,20 @@
     "@value" : "solution Of Architecture"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#suggestsCounterMeasure",
+  "@id" : "https://w3id.org/tsso#suggestsCounterMeasure",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Provision"
+    "@id" : "https://w3id.org/tsso#Provision"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "suggests Counter Measure"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#CounterMeasure"
+    "@id" : "https://w3id.org/tsso#CounterMeasure"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#supplies",
+  "@id" : "https://w3id.org/tsso#supplies",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "IEC references System or component"
@@ -3873,17 +3877,17 @@
     "@value" : "NIST Framework : References an asset"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Supplier"
+    "@id" : "https://w3id.org/tsso#Supplier"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "supplies"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Asset"
+    "@id" : "https://w3id.org/tsso#Asset"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#supportsProtocol",
+  "@id" : "https://w3id.org/tsso#supportsProtocol",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
@@ -3893,10 +3897,10 @@
     "@value" : "supports Protocol"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Protocol"
+    "@id" : "https://w3id.org/tsso#Protocol"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#uses",
+  "@id" : "https://w3id.org/tsso#uses",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
@@ -3906,45 +3910,45 @@
     "@value" : "uses"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#usesAlgorithm",
+  "@id" : "https://w3id.org/tsso#usesAlgorithm",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://purl.org/dc/terms/provenance" : [ {
     "@value" : "ETSI 303645"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Connection"
+    "@id" : "https://w3id.org/tsso#Connection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "uses Algorithm"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Algorithm"
+    "@id" : "https://w3id.org/tsso#Algorithm"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://scch.org/technical_standards#uses"
+    "@id" : "https://w3id.org/tsso#uses"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#usesChannel",
+  "@id" : "https://w3id.org/tsso#usesChannel",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "ETSI 303645"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Connection"
+    "@id" : "https://w3id.org/tsso#Connection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "uses Channel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Channel"
+    "@id" : "https://w3id.org/tsso#Channel"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://scch.org/technical_standards#uses"
+    "@id" : "https://w3id.org/tsso#uses"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#usesEncryption",
+  "@id" : "https://w3id.org/tsso#usesEncryption",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid11"
@@ -3954,32 +3958,32 @@
     "@value" : "uses Encryption"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://scch.org/technical_standards#uses"
+    "@id" : "https://w3id.org/tsso#uses"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#usesProtocol",
+  "@id" : "https://w3id.org/tsso#usesProtocol",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "https://scch.org/technical_standards#Connection"
+    "@id" : "https://w3id.org/tsso#Connection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "uses Protocol"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Protocol"
+    "@id" : "https://w3id.org/tsso#Protocol"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "https://scch.org/technical_standards#uses"
+    "@id" : "https://w3id.org/tsso#uses"
   } ]
 }, {
-  "@id" : "https://scch.org/technical_standards#vulnerableTo",
+  "@id" : "https://w3id.org/tsso#vulnerableTo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "vulnerable To"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "https://scch.org/technical_standards#Vulnerability"
+    "@id" : "https://w3id.org/tsso#Vulnerability"
   } ]
 } ]

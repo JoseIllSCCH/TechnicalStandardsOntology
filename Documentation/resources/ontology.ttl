@@ -1,34 +1,34 @@
-@prefix : <https://scch.org/technical_standards#> .
+@prefix : <https://w3id.org/tsso#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://scch.org/technical_standards#> .
+@base <https://w3id.org/tsso#> .
 
-<https://scch.org/technical_standards> rdf:type owl:Ontology ;
-                                        owl:versionIRI <https://scch.org/technical_standards/0.1> ;
-                                        <http://purl.org/dc/elements/1.1/description> """This ontology serves as the basis to represent technical standards in a machine readable way. It provides elements to define publications, their provisions, their dependencies and possible constraints, among other constructs.
+<https://w3id.org/tsso> rdf:type owl:Ontology ;
+                         owl:versionIRI <https://w3id.org/tsso/0.1> ;
+                         <http://purl.org/dc/elements/1.1/description> """This ontology serves as the basis to represent technical standards in a machine readable way. It provides elements to define publications, their provisions, their dependencies and possible constraints, among other constructs.
 
-This ontology is based on three technical standars, namely the IEC 62443 4-2, ETSI 303645 and the more general NIST Framework  for Improving
+This ontology is based on three technical standards, namely the IEC 62443 4-2, ETSI 303645 and the more general NIST Framework  for Improving
 Critical Infrastructure Cybersecurity.
 
 Therefore, besides providing the schematic elements,  it also considers system related concepts to describe system solutions, their components, etc.
 
 Making it possible to define not only project or system specific information but also project independent information. This makes it more robust for engineering design tasks."""@en ;
-                                        <http://purl.org/dc/elements/1.1/title> "Techincal Security Standards Ontology"@en ;
-                                        <http://purl.org/dc/terms/created> "January 2023"@en ;
-                                        <http://purl.org/dc/terms/creator> "Gandalf Denk"@en ,
-                                                                           "Georg Buchgeher"@en ,
-                                                                           "Jose Illescas"@en ,
-                                                                           "Lisa Ehrlinger"@en ,
-                                                                           "Peter Panholzer"@en ,
-                                                                           "Thomas Brandstetter"@en ;
-                                        <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ,
-                                                                           :CC_Attribution_4-0_International_License ;
-                                        <http://purl.org/vocab/vann/preferredNamespacePrefix> "tsso"@en ;
-                                        <http://purl.org/vocab/vann/preferredNamespaceUri> "https://scch.org/technical_standards"@en ;
-                                        owl:versionInfo "0.1"@en .
+                         <http://purl.org/dc/elements/1.1/title> "Technical Security Standards Ontology"@en ;
+                         <http://purl.org/dc/terms/created> "January 2023"@en ;
+                         <http://purl.org/dc/terms/creator> "Gandalf Denk"@en ,
+                                                            "Georg Buchgeher"@en ,
+                                                            "Jose Illescas"@en ,
+                                                            "Lisa Ehrlinger"@en ,
+                                                            "Peter Panholzer"@en ,
+                                                            "Thomas Brandstetter"@en ;
+                         <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                         <http://purl.org/ontology/bibo#doi> "10.5281/zenodo.7844994" ;
+                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "tsso"@en ;
+                         <http://purl.org/vocab/vann/preferredNamespaceUri> "https://w3id.org/tsso"@en ;
+                         owl:versionInfo "0.1"@en .
 
 #################################################################
 #    Annotation properties
@@ -86,6 +86,10 @@ Making it possible to define not only project or system specific information but
 <http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/ontology/bibo#doi
+<http://purl.org/ontology/bibo#doi> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/vocab/vann/preferredNamespacePrefix
 <http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
 
@@ -106,12 +110,12 @@ rdfs:label rdf:type owl:AnnotationProperty .
 rdfs:seeAlso rdf:type owl:AnnotationProperty .
 
 
-###  https://scch.org/technical_standards#abbr
+###  https://w3id.org/tsso#abbr
 :abbr rdf:type owl:AnnotationProperty ;
       rdfs:label "abbr"@en .
 
 
-###  https://scch.org/technical_standards#replaceBy
+###  https://w3id.org/tsso#replaceBy
 :replaceBy rdf:type owl:AnnotationProperty .
 
 
@@ -147,7 +151,7 @@ xsd:string rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  https://scch.org/technical_standards#achieves
+###  https://w3id.org/tsso#achieves
 :achieves rdf:type owl:ObjectProperty ;
           owl:inverseOf :promotedBy ;
           rdfs:domain :Outcome ;
@@ -156,13 +160,13 @@ xsd:string rdf:type rdfs:Datatype .
           rdfs:label "achieves"@en .
 
 
-###  https://scch.org/technical_standards#addressedBy
+###  https://w3id.org/tsso#addressedBy
 :addressedBy rdf:type owl:ObjectProperty ;
              owl:inverseOf :addresses ;
              rdfs:label "addressed By"@en .
 
 
-###  https://scch.org/technical_standards#addresses
+###  https://w3id.org/tsso#addresses
 :addresses rdf:type owl:ObjectProperty ;
            rdfs:domain [ rdf:type owl:Class ;
                          owl:unionOf ( :Capability
@@ -174,21 +178,21 @@ xsd:string rdf:type rdfs:Datatype .
            rdfs:label "addresses"@en .
 
 
-###  https://scch.org/technical_standards#addressesConcern
+###  https://w3id.org/tsso#addressesConcern
 :addressesConcern rdf:type owl:ObjectProperty ;
                   rdfs:range :Concern ;
                   <http://purl.org/dc/terms/provenance> "NIST Framework" ;
                   rdfs:label "addresses Concern"@en .
 
 
-###  https://scch.org/technical_standards#affects
+###  https://w3id.org/tsso#affects
 :affects rdf:type owl:ObjectProperty ;
          owl:inverseOf :isAffectedBy ;
          rdfs:domain :Problem ;
          rdfs:label "affects"@en .
 
 
-###  https://scch.org/technical_standards#applicableTo
+###  https://w3id.org/tsso#applicableTo
 :applicableTo rdf:type owl:ObjectProperty ;
               owl:inverseOf :applies ;
               rdfs:domain :ComponentRequirement ;
@@ -196,14 +200,14 @@ xsd:string rdf:type rdfs:Datatype .
               rdfs:label "applicable To"@en .
 
 
-###  https://scch.org/technical_standards#applies
+###  https://w3id.org/tsso#applies
 :applies rdf:type owl:ObjectProperty ;
          rdfs:domain :Component ;
          rdfs:range :ComponentRequirement ;
          rdfs:label "applies"@en .
 
 
-###  https://scch.org/technical_standards#associatedToSubCategory
+###  https://w3id.org/tsso#associatedToSubCategory
 :associatedToSubCategory rdf:type owl:ObjectProperty ;
                          owl:inverseOf :considersProvision ;
                          rdfs:domain :Provision ;
@@ -212,7 +216,7 @@ xsd:string rdf:type rdfs:Datatype .
                          rdfs:label "associated To Sub Category"@en .
 
 
-###  https://scch.org/technical_standards#belongsTo
+###  https://w3id.org/tsso#belongsTo
 :belongsTo rdf:type owl:ObjectProperty ;
            owl:inverseOf :ownerOf ;
            rdfs:domain :TechnicalCommittee ;
@@ -220,13 +224,13 @@ xsd:string rdf:type rdfs:Datatype .
            rdfs:label "belongs To"@en .
 
 
-###  https://scch.org/technical_standards#channelUsedBy
+###  https://w3id.org/tsso#channelUsedBy
 :channelUsedBy rdf:type owl:ObjectProperty ;
                owl:inverseOf :usesChannel ;
                rdfs:label "channel Used By"@en .
 
 
-###  https://scch.org/technical_standards#composedOf
+###  https://w3id.org/tsso#composedOf
 :composedOf rdf:type owl:ObjectProperty ;
             owl:inverseOf :composes ;
             rdfs:domain :Component ;
@@ -234,26 +238,26 @@ xsd:string rdf:type rdfs:Datatype .
             rdfs:label "composed Of"@en .
 
 
-###  https://scch.org/technical_standards#composes
+###  https://w3id.org/tsso#composes
 :composes rdf:type owl:ObjectProperty ;
           rdfs:label "composes"@en .
 
 
-###  https://scch.org/technical_standards#configurationOf
+###  https://w3id.org/tsso#configurationOf
 :configurationOf rdf:type owl:ObjectProperty ;
                  owl:inverseOf :hasConfiguration ;
                  <http://purl.org/dc/terms/provenance> "ETSI 303645" ;
                  rdfs:label "configuration Of"@en .
 
 
-###  https://scch.org/technical_standards#connects
+###  https://w3id.org/tsso#connects
 :connects rdf:type owl:ObjectProperty ;
           rdfs:domain :Connection ;
           rdfs:range :Component ;
           rdfs:label "connects"@en .
 
 
-###  https://scch.org/technical_standards#connectsDestination
+###  https://w3id.org/tsso#connectsDestination
 :connectsDestination rdf:type owl:ObjectProperty ;
                      owl:inverseOf :isDestinationOf ;
                      rdfs:domain :Connection ;
@@ -261,7 +265,7 @@ xsd:string rdf:type rdfs:Datatype .
                      rdfs:label "connects Destination"@en .
 
 
-###  https://scch.org/technical_standards#connectsSource
+###  https://w3id.org/tsso#connectsSource
 :connectsSource rdf:type owl:ObjectProperty ;
                 owl:inverseOf :isSourceOf ;
                 rdfs:domain :Connection ;
@@ -269,14 +273,14 @@ xsd:string rdf:type rdfs:Datatype .
                 rdfs:label "connects Source"@en .
 
 
-###  https://scch.org/technical_standards#considersAsset
+###  https://w3id.org/tsso#considersAsset
 :considersAsset rdf:type owl:ObjectProperty ;
                 rdfs:domain :RiskAssesement ;
                 rdfs:range :Asset ;
                 rdfs:label "considers Asset"@en .
 
 
-###  https://scch.org/technical_standards#considersProvision
+###  https://w3id.org/tsso#considersProvision
 :considersProvision rdf:type owl:ObjectProperty ;
                     rdfs:domain :NISTSubCategory ;
                     rdfs:range :Provision ;
@@ -284,13 +288,13 @@ xsd:string rdf:type rdfs:Datatype .
                     rdfs:label "considers Provision"@en .
 
 
-###  https://scch.org/technical_standards#considersRisk
+###  https://w3id.org/tsso#considersRisk
 :considersRisk rdf:type owl:ObjectProperty ;
                rdfs:range :Risk ;
                rdfs:label "considers Risk"@en .
 
 
-###  https://scch.org/technical_standards#considersThreat
+###  https://w3id.org/tsso#considersThreat
 :considersThreat rdf:type owl:ObjectProperty ;
                  rdfs:domain :Risk ;
                  rdfs:range :Threat ;
@@ -298,7 +302,7 @@ xsd:string rdf:type rdfs:Datatype .
                  rdfs:label "considers Threat"@en .
 
 
-###  https://scch.org/technical_standards#considersVulnerability
+###  https://w3id.org/tsso#considersVulnerability
 :considersVulnerability rdf:type owl:ObjectProperty ;
                         rdfs:domain :Risk ;
                         rdfs:range :Vulnerability ;
@@ -307,7 +311,7 @@ xsd:string rdf:type rdfs:Datatype .
                         rdfs:label "considers Vulnerability"@en .
 
 
-###  https://scch.org/technical_standards#consistOfFrameworkElement
+###  https://w3id.org/tsso#consistOfFrameworkElement
 :consistOfFrameworkElement rdf:type owl:ObjectProperty ,
                                     owl:InverseFunctionalProperty ;
                            rdfs:domain :Framework ;
@@ -316,27 +320,27 @@ xsd:string rdf:type rdfs:Datatype .
                            rdfs:label "consist Of Framework Element"@en .
 
 
-###  https://scch.org/technical_standards#containedBy
+###  https://w3id.org/tsso#containedBy
 :containedBy rdf:type owl:ObjectProperty ;
              owl:inverseOf :contains ;
              rdfs:label "contained By"@en .
 
 
-###  https://scch.org/technical_standards#contains
+###  https://w3id.org/tsso#contains
 :contains rdf:type owl:ObjectProperty ;
           rdfs:domain :Publication ;
           rdfs:range :Provision ;
           rdfs:label "contains"@en .
 
 
-###  https://scch.org/technical_standards#demandsCapability
+###  https://w3id.org/tsso#demandsCapability
 :demandsCapability rdf:type owl:ObjectProperty ;
                    rdfs:domain :Provision ;
                    rdfs:range :Capability ;
                    rdfs:label "demands Capability"@en .
 
 
-###  https://scch.org/technical_standards#dependsOn
+###  https://w3id.org/tsso#dependsOn
 :dependsOn rdf:type owl:ObjectProperty ;
            rdfs:domain :RequirementDependencyConstraint ;
            rdfs:range :Provision ;
@@ -344,7 +348,7 @@ xsd:string rdf:type rdfs:Datatype .
            rdfs:label "depends On"@en .
 
 
-###  https://scch.org/technical_standards#describesSolution
+###  https://w3id.org/tsso#describesSolution
 :describesSolution rdf:type owl:ObjectProperty ;
                    owl:inverseOf :solutionOfArchitecture ;
                    rdfs:domain :Architecture ;
@@ -353,13 +357,13 @@ xsd:string rdf:type rdfs:Datatype .
                    rdfs:label "describes Solution"@en .
 
 
-###  https://scch.org/technical_standards#developedBy
+###  https://w3id.org/tsso#developedBy
 :developedBy rdf:type owl:ObjectProperty ;
              owl:inverseOf :develops ;
              rdfs:label "developed By"@en .
 
 
-###  https://scch.org/technical_standards#develops
+###  https://w3id.org/tsso#develops
 :develops rdf:type owl:ObjectProperty ;
           rdfs:domain :TechnicalCommittee ;
           rdfs:range :Publication ;
@@ -368,7 +372,7 @@ xsd:string rdf:type rdfs:Datatype .
           rdfs:label "develops"@en .
 
 
-###  https://scch.org/technical_standards#enhancementOf
+###  https://w3id.org/tsso#enhancementOf
 :enhancementOf rdf:type owl:ObjectProperty ;
                owl:inverseOf :hasEnhancement ;
                rdfs:domain :Provision ;
@@ -376,7 +380,7 @@ xsd:string rdf:type rdfs:Datatype .
                rdfs:label "enhancement Of"@en .
 
 
-###  https://scch.org/technical_standards#exposedBy
+###  https://w3id.org/tsso#exposedBy
 :exposedBy rdf:type owl:ObjectProperty ;
            owl:inverseOf :exposes ;
            rdfs:domain :Vulnerability ;
@@ -384,14 +388,14 @@ xsd:string rdf:type rdfs:Datatype .
            rdfs:label "exposed By"@en .
 
 
-###  https://scch.org/technical_standards#exposes
+###  https://w3id.org/tsso#exposes
 :exposes rdf:type owl:ObjectProperty ;
          rdfs:domain :Threat ;
          rdfs:range :Vulnerability ;
          rdfs:label "exposes"@en .
 
 
-###  https://scch.org/technical_standards#handledBy
+###  https://w3id.org/tsso#handledBy
 :handledBy rdf:type owl:ObjectProperty ;
            owl:inverseOf :handles ;
            rdfs:domain :Vulnerability ;
@@ -399,21 +403,21 @@ xsd:string rdf:type rdfs:Datatype .
            rdfs:label "handled By"@en .
 
 
-###  https://scch.org/technical_standards#handles
+###  https://w3id.org/tsso#handles
 :handles rdf:type owl:ObjectProperty ;
          rdfs:domain :CounterMeasure ;
          rdfs:range :Vulnerability ;
          rdfs:label "handles"@en .
 
 
-###  https://scch.org/technical_standards#hasArchitecture
+###  https://w3id.org/tsso#hasArchitecture
 :hasArchitecture rdf:type owl:ObjectProperty ;
                  rdfs:range :Architecture ;
                  <http://purl.org/dc/terms/provenance> "ETSI 303645" ;
                  rdfs:label "has Architecture"@en .
 
 
-###  https://scch.org/technical_standards#hasCapability
+###  https://w3id.org/tsso#hasCapability
 :hasCapability rdf:type owl:ObjectProperty ;
                rdfs:domain [ rdf:type owl:Class ;
                              owl:unionOf ( :Component
@@ -424,7 +428,7 @@ xsd:string rdf:type rdfs:Datatype .
                rdfs:label "has Capability"@en .
 
 
-###  https://scch.org/technical_standards#hasCategory
+###  https://w3id.org/tsso#hasCategory
 :hasCategory rdf:type owl:ObjectProperty ,
                       owl:InverseFunctionalProperty ;
              rdfs:domain :NISTFunction ;
@@ -433,20 +437,20 @@ xsd:string rdf:type rdfs:Datatype .
              rdfs:label "has Category"@en .
 
 
-###  https://scch.org/technical_standards#hasConfiguration
+###  https://w3id.org/tsso#hasConfiguration
 :hasConfiguration rdf:type owl:ObjectProperty ;
                   rdfs:range :Configuration ;
                   <http://purl.org/dc/terms/provenance> "ETSI 303645" ;
                   rdfs:label "has Configuration"@en .
 
 
-###  https://scch.org/technical_standards#hasConstraint
+###  https://w3id.org/tsso#hasConstraint
 :hasConstraint rdf:type owl:ObjectProperty ;
                rdfs:range :Constraint ;
                rdfs:label "has Constraint"@en .
 
 
-###  https://scch.org/technical_standards#hasDelegatedCapability
+###  https://w3id.org/tsso#hasDelegatedCapability
 :hasDelegatedCapability rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf :hasCapability ;
                         owl:inverseOf :isDelegatedCapabilityOf ;
@@ -457,7 +461,7 @@ can work within a system or component which provides it.""" ;
                         rdfs:label "has Delegated Capability"@en .
 
 
-###  https://scch.org/technical_standards#hasDevicePhysicalLimitation
+###  https://w3id.org/tsso#hasDevicePhysicalLimitation
 :hasDevicePhysicalLimitation rdf:type owl:ObjectProperty ;
                              owl:inverseOf :isDevicePhysicalLimitationOf ;
                              rdfs:domain :Device ;
@@ -465,32 +469,32 @@ can work within a system or component which provides it.""" ;
                              rdfs:label "has Device Physical Limitation"@en .
 
 
-###  https://scch.org/technical_standards#hasDomain
+###  https://w3id.org/tsso#hasDomain
 :hasDomain rdf:type owl:ObjectProperty ;
            owl:inverseOf :isDomainOf ;
            rdfs:range :Domain ;
            rdfs:label "has Domain"@en .
 
 
-###  https://scch.org/technical_standards#hasEnhancement
+###  https://w3id.org/tsso#hasEnhancement
 :hasEnhancement rdf:type owl:ObjectProperty ;
                 rdfs:label "has Enhancement"@en .
 
 
-###  https://scch.org/technical_standards#hasFW
+###  https://w3id.org/tsso#hasFW
 :hasFW rdf:type owl:ObjectProperty ;
        rdfs:domain :Device ;
        rdfs:range :Firmware ;
        rdfs:label "has FW"@en .
 
 
-###  https://scch.org/technical_standards#hasFunction
+###  https://w3id.org/tsso#hasFunction
 :hasFunction rdf:type owl:ObjectProperty ;
              rdfs:range :Function ;
              rdfs:label "has Function"@en .
 
 
-###  https://scch.org/technical_standards#hasHMI
+###  https://w3id.org/tsso#hasHMI
 :hasHMI rdf:type owl:ObjectProperty ;
         rdfs:domain :Device ;
         rdfs:range [ rdf:type owl:Class ;
@@ -501,27 +505,27 @@ can work within a system or component which provides it.""" ;
         rdfs:label "has HMI"@en .
 
 
-###  https://scch.org/technical_standards#hasInterface
+###  https://w3id.org/tsso#hasInterface
 :hasInterface rdf:type owl:ObjectProperty ;
               rdfs:domain :Component ;
               rdfs:range :Interface ;
               rdfs:label "has Interface"@en .
 
 
-###  https://scch.org/technical_standards#hasLighterVersion
+###  https://w3id.org/tsso#hasLighterVersion
 :hasLighterVersion rdf:type owl:ObjectProperty ;
                    owl:inverseOf :hasMoreSecureVersion ;
                    rdfs:label "has Lighter Version"@en .
 
 
-###  https://scch.org/technical_standards#hasMainCategory
+###  https://w3id.org/tsso#hasMainCategory
 :hasMainCategory rdf:type owl:ObjectProperty ;
                  owl:inverseOf :hasSubCategory ;
                  <http://purl.org/dc/terms/provenance> "NIST Framework" ;
                  rdfs:label "has Main Category"@en .
 
 
-###  https://scch.org/technical_standards#hasMoreGeneralDomain
+###  https://w3id.org/tsso#hasMoreGeneralDomain
 :hasMoreGeneralDomain rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf :hasMoreGeneralVersion ;
                       owl:inverseOf :hasSubDomain ;
@@ -531,7 +535,7 @@ can work within a system or component which provides it.""" ;
                       rdfs:label "has More General Domain"@en .
 
 
-###  https://scch.org/technical_standards#hasMoreGeneralProblem
+###  https://w3id.org/tsso#hasMoreGeneralProblem
 :hasMoreGeneralProblem rdf:type owl:ObjectProperty ;
                        rdfs:subPropertyOf :hasMoreGeneralVersion ;
                        owl:inverseOf :hasSubProblem ;
@@ -540,77 +544,77 @@ can work within a system or component which provides it.""" ;
                        rdfs:label "has More General Problem"@en .
 
 
-###  https://scch.org/technical_standards#hasMoreGeneralVersion
+###  https://w3id.org/tsso#hasMoreGeneralVersion
 :hasMoreGeneralVersion rdf:type owl:ObjectProperty ;
                        owl:inverseOf :hasSubVersion ;
                        rdfs:label "has More General Version"@en .
 
 
-###  https://scch.org/technical_standards#hasMoreSecureVersion
+###  https://w3id.org/tsso#hasMoreSecureVersion
 :hasMoreSecureVersion rdf:type owl:ObjectProperty ;
                       rdfs:label "has More Secure Version"@en .
 
 
-###  https://scch.org/technical_standards#hasOS
+###  https://w3id.org/tsso#hasOS
 :hasOS rdf:type owl:ObjectProperty ;
        rdfs:domain :Device ;
        rdfs:range :OperatingSystem ;
        rdfs:label "has OS"@en .
 
 
-###  https://scch.org/technical_standards#hasPolicy
+###  https://w3id.org/tsso#hasPolicy
 :hasPolicy rdf:type owl:ObjectProperty ;
            rdfs:range :Policy ;
            rdfs:label "has Policy"@en .
 
 
-###  https://scch.org/technical_standards#hasPredecessor
+###  https://w3id.org/tsso#hasPredecessor
 :hasPredecessor rdf:type owl:ObjectProperty ;
                 owl:inverseOf :hasSuccessor ;
                 rdfs:label "has Predecessor"@en .
 
 
-###  https://scch.org/technical_standards#hasProfile
+###  https://w3id.org/tsso#hasProfile
 :hasProfile rdf:type owl:ObjectProperty ;
             rdfs:range :Profile ;
             <http://purl.org/dc/terms/provenance> "NIST Framework" ;
             rdfs:label "has Profile"@en .
 
 
-###  https://scch.org/technical_standards#hasProperty
+###  https://w3id.org/tsso#hasProperty
 :hasProperty rdf:type owl:ObjectProperty ;
              rdfs:range :GenericProperty ;
              rdfs:label "has Property"@en .
 
 
-###  https://scch.org/technical_standards#hasRequirement
+###  https://w3id.org/tsso#hasRequirement
 :hasRequirement rdf:type owl:ObjectProperty ;
                 rdfs:domain :System ;
                 rdfs:range :SystemRequirement ;
                 rdfs:label "has Requirement"@en .
 
 
-###  https://scch.org/technical_standards#hasScope
+###  https://w3id.org/tsso#hasScope
 :hasScope rdf:type owl:ObjectProperty ;
           <http://purl.org/dc/terms/provenance> "ETSI 303645" ;
           rdfs:label "has Scope"@en .
 
 
-###  https://scch.org/technical_standards#hasSolutionStructure
+###  https://w3id.org/tsso#hasSolutionStructure
 :hasSolutionStructure rdf:type owl:ObjectProperty ;
                       rdfs:domain :System ;
                       rdfs:range :SolutionStructure ;
                       rdfs:label "has Solution Structure"@en .
 
 
-###  https://scch.org/technical_standards#hasStatus
+###  https://w3id.org/tsso#hasStatus
 :hasStatus rdf:type owl:ObjectProperty ;
            rdfs:domain :Publication ;
            rdfs:range :Status ;
            rdfs:label "has Status"@en .
 
 
-###  https://scch.org/technical_standards#hasSubCategory
+###  https://w3id.org/tsso#hasSubCategory
 :hasSubCategory rdf:type owl:ObjectProperty ,
                          owl:InverseFunctionalProperty ;
                 rdfs:domain :NISTCategory ;
@@ -619,7 +623,7 @@ can work within a system or component which provides it.""" ;
                 rdfs:label "has Sub Category"@en .
 
 
-###  https://scch.org/technical_standards#hasSubDomain
+###  https://w3id.org/tsso#hasSubDomain
 :hasSubDomain rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :hasSubVersion ;
               rdfs:domain :Domain ;
@@ -627,7 +631,7 @@ can work within a system or component which provides it.""" ;
               rdfs:label "has Sub Domain"@en .
 
 
-###  https://scch.org/technical_standards#hasSubProblem
+###  https://w3id.org/tsso#hasSubProblem
 :hasSubProblem rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :hasSubVersion ;
                rdfs:domain :Threat ;
@@ -635,18 +639,18 @@ can work within a system or component which provides it.""" ;
                rdfs:label "has Sub Problem"@en .
 
 
-###  https://scch.org/technical_standards#hasSubVersion
+###  https://w3id.org/tsso#hasSubVersion
 :hasSubVersion rdf:type owl:ObjectProperty ;
                rdfs:label "has Sub Version"@en .
 
 
-###  https://scch.org/technical_standards#hasSuccessor
+###  https://w3id.org/tsso#hasSuccessor
 :hasSuccessor rdf:type owl:ObjectProperty ;
               <http://purl.org/dc/terms/provenance> "" ;
               rdfs:label "has Successor"@en .
 
 
-###  https://scch.org/technical_standards#hasSupplementalGuidance
+###  https://w3id.org/tsso#hasSupplementalGuidance
 :hasSupplementalGuidance rdf:type owl:ObjectProperty ;
                          owl:inverseOf :isSupplementalGuidanceOf ;
                          rdfs:domain :Provision ;
@@ -654,95 +658,95 @@ can work within a system or component which provides it.""" ;
                          rdfs:label "has Supplemental Guidance"@en .
 
 
-###  https://scch.org/technical_standards#hasTier
+###  https://w3id.org/tsso#hasTier
 :hasTier rdf:type owl:ObjectProperty ;
          rdfs:range :Tier ;
          <http://purl.org/dc/terms/provenance> "NIST Framework" ;
          rdfs:label "has Tier"@en .
 
 
-###  https://scch.org/technical_standards#hasTolerance
+###  https://w3id.org/tsso#hasTolerance
 :hasTolerance rdf:type owl:ObjectProperty ;
               rdfs:domain :RiskAssesement ;
               rdfs:range :Tolerance ;
               rdfs:label "has Tolerance"@en .
 
 
-###  https://scch.org/technical_standards#hasType
+###  https://w3id.org/tsso#hasType
 :hasType rdf:type owl:ObjectProperty ;
          rdfs:range :Type ;
          rdfs:label "has Type"@en .
 
 
-###  https://scch.org/technical_standards#improvesQA
+###  https://w3id.org/tsso#improvesQA
 :improvesQA rdf:type owl:ObjectProperty ;
             rdfs:range :NonFunctionalRequirement ;
             rdfs:label "improves QA"@en .
 
 
-###  https://scch.org/technical_standards#interestedIn
+###  https://w3id.org/tsso#interestedIn
 :interestedIn rdf:type owl:ObjectProperty ;
               rdfs:domain :Stakeholder ;
               rdfs:range :Concern ;
               rdfs:label "interested In"@en .
 
 
-###  https://scch.org/technical_standards#isAffectedBy
+###  https://w3id.org/tsso#isAffectedBy
 :isAffectedBy rdf:type owl:ObjectProperty ;
               rdfs:label "is Affected By"@en .
 
 
-###  https://scch.org/technical_standards#isAssetOf
+###  https://w3id.org/tsso#isAssetOf
 :isAssetOf rdf:type owl:ObjectProperty ;
            owl:inverseOf :ownsAsset ;
            <http://purl.org/dc/terms/provenance> "NIST Framework" ;
            rdfs:label "is Asset Of"@en .
 
 
-###  https://scch.org/technical_standards#isDelegatedCapabilityOf
+###  https://w3id.org/tsso#isDelegatedCapabilityOf
 :isDelegatedCapabilityOf rdf:type owl:ObjectProperty ;
                          rdfs:label "is Delegated Capability Of"@en .
 
 
-###  https://scch.org/technical_standards#isDestinationOf
+###  https://w3id.org/tsso#isDestinationOf
 :isDestinationOf rdf:type owl:ObjectProperty ;
                  rdfs:comment "ETSI 303645" ;
                  rdfs:label "is Destination Of"@en .
 
 
-###  https://scch.org/technical_standards#isDevicePhysicalLimitationOf
+###  https://w3id.org/tsso#isDevicePhysicalLimitationOf
 :isDevicePhysicalLimitationOf rdf:type owl:ObjectProperty ;
                               rdfs:label "is Device Physical Limitation Of"@en .
 
 
-###  https://scch.org/technical_standards#isDomainOf
+###  https://w3id.org/tsso#isDomainOf
 :isDomainOf rdf:type owl:ObjectProperty ;
             rdfs:label "is Domain Of"@en .
 
 
-###  https://scch.org/technical_standards#isSourceOf
+###  https://w3id.org/tsso#isSourceOf
 :isSourceOf rdf:type owl:ObjectProperty ;
             rdfs:comment "ETSI 303645" ;
             rdfs:label "is Source Of"@en .
 
 
-###  https://scch.org/technical_standards#isSupplementalGuidanceOf
+###  https://w3id.org/tsso#isSupplementalGuidanceOf
 :isSupplementalGuidanceOf rdf:type owl:ObjectProperty ;
                           rdfs:label "is Supplemental Guidance Of"@en .
 
 
-###  https://scch.org/technical_standards#manufactures
+###  https://w3id.org/tsso#manufactures
 :manufactures rdf:type owl:ObjectProperty ;
               <http://purl.org/dc/terms/provenance> "ETSI 303645" ;
               rdfs:label "manufactures"@en .
 
 
-###  https://scch.org/technical_standards#ownerOf
+###  https://w3id.org/tsso#ownerOf
 :ownerOf rdf:type owl:ObjectProperty ;
          rdfs:label "owner Of"@en .
 
 
-###  https://scch.org/technical_standards#ownsAsset
+###  https://w3id.org/tsso#ownsAsset
 :ownsAsset rdf:type owl:ObjectProperty ;
            rdfs:domain :Stakeholder ;
            rdfs:range :Asset ;
@@ -750,7 +754,7 @@ can work within a system or component which provides it.""" ;
            rdfs:label "owns Asset"@en .
 
 
-###  https://scch.org/technical_standards#partOfComponentSolution
+###  https://w3id.org/tsso#partOfComponentSolution
 :partOfComponentSolution rdf:type owl:ObjectProperty ;
                          rdfs:subPropertyOf :partOfSolution ;
                          rdfs:domain :Component ;
@@ -758,7 +762,7 @@ can work within a system or component which provides it.""" ;
                          rdfs:label "part Of Component Solution"@en .
 
 
-###  https://scch.org/technical_standards#partOfDeploymentSolution
+###  https://w3id.org/tsso#partOfDeploymentSolution
 :partOfDeploymentSolution rdf:type owl:ObjectProperty ;
                           rdfs:subPropertyOf :partOfSolution ;
                           rdfs:domain :DeploymentNode ;
@@ -766,39 +770,39 @@ can work within a system or component which provides it.""" ;
                           rdfs:label "part Of Deployment Solution"@en .
 
 
-###  https://scch.org/technical_standards#partOfSolution
+###  https://w3id.org/tsso#partOfSolution
 :partOfSolution rdf:type owl:ObjectProperty ;
                 owl:inverseOf :solutionOf ;
                 rdfs:range :SolutionStructure ;
                 rdfs:label "part Of Solution"@en .
 
 
-###  https://scch.org/technical_standards#promotedBy
+###  https://w3id.org/tsso#promotedBy
 :promotedBy rdf:type owl:ObjectProperty ;
             rdfs:label "promoted By"@en .
 
 
-###  https://scch.org/technical_standards#protocolSupportedBy
+###  https://w3id.org/tsso#protocolSupportedBy
 :protocolSupportedBy rdf:type owl:ObjectProperty ;
                      owl:inverseOf :supportsProtocol ;
                      <http://purl.org/dc/terms/provenance> "ETSI 303645" ;
                      rdfs:label "protocol Supported By"@en .
 
 
-###  https://scch.org/technical_standards#protocolUsedBy
+###  https://w3id.org/tsso#protocolUsedBy
 :protocolUsedBy rdf:type owl:ObjectProperty ;
                 owl:inverseOf :usesProtocol ;
                 rdfs:label "protocol Used By"@en .
 
 
-###  https://scch.org/technical_standards#providesFunction
+###  https://w3id.org/tsso#providesFunction
 :providesFunction rdf:type owl:ObjectProperty ;
                   rdfs:domain :Component ;
                   rdfs:range :Function ;
                   rdfs:label "provides Function"@en .
 
 
-###  https://scch.org/technical_standards#providesFunctionality
+###  https://w3id.org/tsso#providesFunctionality
 :providesFunctionality rdf:type owl:ObjectProperty ;
                        rdfs:domain :Component ;
                        rdfs:range :Port ;
@@ -806,7 +810,7 @@ can work within a system or component which provides it.""" ;
                        rdfs:label "provides Functionality"@en .
 
 
-###  https://scch.org/technical_standards#providesService
+###  https://w3id.org/tsso#providesService
 :providesService rdf:type owl:ObjectProperty ;
                  owl:inverseOf :serviceProvidedBy ;
                  rdfs:domain :Component ;
@@ -814,7 +818,7 @@ can work within a system or component which provides it.""" ;
                  rdfs:label "provides Service"@en .
 
 
-###  https://scch.org/technical_standards#published
+###  https://w3id.org/tsso#published
 :published rdf:type owl:ObjectProperty ;
            owl:inverseOf :publishedBy ;
            rdfs:domain :Organization ;
@@ -822,12 +826,12 @@ can work within a system or component which provides it.""" ;
            rdfs:label "published"@en .
 
 
-###  https://scch.org/technical_standards#publishedBy
+###  https://w3id.org/tsso#publishedBy
 :publishedBy rdf:type owl:ObjectProperty ;
              rdfs:label "published By"@en .
 
 
-###  https://scch.org/technical_standards#referencesArchitecture
+###  https://w3id.org/tsso#referencesArchitecture
 :referencesArchitecture rdf:type owl:ObjectProperty ;
                         rdfs:domain :ReferenceArchitecture ;
                         rdfs:range :Architecture ;
@@ -835,19 +839,19 @@ can work within a system or component which provides it.""" ;
                         rdfs:label "references Architecture"@en .
 
 
-###  https://scch.org/technical_standards#refersTo
+###  https://w3id.org/tsso#refersTo
 :refersTo rdf:type owl:ObjectProperty ;
           rdfs:domain :PublicationConstraint ;
           rdfs:range :Publication ;
           rdfs:label "refers To"@en .
 
 
-###  https://scch.org/technical_standards#relatedTo
+###  https://w3id.org/tsso#relatedTo
 :relatedTo rdf:type owl:ObjectProperty ;
            rdfs:label "related To"@en .
 
 
-###  https://scch.org/technical_standards#relatedToProblem
+###  https://w3id.org/tsso#relatedToProblem
 :relatedToProblem rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :relatedTo ;
                   rdfs:domain :Problem ;
@@ -857,7 +861,7 @@ can work within a system or component which provides it.""" ;
                   rdfs:label "related To Problem"@en .
 
 
-###  https://scch.org/technical_standards#requiresFunctionality
+###  https://w3id.org/tsso#requiresFunctionality
 :requiresFunctionality rdf:type owl:ObjectProperty ;
                        rdfs:domain :Component ;
                        rdfs:range :Port ;
@@ -865,56 +869,56 @@ can work within a system or component which provides it.""" ;
                        rdfs:label "requires Functionality"@en .
 
 
-###  https://scch.org/technical_standards#requiresService
+###  https://w3id.org/tsso#requiresService
 :requiresService rdf:type owl:ObjectProperty ;
                  owl:inverseOf :serviceRequiredBy ;
                  rdfs:range :Service ;
                  rdfs:label "requires Service"@en .
 
 
-###  https://scch.org/technical_standards#runsOn
+###  https://w3id.org/tsso#runsOn
 :runsOn rdf:type owl:ObjectProperty ;
         rdfs:domain :SWApplication ;
         rdfs:range :Device ;
         rdfs:label "runs On"@en .
 
 
-###  https://scch.org/technical_standards#serviceProvidedBy
+###  https://w3id.org/tsso#serviceProvidedBy
 :serviceProvidedBy rdf:type owl:ObjectProperty ;
                    rdfs:label "service Provided By"@en .
 
 
-###  https://scch.org/technical_standards#serviceRequiredBy
+###  https://w3id.org/tsso#serviceRequiredBy
 :serviceRequiredBy rdf:type owl:ObjectProperty ;
                    rdfs:label "service Required By"@en .
 
 
-###  https://scch.org/technical_standards#serviceUsedBy
+###  https://w3id.org/tsso#serviceUsedBy
 :serviceUsedBy rdf:type owl:ObjectProperty ;
                rdfs:domain :Service ;
                rdfs:range :Component ;
                rdfs:label "service Used By"@en .
 
 
-###  https://scch.org/technical_standards#solutionOf
+###  https://w3id.org/tsso#solutionOf
 :solutionOf rdf:type owl:ObjectProperty ;
             rdfs:label "solution Of"@en .
 
 
-###  https://scch.org/technical_standards#solutionOfArchitecture
+###  https://w3id.org/tsso#solutionOfArchitecture
 :solutionOfArchitecture rdf:type owl:ObjectProperty ;
                         <http://purl.org/dc/terms/provenance> "ETSI 303645" ;
                         rdfs:label "solution Of Architecture"@en .
 
 
-###  https://scch.org/technical_standards#suggestsCounterMeasure
+###  https://w3id.org/tsso#suggestsCounterMeasure
 :suggestsCounterMeasure rdf:type owl:ObjectProperty ;
                         rdfs:domain :Provision ;
                         rdfs:range :CounterMeasure ;
                         rdfs:label "suggests Counter Measure"@en .
 
 
-###  https://scch.org/technical_standards#supplies
+###  https://w3id.org/tsso#supplies
 :supplies rdf:type owl:ObjectProperty ;
           rdfs:domain :Supplier ;
           rdfs:range :Asset ;
@@ -923,20 +927,20 @@ can work within a system or component which provides it.""" ;
           rdfs:label "supplies"@en .
 
 
-###  https://scch.org/technical_standards#supportsProtocol
+###  https://w3id.org/tsso#supportsProtocol
 :supportsProtocol rdf:type owl:ObjectProperty ;
                   rdfs:range :Protocol ;
                   <http://purl.org/dc/terms/provenance> "ETSI 303645" ;
                   rdfs:label "supports Protocol"@en .
 
 
-###  https://scch.org/technical_standards#uses
+###  https://w3id.org/tsso#uses
 :uses rdf:type owl:ObjectProperty ;
       <http://purl.org/dc/terms/provenance> "ETSI 303645" ;
       rdfs:label "uses"@en .
 
 
-###  https://scch.org/technical_standards#usesAlgorithm
+###  https://w3id.org/tsso#usesAlgorithm
 :usesAlgorithm rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf :uses ;
                rdfs:domain :Connection ;
@@ -945,7 +949,7 @@ can work within a system or component which provides it.""" ;
                rdfs:label "uses Algorithm"@en .
 
 
-###  https://scch.org/technical_standards#usesChannel
+###  https://w3id.org/tsso#usesChannel
 :usesChannel rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :uses ;
              rdfs:domain :Connection ;
@@ -954,7 +958,7 @@ can work within a system or component which provides it.""" ;
              rdfs:label "uses Channel"@en .
 
 
-###  https://scch.org/technical_standards#usesEncryption
+###  https://w3id.org/tsso#usesEncryption
 :usesEncryption rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf :uses ;
                 rdfs:domain [ rdf:type owl:Class ;
@@ -965,7 +969,7 @@ can work within a system or component which provides it.""" ;
                 rdfs:label "uses Encryption"@en .
 
 
-###  https://scch.org/technical_standards#usesProtocol
+###  https://w3id.org/tsso#usesProtocol
 :usesProtocol rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :uses ;
               rdfs:domain :Connection ;
@@ -973,7 +977,7 @@ can work within a system or component which provides it.""" ;
               rdfs:label "uses Protocol"@en .
 
 
-###  https://scch.org/technical_standards#vulnerableTo
+###  https://w3id.org/tsso#vulnerableTo
 :vulnerableTo rdf:type owl:ObjectProperty ;
               rdfs:range :Vulnerability ;
               rdfs:label "vulnerable To"@en .
@@ -983,7 +987,7 @@ can work within a system or component which provides it.""" ;
 #    Data properties
 #################################################################
 
-###  https://scch.org/technical_standards#appliesCryptography
+###  https://w3id.org/tsso#appliesCryptography
 :appliesCryptography rdf:type owl:DatatypeProperty ,
                               owl:FunctionalProperty ;
                      rdfs:range xsd:boolean ;
@@ -991,7 +995,7 @@ can work within a system or component which provides it.""" ;
                      rdfs:label "applies Cryptography"@en .
 
 
-###  https://scch.org/technical_standards#dateOfAdoption
+###  https://w3id.org/tsso#dateOfAdoption
 :dateOfAdoption rdf:type owl:DatatypeProperty ,
                          owl:FunctionalProperty ;
                 rdfs:range xsd:dateTime ;
@@ -999,7 +1003,7 @@ can work within a system or component which provides it.""" ;
                 rdfs:label "date Of Adoption"@en .
 
 
-###  https://scch.org/technical_standards#dateOfPublication
+###  https://w3id.org/tsso#dateOfPublication
 :dateOfPublication rdf:type owl:DatatypeProperty ,
                             owl:FunctionalProperty ;
                    rdfs:range xsd:dateTime ;
@@ -1007,7 +1011,7 @@ can work within a system or component which provides it.""" ;
                    rdfs:label "date Of Publication"@en .
 
 
-###  https://scch.org/technical_standards#dateOfWithdrawal
+###  https://w3id.org/tsso#dateOfWithdrawal
 :dateOfWithdrawal rdf:type owl:DatatypeProperty ,
                            owl:FunctionalProperty ;
                   rdfs:range xsd:dateTime ;
@@ -1015,7 +1019,7 @@ can work within a system or component which provides it.""" ;
                   rdfs:label "date Of Withdrawal"@en .
 
 
-###  https://scch.org/technical_standards#isAuthenticated
+###  https://w3id.org/tsso#isAuthenticated
 :isAuthenticated rdf:type owl:DatatypeProperty ,
                           owl:FunctionalProperty ;
                  rdfs:domain :Interface ;
@@ -1023,7 +1027,7 @@ can work within a system or component which provides it.""" ;
                  rdfs:label "is Authenticated"@en .
 
 
-###  https://scch.org/technical_standards#isCritical
+###  https://w3id.org/tsso#isCritical
 :isCritical rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:range xsd:boolean ;
@@ -1032,7 +1036,7 @@ can work within a system or component which provides it.""" ;
             rdfs:label "is Critical"@en .
 
 
-###  https://scch.org/technical_standards#isDebugInterface
+###  https://w3id.org/tsso#isDebugInterface
 :isDebugInterface rdf:type owl:DatatypeProperty ,
                            owl:FunctionalProperty ;
                   rdfs:domain :Interface ;
@@ -1042,7 +1046,7 @@ can work within a system or component which provides it.""" ;
                   rdfs:label "is Debug Interface"@en .
 
 
-###  https://scch.org/technical_standards#isDisclosed
+###  https://w3id.org/tsso#isDisclosed
 :isDisclosed rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain :Vulnerability ;
@@ -1051,7 +1055,7 @@ can work within a system or component which provides it.""" ;
              rdfs:label "is Disclosed"@en .
 
 
-###  https://scch.org/technical_standards#isEmbedded
+###  https://w3id.org/tsso#isEmbedded
 :isEmbedded rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain :Device ;
@@ -1059,14 +1063,14 @@ can work within a system or component which provides it.""" ;
             rdfs:label "is Embedded"@en .
 
 
-###  https://scch.org/technical_standards#isEncrypted
+###  https://w3id.org/tsso#isEncrypted
 :isEncrypted rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
              rdfs:range xsd:boolean ;
              rdfs:label "is Encrypted"@en .
 
 
-###  https://scch.org/technical_standards#isEssential
+###  https://w3id.org/tsso#isEssential
 :isEssential rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain [ rdf:type owl:Class ;
@@ -1078,7 +1082,7 @@ can work within a system or component which provides it.""" ;
              rdfs:label "is Essential"@en .
 
 
-###  https://scch.org/technical_standards#isExternal
+###  https://w3id.org/tsso#isExternal
 :isExternal rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:range xsd:boolean ;
@@ -1086,7 +1090,7 @@ can work within a system or component which provides it.""" ;
             rdfs:label "is External"@en .
 
 
-###  https://scch.org/technical_standards#isHard
+###  https://w3id.org/tsso#isHard
 :isHard rdf:type owl:DatatypeProperty ,
                  owl:FunctionalProperty ;
         rdfs:domain :Constraint ;
@@ -1094,7 +1098,7 @@ can work within a system or component which provides it.""" ;
         rdfs:label "is Hard"@en .
 
 
-###  https://scch.org/technical_standards#isInternal
+###  https://w3id.org/tsso#isInternal
 :isInternal rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain :Threat ;
@@ -1103,21 +1107,21 @@ can work within a system or component which provides it.""" ;
             rdfs:label "is Internal"@en .
 
 
-###  https://scch.org/technical_standards#isInternational
+###  https://w3id.org/tsso#isInternational
 :isInternational rdf:type owl:DatatypeProperty ,
                           owl:FunctionalProperty ;
                  rdfs:range xsd:boolean ;
                  rdfs:label "is International"@en .
 
 
-###  https://scch.org/technical_standards#isMandatory
+###  https://w3id.org/tsso#isMandatory
 :isMandatory rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
              rdfs:range xsd:boolean ;
              rdfs:label "is Mandatory"@en .
 
 
-###  https://scch.org/technical_standards#isNormative
+###  https://w3id.org/tsso#isNormative
 :isNormative rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain [ rdf:type owl:Class ;
@@ -1129,14 +1133,14 @@ can work within a system or component which provides it.""" ;
              rdfs:label "is Normative"@en .
 
 
-###  https://scch.org/technical_standards#isOnline
+###  https://w3id.org/tsso#isOnline
 :isOnline rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
           rdfs:range xsd:boolean ;
           rdfs:label "is Online"@en .
 
 
-###  https://scch.org/technical_standards#isPhysical
+###  https://w3id.org/tsso#isPhysical
 :isPhysical rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain [ rdf:type owl:Class ;
@@ -1152,7 +1156,7 @@ can work within a system or component which provides it.""" ;
             rdfs:label "is Physical"@en .
 
 
-###  https://scch.org/technical_standards#isPublic
+###  https://w3id.org/tsso#isPublic
 :isPublic rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
           rdfs:range xsd:boolean ;
@@ -1160,7 +1164,7 @@ can work within a system or component which provides it.""" ;
           rdfs:label "is Public"@en .
 
 
-###  https://scch.org/technical_standards#isRealTime
+###  https://w3id.org/tsso#isRealTime
 :isRealTime rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain :OperatingSystem ;
@@ -1168,7 +1172,7 @@ can work within a system or component which provides it.""" ;
             rdfs:label "is Real Time"@en .
 
 
-###  https://scch.org/technical_standards#isRemote
+###  https://w3id.org/tsso#isRemote
 :isRemote rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
           rdfs:domain :Interface ;
@@ -1178,7 +1182,7 @@ can work within a system or component which provides it.""" ;
           rdfs:label "is Remote"@en .
 
 
-###  https://scch.org/technical_standards#isRoleProtected
+###  https://w3id.org/tsso#isRoleProtected
 :isRoleProtected rdf:type owl:DatatypeProperty ,
                           owl:FunctionalProperty ;
                  rdfs:range xsd:boolean ;
@@ -1187,7 +1191,7 @@ MAy be modelled differently, via Component's property.""" ;
                  rdfs:label "is Role Protected"@en .
 
 
-###  https://scch.org/technical_standards#isSW
+###  https://w3id.org/tsso#isSW
 :isSW rdf:type owl:DatatypeProperty ,
                owl:FunctionalProperty ;
       rdfs:domain [ rdf:type owl:Class ;
@@ -1199,14 +1203,14 @@ MAy be modelled differently, via Component's property.""" ;
       rdfs:label "is SW"@en .
 
 
-###  https://scch.org/technical_standards#isSmart
+###  https://w3id.org/tsso#isSmart
 :isSmart rdf:type owl:DatatypeProperty ,
                   owl:FunctionalProperty ;
          rdfs:range xsd:boolean ;
          rdfs:label "is Smart"@en .
 
 
-###  https://scch.org/technical_standards#isSolved
+###  https://w3id.org/tsso#isSolved
 :isSolved rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
           rdfs:domain :Vulnerability ;
@@ -1215,7 +1219,7 @@ MAy be modelled differently, via Component's property.""" ;
           rdfs:label "is Solved"@en .
 
 
-###  https://scch.org/technical_standards#isSpecialPurpose
+###  https://w3id.org/tsso#isSpecialPurpose
 :isSpecialPurpose rdf:type owl:DatatypeProperty ,
                            owl:FunctionalProperty ;
                   rdfs:domain :Device ;
@@ -1223,7 +1227,7 @@ MAy be modelled differently, via Component's property.""" ;
                   rdfs:label "is Special Purpose"@en .
 
 
-###  https://scch.org/technical_standards#isTransportable
+###  https://w3id.org/tsso#isTransportable
 :isTransportable rdf:type owl:DatatypeProperty ,
                           owl:FunctionalProperty ;
                  rdfs:domain :Device ;
@@ -1231,7 +1235,7 @@ MAy be modelled differently, via Component's property.""" ;
                  rdfs:label "is Transportable"@en .
 
 
-###  https://scch.org/technical_standards#isUpdatable
+###  https://w3id.org/tsso#isUpdatable
 :isUpdatable rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
              rdfs:range xsd:boolean ;
@@ -1240,7 +1244,7 @@ MAy be modelled differently, via Component's property.""" ;
              rdfs:label "is Updatable"@en .
 
 
-###  https://scch.org/technical_standards#isVulnerable
+###  https://w3id.org/tsso#isVulnerable
 :isVulnerable rdf:type owl:DatatypeProperty ,
                        owl:FunctionalProperty ;
               rdfs:range xsd:boolean ;
@@ -1249,7 +1253,7 @@ MAy be modelled differently, via Component's property.""" ;
               rdfs:label "is Vulnerable"@en .
 
 
-###  https://scch.org/technical_standards#isWireless
+###  https://w3id.org/tsso#isWireless
 :isWireless rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
             rdfs:domain [ rdf:type owl:Class ;
@@ -1261,7 +1265,7 @@ MAy be modelled differently, via Component's property.""" ;
             rdfs:label "is Wireless"@en .
 
 
-###  https://scch.org/technical_standards#pages
+###  https://w3id.org/tsso#pages
 :pages rdf:type owl:DatatypeProperty ,
                 owl:FunctionalProperty ;
        rdfs:domain :Publication ;
@@ -1270,13 +1274,13 @@ MAy be modelled differently, via Component's property.""" ;
        rdfs:label "pages"@en .
 
 
-###  https://scch.org/technical_standards#priority
+###  https://w3id.org/tsso#priority
 :priority rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
           rdfs:label "priority"@en .
 
 
-###  https://scch.org/technical_standards#probability
+###  https://w3id.org/tsso#probability
 :probability rdf:type owl:DatatypeProperty ,
                       owl:FunctionalProperty ;
              rdfs:domain :Threat ;
@@ -1285,7 +1289,7 @@ MAy be modelled differently, via Component's property.""" ;
              rdfs:label "probability"@en .
 
 
-###  https://scch.org/technical_standards#receivesData
+###  https://w3id.org/tsso#receivesData
 :receivesData rdf:type owl:DatatypeProperty ,
                        owl:FunctionalProperty ;
               rdfs:range xsd:boolean ;
@@ -1293,7 +1297,7 @@ MAy be modelled differently, via Component's property.""" ;
               rdfs:label "receives Data"@en .
 
 
-###  https://scch.org/technical_standards#securityLevel
+###  https://w3id.org/tsso#securityLevel
 :securityLevel rdf:type owl:DatatypeProperty ,
                         owl:FunctionalProperty ;
                rdfs:domain [ rdf:type owl:Class ;
@@ -1305,7 +1309,7 @@ MAy be modelled differently, via Component's property.""" ;
                rdfs:label "security Level"@en .
 
 
-###  https://scch.org/technical_standards#sendsData
+###  https://w3id.org/tsso#sendsData
 :sendsData rdf:type owl:DatatypeProperty ,
                     owl:FunctionalProperty ;
            rdfs:range xsd:boolean ;
@@ -1313,7 +1317,7 @@ MAy be modelled differently, via Component's property.""" ;
            rdfs:label "sends Data"@en .
 
 
-###  https://scch.org/technical_standards#severity
+###  https://w3id.org/tsso#severity
 :severity rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
           rdfs:domain [ rdf:type owl:Class ;
@@ -1326,7 +1330,7 @@ MAy be modelled differently, via Component's property.""" ;
           rdfs:label "severity"@en .
 
 
-###  https://scch.org/technical_standards#size
+###  https://w3id.org/tsso#size
 :size rdf:type owl:DatatypeProperty ,
                owl:FunctionalProperty ;
       <http://purl.org/dc/terms/provenance> "NIST Framework" ;
@@ -1337,20 +1341,20 @@ MAy be modelled differently, via Component's property.""" ;
 #    Classes
 #################################################################
 
-###  https://scch.org/technical_standards#API
+###  https://w3id.org/tsso#API
 :API rdf:type owl:Class ;
      rdfs:comment "Application Program Interface, defines the methods and behaviour required and expected for communication" ;
      rdfs:label "API"@en .
 
 
-###  https://scch.org/technical_standards#APIKind
+###  https://w3id.org/tsso#APIKind
 :APIKind rdf:type owl:Class ;
          rdfs:subClassOf :Kind ;
          rdfs:comment "There are mulitple kinds such as REST, ROA, RMC, RMI" ;
          rdfs:label "API Kind"@en .
 
 
-###  https://scch.org/technical_standards#AccessControlMechanism
+###  https://w3id.org/tsso#AccessControlMechanism
 :AccessControlMechanism rdf:type owl:Class ;
                         rdfs:subClassOf :Mechanism ;
                         <http://purl.org/dc/elements/1.1/description> "Security safeguard designed to detect and deny unauthorized access and permit authorized access to an information system or physical facility." ;
@@ -1358,7 +1362,7 @@ MAy be modelled differently, via Component's property.""" ;
                         rdfs:label "Access Control Mechanism"@en .
 
 
-###  https://scch.org/technical_standards#Actuator
+###  https://w3id.org/tsso#Actuator
 :Actuator rdf:type owl:Class ;
           rdfs:subClassOf :Device ;
           <http://purl.org/dc/elements/1.1/description> "a device that causes a machine or other device to operate" ;
@@ -1366,7 +1370,7 @@ MAy be modelled differently, via Component's property.""" ;
           rdfs:label "Actuator"@en .
 
 
-###  https://scch.org/technical_standards#Algorithm
+###  https://w3id.org/tsso#Algorithm
 :Algorithm rdf:type owl:Class ;
            <http://purl.org/dc/elements/1.1/description> "Process or set of rules to be followed in calculations or other problem-solving operations, especially by a computer." ;
            <http://purl.org/dc/terms/provenance> "ETSI 303645" ;
@@ -1374,21 +1378,21 @@ MAy be modelled differently, via Component's property.""" ;
            :replaceBy "fabio:Algorithm" .
 
 
-###  https://scch.org/technical_standards#Architecture
+###  https://w3id.org/tsso#Architecture
 :Architecture rdf:type owl:Class ;
               <http://purl.org/dc/elements/1.1/description> "Conceptual model that defines the structure, behavior, and more views of a system." ;
               <http://purl.org/dc/terms/provenance> "ETSI 303645" ;
               rdfs:label "Architecture"@en .
 
 
-###  https://scch.org/technical_standards#Asset
+###  https://w3id.org/tsso#Asset
 :Asset rdf:type owl:Class ;
        <http://purl.org/dc/elements/1.1/description> "An item owned by a person or company, regarded as having value or being useful." ,
                                                      "NIST Framework" ;
        rdfs:label "Asset"@en .
 
 
-###  https://scch.org/technical_standards#AuthenticationMechanism
+###  https://w3id.org/tsso#AuthenticationMechanism
 :AuthenticationMechanism rdf:type owl:Class ;
                          rdfs:subClassOf :Mechanism ;
                          <http://purl.org/dc/elements/1.1/description> "Method used to prove the authenticity of an entity" ;
@@ -1396,14 +1400,14 @@ MAy be modelled differently, via Component's property.""" ;
                          rdfs:label "Authentication Mechanism"@en .
 
 
-###  https://scch.org/technical_standards#BooleanConstraint
+###  https://w3id.org/tsso#BooleanConstraint
 :BooleanConstraint rdf:type owl:Class ;
                    rdfs:subClassOf :Constraint ;
                    <http://purl.org/dc/elements/1.1/description> "Represents a boolean constraint also interpreted as condition." ;
                    rdfs:label "Boolean Constraint"@en .
 
 
-###  https://scch.org/technical_standards#Buyer
+###  https://w3id.org/tsso#Buyer
 :Buyer rdf:type owl:Class ;
        rdfs:subClassOf :Stakeholder ;
        <http://purl.org/dc/elements/1.1/description> "The people or organizations that consume a given product or service." ;
@@ -1411,7 +1415,7 @@ MAy be modelled differently, via Component's property.""" ;
        rdfs:label "Buyer"@en .
 
 
-###  https://scch.org/technical_standards#Capability
+###  https://w3id.org/tsso#Capability
 :Capability rdf:type owl:Class ;
             owl:equivalentClass :Functionality ;
             <http://purl.org/dc/elements/1.1/description> "Ability to perform a specified task" ;
@@ -1419,13 +1423,13 @@ MAy be modelled differently, via Component's property.""" ;
             rdfs:label "Capability"@en .
 
 
-###  https://scch.org/technical_standards#Category
+###  https://w3id.org/tsso#Category
 :Category rdf:type owl:Class ;
           <http://purl.org/dc/elements/1.1/description> "General concept to define possible categories and divivsions of elements." ;
           rdfs:label "Category"@en .
 
 
-###  https://scch.org/technical_standards#Channel
+###  https://w3id.org/tsso#Channel
 :Channel rdf:type owl:Class ;
          <http://purl.org/dc/elements/1.1/description> "Communication channels are mediums through which you can send information." ,
                                                        "Logical or physocal link between assets." ;
@@ -1433,26 +1437,26 @@ MAy be modelled differently, via Component's property.""" ;
          rdfs:label "Channel"@en .
 
 
-###  https://scch.org/technical_standards#Component
+###  https://w3id.org/tsso#Component
 :Component rdf:type owl:Class ;
            <http://purl.org/dc/elements/1.1/description> "A part or element of a larger wholesuch as a system. It can be seen as a buillding block." ;
            rdfs:label "Component"@en .
 
 
-###  https://scch.org/technical_standards#ComponentRequirement
+###  https://w3id.org/tsso#ComponentRequirement
 :ComponentRequirement rdf:type owl:Class ;
                       rdfs:subClassOf :Requirement ;
                       rdfs:comment "A requirement targeting components that build up a system" ;
                       rdfs:label "Component Requirement"@en .
 
 
-###  https://scch.org/technical_standards#ComponentSolution
+###  https://w3id.org/tsso#ComponentSolution
 :ComponentSolution rdf:type owl:Class ;
                    rdfs:subClassOf :SolutionStructure ;
                    rdfs:label "Component Solution"@en .
 
 
-###  https://scch.org/technical_standards#Composite
+###  https://w3id.org/tsso#Composite
 :Composite rdf:type owl:Class ;
            owl:equivalentClass [ rdf:type owl:Restriction ;
                                  owl:onProperty :composedOf ;
@@ -1463,25 +1467,25 @@ MAy be modelled differently, via Component's property.""" ;
            rdfs:label "Composite"@en .
 
 
-###  https://scch.org/technical_standards#Concern
+###  https://w3id.org/tsso#Concern
 :Concern rdf:type owl:Class ;
          rdfs:label "Concern"@en .
 
 
-###  https://scch.org/technical_standards#Configuration
+###  https://w3id.org/tsso#Configuration
 :Configuration rdf:type owl:Class ;
                <http://purl.org/dc/elements/1.1/description> "Arrangement or set-up of the hardware and software that make up a computer system." ;
                <http://purl.org/dc/terms/provenance> "ETSI 303645" ;
                rdfs:label "Configuration"@en .
 
 
-###  https://scch.org/technical_standards#Connection
+###  https://w3id.org/tsso#Connection
 :Connection rdf:type owl:Class ;
             <http://purl.org/dc/elements/1.1/description> "Object that is used as communication channel between components. This connection can be attributed and configured." ;
             rdfs:label "Connection"@en .
 
 
-###  https://scch.org/technical_standards#ConstrainedDevice
+###  https://w3id.org/tsso#ConstrainedDevice
 :ConstrainedDevice rdf:type owl:Class ;
                    rdfs:subClassOf [ owl:intersectionOf ( :Device
                                                           [ rdf:type owl:Restriction ;
@@ -1496,13 +1500,13 @@ MAy be modelled differently, via Component's property.""" ;
                    rdfs:label "Constrained Device"@en .
 
 
-###  https://scch.org/technical_standards#Constraint
+###  https://w3id.org/tsso#Constraint
 :Constraint rdf:type owl:Class ;
             <http://purl.org/dc/elements/1.1/description> "Limitation or restriction. Requirements may have constraints imposed." ;
             rdfs:label "Constraint"@en .
 
 
-###  https://scch.org/technical_standards#Core
+###  https://w3id.org/tsso#Core
 :Core rdf:type owl:Class ;
       rdfs:subClassOf :FrameworkElement ;
       <http://purl.org/dc/elements/1.1/description> "Set of cybersecurity activities, desired outcomes, and applicable references that are common across critical infrastructure sectors. The Framework Core provides a set of activities to achieve specific cybersecurity outcomes, and references examples of guidance to achieve those outcomes" ;
@@ -1510,34 +1514,34 @@ MAy be modelled differently, via Component's property.""" ;
       rdfs:label "Core"@en .
 
 
-###  https://scch.org/technical_standards#CounterMeasure
+###  https://w3id.org/tsso#CounterMeasure
 :CounterMeasure rdf:type owl:Class ;
                 <http://purl.org/dc/elements/1.1/description> "Reduces a threat, vulnerability or the result of an attack. It may be able to discover it and report it so that proper action can be taken." ;
                 rdfs:comment "Measure used to avoid/ mitigate a theat or problem, solve a vulnerability" ;
                 rdfs:label "Counter Measure"@en .
 
 
-###  https://scch.org/technical_standards#Customer
+###  https://w3id.org/tsso#Customer
 :Customer rdf:type owl:Class ;
           rdfs:subClassOf :Stakeholder ;
           <http://purl.org/dc/terms/provenance> "NIST Framework" ;
           rdfs:label "Customer"@en .
 
 
-###  https://scch.org/technical_standards#DeploymentNode
+###  https://w3id.org/tsso#DeploymentNode
 :DeploymentNode rdf:type owl:Class ;
                 <http://purl.org/dc/elements/1.1/description> "A node that is a  part of a deployment solution. Commonly referring a device with an IP address."@en ;
                 rdfs:label "Deployment Node"@en ,
                            "Deployment node"@en .
 
 
-###  https://scch.org/technical_standards#DeploymentSolution
+###  https://w3id.org/tsso#DeploymentSolution
 :DeploymentSolution rdf:type owl:Class ;
                     rdfs:subClassOf :SolutionStructure ;
                     rdfs:label "Deployment Solution"@en .
 
 
-###  https://scch.org/technical_standards#DetectionMechanism
+###  https://w3id.org/tsso#DetectionMechanism
 :DetectionMechanism rdf:type owl:Class ;
                     rdfs:subClassOf :Mechanism ;
                     <http://purl.org/dc/elements/1.1/description> "Detect the presence of events." ;
@@ -1545,14 +1549,14 @@ MAy be modelled differently, via Component's property.""" ;
                     rdfs:label "Detection Mechanism"@en .
 
 
-###  https://scch.org/technical_standards#Developer
+###  https://w3id.org/tsso#Developer
 :Developer rdf:type owl:Class ;
            rdfs:subClassOf :Stakeholder ;
            <http://purl.org/dc/terms/provenance> "ETSI 303645" ;
            rdfs:label "Developer"@en .
 
 
-###  https://scch.org/technical_standards#Device
+###  https://w3id.org/tsso#Device
 :Device rdf:type owl:Class ;
         rdfs:subClassOf :Product ,
                         [ rdf:type owl:Restriction ;
@@ -1564,14 +1568,14 @@ MAy be modelled differently, via Component's property.""" ;
         rdfs:label "Device"@en .
 
 
-###  https://scch.org/technical_standards#DevicePhysicalLimitation
+###  https://w3id.org/tsso#DevicePhysicalLimitation
 :DevicePhysicalLimitation rdf:type owl:Class ;
                           <http://purl.org/dc/elements/1.1/description> "Physical limitations can be due to power supply, battery life, processing power, physical access, limited functionality, limited memory or limited network bandwidth." ;
                           <http://purl.org/dc/terms/provenance> "ETSI 303645" ;
                           rdfs:label "Device Physical Limitation"@en .
 
 
-###  https://scch.org/technical_standards#Domain
+###  https://w3id.org/tsso#Domain
 :Domain rdf:type owl:Class ;
         owl:equivalentClass [ rdf:type owl:Restriction ;
                               owl:onProperty :relatedTo ;
@@ -1581,7 +1585,7 @@ MAy be modelled differently, via Component's property.""" ;
         rdfs:label "Domain"@en .
 
 
-###  https://scch.org/technical_standards#Driver
+###  https://w3id.org/tsso#Driver
 :Driver rdf:type owl:Class ;
         rdfs:subClassOf :Concern ;
         <http://purl.org/dc/elements/1.1/description> "Something that creates and fuels activity, or gives force or impetus regarding the goals of an organization." ;
@@ -1589,7 +1593,7 @@ MAy be modelled differently, via Component's property.""" ;
         rdfs:label "Driver"@en .
 
 
-###  https://scch.org/technical_standards#EmbeddedDevice
+###  https://w3id.org/tsso#EmbeddedDevice
 :EmbeddedDevice rdf:type owl:Class ;
                 rdfs:subClassOf :Device ;
                 <http://purl.org/dc/elements/1.1/description> "Device which has physical limitations in either the ability to process data, the ability to communicate data, the ability to store data or the ability to interact with the user, due to restrictions that arise from its intended use" ;
@@ -1599,74 +1603,74 @@ MAy be modelled differently, via Component's property.""" ;
                 rdfs:label "Embedded Device"@en .
 
 
-###  https://scch.org/technical_standards#Firmware
+###  https://w3id.org/tsso#Firmware
 :Firmware rdf:type owl:Class ;
           rdfs:comment "Permanent software programmed into a read-only memory." ;
           rdfs:label "Firmware"@en .
 
 
-###  https://scch.org/technical_standards#Framework
+###  https://w3id.org/tsso#Framework
 :Framework rdf:type owl:Class ;
            <http://purl.org/dc/elements/1.1/description> "Concept that represents real or conceptual structure intended to serve as a support or guide for the building of something that expands the structure into something useful" ;
            <http://purl.org/dc/terms/provenance> "NIST Framework" ;
            rdfs:label "Framework"@en .
 
 
-###  https://scch.org/technical_standards#FrameworkElement
+###  https://w3id.org/tsso#FrameworkElement
 :FrameworkElement rdf:type owl:Class ;
                   <http://purl.org/dc/elements/1.1/description> "Concept  used to define building elements of a framework." ;
                   <http://purl.org/dc/terms/provenance> "NIST Framework" ;
                   rdfs:label "Framework Element"@en .
 
 
-###  https://scch.org/technical_standards#Function
+###  https://w3id.org/tsso#Function
 :Function rdf:type owl:Class ;
           rdfs:comment "Components provide set of relatedfunctions with a specific task" ;
           rdfs:label "Function"@en .
 
 
-###  https://scch.org/technical_standards#FunctionalRequirement
+###  https://w3id.org/tsso#FunctionalRequirement
 :FunctionalRequirement rdf:type owl:Class ;
                        rdfs:subClassOf :SystemRequirement ;
                        <http://purl.org/dc/elements/1.1/description> "A requisite demanded to define a system or its component" ;
                        rdfs:label "Functional Requirement"@en .
 
 
-###  https://scch.org/technical_standards#Functionality
+###  https://w3id.org/tsso#Functionality
 :Functionality rdf:type owl:Class ;
                rdfs:comment "Components provide also functionalities which can trigger special events; be targets of threats; could be part or associated to capabilities" ;
                rdfs:label "Functionality"@en .
 
 
-###  https://scch.org/technical_standards#GenericProperty
+###  https://w3id.org/tsso#GenericProperty
 :GenericProperty rdf:type owl:Class ;
                  rdfs:comment """Items have properties.  Properties can describe characteristic something.
 Devices may have specific attributes that may be exposed to different threats, while others may reduce the risk of other threats appareances.""" ;
                  rdfs:label "Generic Property"@en .
 
 
-###  https://scch.org/technical_standards#Guideline
+###  https://w3id.org/tsso#Guideline
 :Guideline rdf:type owl:Class ;
            rdfs:subClassOf :Publication ;
            <http://purl.org/dc/elements/1.1/description> "General rule, principle, or piece of advice"@en ;
            rdfs:label "Guideline"@en .
 
 
-###  https://scch.org/technical_standards#HUI
+###  https://w3id.org/tsso#HUI
 :HUI rdf:type owl:Class ;
      rdfs:subClassOf :UI ;
      rdfs:comment "Kind of interface, intended for human use" ;
      rdfs:label "HUI"@en .
 
 
-###  https://scch.org/technical_standards#HWSolution
+###  https://w3id.org/tsso#HWSolution
 :HWSolution rdf:type owl:Class ;
             rdfs:subClassOf :SolutionStructure ;
             <http://purl.org/dc/terms/provenance> "ETSI 303645" ;
             rdfs:label "HW Solution"@en .
 
 
-###  https://scch.org/technical_standards#HostDevice
+###  https://w3id.org/tsso#HostDevice
 :HostDevice rdf:type owl:Class ;
             rdfs:subClassOf :Device ;
             <http://purl.org/dc/elements/1.1/description> "Device which has physical limitations in either the ability to process data, the ability to communicate data, the ability to store data or the ability to interact with the user, due to restrictions that arise from its intended use" ;
@@ -1676,7 +1680,7 @@ Devices may have specific attributes that may be exposed to different threats, w
             rdfs:label "Host Device"@en .
 
 
-###  https://scch.org/technical_standards#InputDevice
+###  https://w3id.org/tsso#InputDevice
 :InputDevice rdf:type owl:Class ;
              rdfs:subClassOf :Device ;
              <http://purl.org/dc/elements/1.1/description> "A piece of equipment used to provide data and control signals to an information processing system." ;
@@ -1684,20 +1688,20 @@ Devices may have specific attributes that may be exposed to different threats, w
              rdfs:label "Input Device"@en .
 
 
-###  https://scch.org/technical_standards#Interface
+###  https://w3id.org/tsso#Interface
 :Interface rdf:type owl:Class ;
            rdfs:comment "Components have interfaces such as buttons, keyboards, internet ports, hmdi and other interfaces. Those determine interaction points." ;
            rdfs:label "Interface"@en .
 
 
-###  https://scch.org/technical_standards#Kind
+###  https://w3id.org/tsso#Kind
 :Kind rdf:type owl:Class ;
       owl:equivalentClass :Type ;
       rdfs:comment "A group of  things which share similar characteristics" ;
       rdfs:label "Kind"@en .
 
 
-###  https://scch.org/technical_standards#Manufacturer
+###  https://w3id.org/tsso#Manufacturer
 :Manufacturer rdf:type owl:Class ;
               owl:equivalentClass :Supplier ;
               rdfs:subClassOf :Stakeholder ;
@@ -1705,7 +1709,7 @@ Devices may have specific attributes that may be exposed to different threats, w
               rdfs:label "Manufacturer"@en .
 
 
-###  https://scch.org/technical_standards#Mechanism
+###  https://w3id.org/tsso#Mechanism
 :Mechanism rdf:type owl:Class ;
            rdfs:subClassOf :CounterMeasure ;
            <http://purl.org/dc/elements/1.1/description> "The process, way, or system used to produce a particular result." ;
@@ -1713,7 +1717,7 @@ Devices may have specific attributes that may be exposed to different threats, w
            rdfs:label "Mechanism"@en .
 
 
-###  https://scch.org/technical_standards#MemoryAccessControl
+###  https://w3id.org/tsso#MemoryAccessControl
 :MemoryAccessControl rdf:type owl:Class ;
                      rdfs:subClassOf :AccessControlMechanism ;
                      <http://purl.org/dc/elements/1.1/description> "Way to control memory access rights" ;
@@ -1721,7 +1725,7 @@ Devices may have specific attributes that may be exposed to different threats, w
                      rdfs:label "Memory Access Control"@en .
 
 
-###  https://scch.org/technical_standards#MobileDevice
+###  https://w3id.org/tsso#MobileDevice
 :MobileDevice rdf:type owl:Class ;
               rdfs:subClassOf :Device ;
               <http://purl.org/dc/terms/provenance> "IEC 62443 4-2" ;
@@ -1729,7 +1733,7 @@ Devices may have specific attributes that may be exposed to different threats, w
               rdfs:label "Mobile Device"@en .
 
 
-###  https://scch.org/technical_standards#NISTCategory
+###  https://w3id.org/tsso#NISTCategory
 :NISTCategory rdf:type owl:Class ;
               rdfs:subClassOf [ owl:intersectionOf ( :Category
                                                      :Core
@@ -1745,7 +1749,7 @@ Devices may have specific attributes that may be exposed to different threats, w
               rdfs:label "NIST Category"@en .
 
 
-###  https://scch.org/technical_standards#NISTFunction
+###  https://w3id.org/tsso#NISTFunction
 :NISTFunction rdf:type owl:Class ;
               rdfs:subClassOf [ owl:intersectionOf ( :Core
                                                      [ rdf:type owl:Restriction ;
@@ -1760,7 +1764,7 @@ Devices may have specific attributes that may be exposed to different threats, w
               rdfs:label "NIST Function"@en .
 
 
-###  https://scch.org/technical_standards#NISTSubCategory
+###  https://w3id.org/tsso#NISTSubCategory
 :NISTSubCategory rdf:type owl:Class ;
                  rdfs:subClassOf [ owl:intersectionOf ( :Category
                                                         :Core
@@ -1781,7 +1785,7 @@ Devices may have specific attributes that may be exposed to different threats, w
                  rdfs:label "NIST Sub Category"@en .
 
 
-###  https://scch.org/technical_standards#NetworkDevice
+###  https://w3id.org/tsso#NetworkDevice
 :NetworkDevice rdf:type owl:Class ;
                rdfs:subClassOf :Device ;
                <http://purl.org/dc/terms/provenance> "IEC 62443 4-2" ;
@@ -1790,14 +1794,14 @@ Devices may have specific attributes that may be exposed to different threats, w
                rdfs:label "Network Device"@en .
 
 
-###  https://scch.org/technical_standards#NetworkType
+###  https://w3id.org/tsso#NetworkType
 :NetworkType rdf:type owl:Class ;
              rdfs:subClassOf :Type ;
              rdfs:comment "A network type might be usefull to determine the type of connection security" ;
              rdfs:label "Network Type"@en .
 
 
-###  https://scch.org/technical_standards#NonFunctionalRequirement
+###  https://w3id.org/tsso#NonFunctionalRequirement
 :NonFunctionalRequirement rdf:type owl:Class ;
                           owl:equivalentClass :QualityAttribute ;
                           rdfs:subClassOf :SystemRequirement ;
@@ -1805,19 +1809,19 @@ Devices may have specific attributes that may be exposed to different threats, w
                           rdfs:label "Non Functional Requirement"@en .
 
 
-###  https://scch.org/technical_standards#OperatingSystem
+###  https://w3id.org/tsso#OperatingSystem
 :OperatingSystem rdf:type owl:Class ;
                  rdfs:comment "Operating system that can run on a device. It supports a device's basic functions, such as controlling peripherals and interfaces." ;
                  rdfs:label "Operating System"@en .
 
 
-###  https://scch.org/technical_standards#Organization
+###  https://w3id.org/tsso#Organization
 :Organization rdf:type owl:Class ;
               rdfs:comment "Entity in charge of making standards" ;
               rdfs:label "Organization"@en .
 
 
-###  https://scch.org/technical_standards#Outcome
+###  https://w3id.org/tsso#Outcome
 :Outcome rdf:type owl:Class ;
          rdfs:subClassOf :Concern ;
          <http://purl.org/dc/elements/1.1/description> "Result or a conclusion reached through a process of logical thinking or motivated by a driver." ;
@@ -1825,41 +1829,41 @@ Devices may have specific attributes that may be exposed to different threats, w
          rdfs:label "Outcome"@en .
 
 
-###  https://scch.org/technical_standards#Policy
+###  https://w3id.org/tsso#Policy
 :Policy rdf:type owl:Class ;
         rdfs:subClassOf :CounterMeasure ;
         rdfs:comment "A policy is a set of rules or guidelines to follow in or to achieve compliance. Components  consider policies, policies are addressed or demanded by requirements." ;
         rdfs:label "Policy"@en .
 
 
-###  https://scch.org/technical_standards#Port
+###  https://w3id.org/tsso#Port
 :Port rdf:type owl:Class ;
       <http://purl.org/dc/elements/1.1/description> "A port is a virtual point where network connections start and end. They are associated to services provided by components." ;
       <http://purl.org/dc/terms/provenance> "ETSI 303645" ;
       rdfs:label "Port"@en .
 
 
-###  https://scch.org/technical_standards#Practice
+###  https://w3id.org/tsso#Practice
 :Practice rdf:type owl:Class ;
           rdfs:subClassOf :CounterMeasure ;
           <http://purl.org/dc/elements/1.1/description> "Procedures that are accepted or prescribed as being correct or most effective" ;
           rdfs:label "Practice"@en .
 
 
-###  https://scch.org/technical_standards#Problem
+###  https://w3id.org/tsso#Problem
 :Problem rdf:type owl:Class ;
          rdfs:comment "ETSI 303645" ,
                       "General concept that defines a probllem that may affect any kind of asset." ;
          rdfs:label "Problem"@en .
 
 
-###  https://scch.org/technical_standards#Product
+###  https://w3id.org/tsso#Product
 :Product rdf:type owl:Class ;
          rdfs:subClassOf :Asset ;
          rdfs:label "Product"@en .
 
 
-###  https://scch.org/technical_standards#Profile
+###  https://w3id.org/tsso#Profile
 :Profile rdf:type owl:Class ;
          rdfs:subClassOf :FrameworkElement ;
          <http://purl.org/dc/elements/1.1/description> "Component of the framework. It represents the alignment of the Functions, Categories, and Subcategories with the business requirements, risk tolerance, and resources of the organization. A Profile enables organizations to establish a roadmap for reducing cybersecurity risk that is well aligned with organizational and sector goals, considers legal/regulatory requirements and industry best practices, and reflects risk management priorities" ;
@@ -1867,44 +1871,44 @@ Devices may have specific attributes that may be exposed to different threats, w
          rdfs:label "Profile"@en .
 
 
-###  https://scch.org/technical_standards#Protocol
+###  https://w3id.org/tsso#Protocol
 :Protocol rdf:type owl:Class ;
           rdfs:comment "Used by components to communicate" ;
           rdfs:label "Protocol"@en .
 
 
-###  https://scch.org/technical_standards#ProtocolProperty
+###  https://w3id.org/tsso#ProtocolProperty
 :ProtocolProperty rdf:type owl:Class ;
                   rdfs:subClassOf :GenericProperty ;
                   <http://purl.org/dc/terms/provenance> "ETSI 303645" ;
                   rdfs:label "Protocol Property"@en .
 
 
-###  https://scch.org/technical_standards#Provision
+###  https://w3id.org/tsso#Provision
 :Provision rdf:type owl:Class ;
            rdfs:label "Provision"@en .
 
 
-###  https://scch.org/technical_standards#Publication
+###  https://w3id.org/tsso#Publication
 :Publication rdf:type owl:Class ;
              rdfs:comment "Document developed by an organization that is published"@en ;
              rdfs:label "Publication"@en .
 
 
-###  https://scch.org/technical_standards#PublicationConstraint
+###  https://w3id.org/tsso#PublicationConstraint
 :PublicationConstraint rdf:type owl:Class ;
                        rdfs:subClassOf :Constraint ;
                        rdfs:label "Publication Constraint"@en .
 
 
-###  https://scch.org/technical_standards#QualityAttribute
+###  https://w3id.org/tsso#QualityAttribute
 :QualityAttribute rdf:type owl:Class ;
                   <http://purl.org/dc/terms/provenance> "ETSI 303645" ;
                   rdfs:label "Quality Attribute"@en ;
                   rdfs:seeAlso :NonFunctionalRequirement .
 
 
-###  https://scch.org/technical_standards#Recommendation
+###  https://w3id.org/tsso#Recommendation
 :Recommendation rdf:type owl:Class ;
                 rdfs:subClassOf [ owl:intersectionOf ( :Provision
                                                        [ rdf:type owl:Restriction ;
@@ -1918,14 +1922,14 @@ Devices may have specific attributes that may be exposed to different threats, w
                 rdfs:label "Recommendation"@en .
 
 
-###  https://scch.org/technical_standards#ReferenceArchitecture
+###  https://w3id.org/tsso#ReferenceArchitecture
 :ReferenceArchitecture rdf:type owl:Class ;
                        rdfs:subClassOf :SolutionStructure ;
                        <http://purl.org/dc/terms/provenance> "ETSI 303645" ;
                        rdfs:label "Reference Architecture"@en .
 
 
-###  https://scch.org/technical_standards#Requirement
+###  https://w3id.org/tsso#Requirement
 :Requirement rdf:type owl:Class ;
              rdfs:subClassOf [ owl:intersectionOf ( :Provision
                                                     [ rdf:type owl:Restriction ;
@@ -1939,48 +1943,48 @@ Devices may have specific attributes that may be exposed to different threats, w
              rdfs:label "Requirement"@en .
 
 
-###  https://scch.org/technical_standards#RequirementDependencyConstraint
+###  https://w3id.org/tsso#RequirementDependencyConstraint
 :RequirementDependencyConstraint rdf:type owl:Class ;
                                  rdfs:subClassOf :Constraint ;
                                  rdfs:label "Requirement Dependency Constraint"@en .
 
 
-###  https://scch.org/technical_standards#Risk
+###  https://w3id.org/tsso#Risk
 :Risk rdf:type owl:Class ;
       <http://purl.org/dc/elements/1.1/description> "A measure of the extent to which an entity is threatened by a potential circumstance or event, and typically a function of: (i) the adverse impacts that would arise if the circumstance or event occurs; and (ii) the likelihood of occurrence." ;
       <http://purl.org/dc/terms/provenance> "NIST Framework" ;
       rdfs:label "Risk"@en .
 
 
-###  https://scch.org/technical_standards#RiskAssesement
+###  https://w3id.org/tsso#RiskAssesement
 :RiskAssesement rdf:type owl:Class ;
                 <http://purl.org/dc/elements/1.1/description> "Association object between assets and risk. It can be attributed e.g. priority, effect, likelihood" ;
                 <http://purl.org/dc/terms/provenance> "NIST Framework" ;
                 rdfs:label "Risk Assesement"@en .
 
 
-###  https://scch.org/technical_standards#SWApplication
+###  https://w3id.org/tsso#SWApplication
 :SWApplication rdf:type owl:Class ;
                rdfs:subClassOf :Product ;
                rdfs:comment "A kind of component that builds an IACS" ;
                rdfs:label "SW Application"@en .
 
 
-###  https://scch.org/technical_standards#SWSolution
+###  https://w3id.org/tsso#SWSolution
 :SWSolution rdf:type owl:Class ;
             rdfs:subClassOf :SolutionStructure ;
             <http://purl.org/dc/terms/provenance> "ETSI 303645" ;
             rdfs:label "SW Solution"@en .
 
 
-###  https://scch.org/technical_standards#Scope
+###  https://w3id.org/tsso#Scope
 :Scope rdf:type owl:Class ;
        <http://purl.org/dc/elements/1.1/description> "Extent of the area or subject matter that something deals with or to which it is relevant" ;
        <http://purl.org/dc/terms/provenance> "ETSI 303645" ;
        rdfs:label "Scope"@en .
 
 
-###  https://scch.org/technical_standards#SecureBootMechanism
+###  https://w3id.org/tsso#SecureBootMechanism
 :SecureBootMechanism rdf:type owl:Class ;
                      rdfs:subClassOf :Mechanism ;
                      <http://purl.org/dc/elements/1.1/description> "Mechanism that verifies the integrity of every code being loaded, before it's allowed to execute" ;
@@ -1988,34 +1992,34 @@ Devices may have specific attributes that may be exposed to different threats, w
                      rdfs:label "Secure Boot Mechanism"@en .
 
 
-###  https://scch.org/technical_standards#Sensor
+###  https://w3id.org/tsso#Sensor
 :Sensor rdf:type owl:Class ;
         rdfs:subClassOf :Device ;
         <http://purl.org/dc/terms/provenance> "ETSI 303645" ;
         rdfs:label "Sensor"@en .
 
 
-###  https://scch.org/technical_standards#Service
+###  https://w3id.org/tsso#Service
 :Service rdf:type owl:Class ;
          rdfs:subClassOf :Product ;
          rdfs:comment "Components provide services, which are units of funtionality that can run independently." ;
          rdfs:label "Service"@en .
 
 
-###  https://scch.org/technical_standards#SolutionStructure
+###  https://w3id.org/tsso#SolutionStructure
 :SolutionStructure rdf:type owl:Class ;
                    rdfs:comment "Generic concept that represents solution structures for systems." ;
                    rdfs:label "Solution Structure"@en .
 
 
-###  https://scch.org/technical_standards#Stakeholder
+###  https://w3id.org/tsso#Stakeholder
 :Stakeholder rdf:type owl:Class ;
              <http://purl.org/dc/elements/1.1/description> "Person with an interest or concern in something" ;
              <http://purl.org/dc/terms/provenance> "ETSI 303645" ;
              rdfs:label "Stakeholder"@en .
 
 
-###  https://scch.org/technical_standards#Standard
+###  https://w3id.org/tsso#Standard
 :Standard rdf:type owl:Class ;
           rdfs:subClassOf :Publication ;
           <http://purl.org/dc/elements/1.1/description> "A standard is a document that provides rules or guidelines to achieve order in a given context."@en ;
@@ -2023,14 +2027,14 @@ Devices may have specific attributes that may be exposed to different threats, w
           rdfs:label "Standard"@en .
 
 
-###  https://scch.org/technical_standards#Status
+###  https://w3id.org/tsso#Status
 :Status rdf:type owl:Class ;
         rdfs:comment """Status of a document
 """ ;
         rdfs:label "Status"@en .
 
 
-###  https://scch.org/technical_standards#StorageMechanism
+###  https://w3id.org/tsso#StorageMechanism
 :StorageMechanism rdf:type owl:Class ;
                   rdfs:subClassOf :Mechanism ;
                   <http://purl.org/dc/elements/1.1/description> "Mechanism that enables a computer or system to retain data, either temporarily or permanently" ;
@@ -2038,13 +2042,13 @@ Devices may have specific attributes that may be exposed to different threats, w
                   rdfs:label "Storage Mechanism"@en .
 
 
-###  https://scch.org/technical_standards#SupplementalGuidance
+###  https://w3id.org/tsso#SupplementalGuidance
 :SupplementalGuidance rdf:type owl:Class ;
                       rdfs:comment "Generic class for extra informative content" ;
                       rdfs:label "Supplemental Guidance"@en .
 
 
-###  https://scch.org/technical_standards#Supplier
+###  https://w3id.org/tsso#Supplier
 :Supplier rdf:type owl:Class ;
           rdfs:subClassOf :Stakeholder ;
           <http://purl.org/dc/elements/1.1/description> "Product and service providers used for an organization’s internal purposes (e.g., IT infrastructure) or integrated into the products of services provided to that organization’s Buyers." ;
@@ -2053,14 +2057,14 @@ Devices may have specific attributes that may be exposed to different threats, w
           rdfs:label "Supplier"@en .
 
 
-###  https://scch.org/technical_standards#System
+###  https://w3id.org/tsso#System
 :System rdf:type owl:Class ;
         rdfs:subClassOf :Asset ;
         rdfs:comment "System for which components will be defined" ;
         rdfs:label "System"@en .
 
 
-###  https://scch.org/technical_standards#SystemRequirement
+###  https://w3id.org/tsso#SystemRequirement
 :SystemRequirement rdf:type owl:Class ;
                    rdfs:subClassOf :Concern ;
                    rdfs:comment "Statement that identifies the functionality and characteristics of a system to satisfy the stakeholder’s requirements/needs/concerns" ;
@@ -2068,21 +2072,21 @@ Devices may have specific attributes that may be exposed to different threats, w
                    rdfs:seeAlso "https://www.umsl.edu/~sauterv/analysis/F2015/System%20Requirements.html.htm" .
 
 
-###  https://scch.org/technical_standards#TechnicalCommittee
+###  https://w3id.org/tsso#TechnicalCommittee
 :TechnicalCommittee rdf:type owl:Class ;
                     rdfs:comment """Entity part of an organization in charge of developing standard
 """ ;
                     rdfs:label "Technical Committee"@en .
 
 
-###  https://scch.org/technical_standards#Technology
+###  https://w3id.org/tsso#Technology
 :Technology rdf:type owl:Class ;
             rdfs:subClassOf :CounterMeasure ;
             <http://purl.org/dc/elements/1.1/description> "Application of scientific knowledge for practical purposes" ;
             rdfs:label "Technology"@en .
 
 
-###  https://scch.org/technical_standards#Threat
+###  https://w3id.org/tsso#Threat
 :Threat rdf:type owl:Class ;
         owl:equivalentClass [ rdf:type owl:Restriction ;
                               owl:onProperty :relatedTo ;
@@ -2093,7 +2097,7 @@ Devices may have specific attributes that may be exposed to different threats, w
         rdfs:label "Threat"@en .
 
 
-###  https://scch.org/technical_standards#Tier
+###  https://w3id.org/tsso#Tier
 :Tier rdf:type owl:Class ;
       rdfs:subClassOf :FrameworkElement ;
       <http://purl.org/dc/elements/1.1/description> "Tiers describe the degree to which an organization’s cybersecurity risk management practices exhibit the characteristics defined in the Framework (e.g., risk and threat aware, repeatable, and adaptive)" ;
@@ -2101,35 +2105,35 @@ Devices may have specific attributes that may be exposed to different threats, w
       rdfs:label "Tier"@en .
 
 
-###  https://scch.org/technical_standards#Tolerance
+###  https://w3id.org/tsso#Tolerance
 :Tolerance rdf:type owl:Class ;
            <http://purl.org/dc/elements/1.1/description> "Value that describes the tolerance of a risk accepted by an organization"@en ;
            <http://purl.org/dc/terms/provenance> "NIST Framework" ;
            rdfs:label "Tolerance"@en .
 
 
-###  https://scch.org/technical_standards#Tool
+###  https://w3id.org/tsso#Tool
 :Tool rdf:type owl:Class ;
       rdfs:subClassOf :Technology ;
       <http://purl.org/dc/elements/1.1/description> "A thing or technology used to help perform a job, e.g. SW that carries out a particular function, typically creating or modifying another program." ;
       rdfs:label "Tool"@en .
 
 
-###  https://scch.org/technical_standards#Type
+###  https://w3id.org/tsso#Type
 :Type rdf:type owl:Class ;
       rdfs:comment """Type is used to define a category of things having common characteristics
 Items can have types, devices also.""" ;
       rdfs:label "Type"@en .
 
 
-###  https://scch.org/technical_standards#UI
+###  https://w3id.org/tsso#UI
 :UI rdf:type owl:Class ;
     rdfs:subClassOf :Interface ;
     rdfs:comment "Kind of interface, intended for a users" ;
     rdfs:label "UI"@en .
 
 
-###  https://scch.org/technical_standards#UpdateMechanism
+###  https://w3id.org/tsso#UpdateMechanism
 :UpdateMechanism rdf:type owl:Class ;
                  rdfs:subClassOf :Mechanism ;
                  <http://purl.org/dc/elements/1.1/description> "Ways of updating SW" ;
@@ -2137,7 +2141,7 @@ Items can have types, devices also.""" ;
                  rdfs:label "Update Mechanism"@en .
 
 
-###  https://scch.org/technical_standards#User
+###  https://w3id.org/tsso#User
 :User rdf:type owl:Class ;
       rdfs:subClassOf :Stakeholder ;
       <http://purl.org/dc/elements/1.1/description> "Natural person or organization" ;
@@ -2145,7 +2149,7 @@ Items can have types, devices also.""" ;
       rdfs:label "User"@en .
 
 
-###  https://scch.org/technical_standards#Vulnerability
+###  https://w3id.org/tsso#Vulnerability
 :Vulnerability rdf:type owl:Class ;
                rdfs:subClassOf :Problem ;
                rdfs:comment "Weakness within a system or component" ;
@@ -2156,20 +2160,20 @@ Items can have types, devices also.""" ;
 #    Individuals
 #################################################################
 
-###  https://scch.org/technical_standards#CC_Attribution_4-0_International_License
+###  https://w3id.org/tsso#CC_Attribution_4-0_International_License
 :CC_Attribution_4-0_International_License rdf:type owl:NamedIndividual ;
                                           rdfs:label "Creative Commons Attribution 4.0 International" ;
                                           rdfs:seeAlso <https://creativecommons.org/licenses/by/4.0/> .
 
 
-###  https://scch.org/technical_standards#IEC
+###  https://w3id.org/tsso#IEC
 :IEC rdf:type owl:NamedIndividual ;
      rdfs:label "IEC"@en ,
                 "Internation Electrotechincal Commission" ;
      :abbr "IEC" .
 
 
-###  https://scch.org/technical_standards#IEC_62443_4-2
+###  https://w3id.org/tsso#IEC_62443_4-2
 :IEC_62443_4-2 rdf:type owl:NamedIndividual ;
                :developedBy :IEC_TC_65 ;
                :publishedBy :IEC ;
@@ -2183,7 +2187,7 @@ Items can have types, devices also.""" ;
                           "IEC 62443 4-2" .
 
 
-###  https://scch.org/technical_standards#IEC_TC_65
+###  https://w3id.org/tsso#IEC_TC_65
 :IEC_TC_65 rdf:type owl:NamedIndividual ;
            :belongsTo :IEC ;
            rdfs:label "IEC _ TC _65"@en ,
@@ -2191,40 +2195,40 @@ Items can have types, devices also.""" ;
                       "Industrial-process measurement, control and automation" .
 
 
-###  https://scch.org/technical_standards#ISO
+###  https://w3id.org/tsso#ISO
 :ISO rdf:type owl:NamedIndividual ;
      rdfs:label "ISO"@en ,
                 "International Organization for Standarization" ;
      :abbr "ISO" .
 
 
-###  https://scch.org/technical_standards#MIT_License
+###  https://w3id.org/tsso#MIT_License
 :MIT_License rdf:type owl:NamedIndividual ;
              rdfs:label "MIT _ License"@en ,
                         "MIT License" ;
              rdfs:seeAlso "https://choosealicense.com/licenses/mit/" .
 
 
-###  https://scch.org/technical_standards#NIST
+###  https://w3id.org/tsso#NIST
 :NIST rdf:type owl:NamedIndividual ;
       rdfs:label "NIST"@en ,
                  "National Institute Of Standards and Technology" ;
       :abbr "NIST" .
 
 
-###  https://scch.org/technical_standards#Status_Published
+###  https://w3id.org/tsso#Status_Published
 :Status_Published rdf:type owl:NamedIndividual ;
                   rdfs:label "Status _ Published"@en ,
                              "Published" .
 
 
-###  https://scch.org/technical_standards#Status_Withdrawn
+###  https://w3id.org/tsso#Status_Withdrawn
 :Status_Withdrawn rdf:type owl:NamedIndividual ;
                   rdfs:label "Status _ Withdrawn"@en ,
                              "Withdrawn" .
 
 
-###  https://scch.org/technical_standards#Type_NIST
+###  https://w3id.org/tsso#Type_NIST
 :Type_NIST rdf:type owl:NamedIndividual ,
                     :Type ;
            rdfs:label "Type _ NIST"@en .
